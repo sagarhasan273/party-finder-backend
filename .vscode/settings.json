@@ -16,9 +16,18 @@
   "terminal.integrated.profiles.windows": {
     "Git Bash": {
       "source": "Git Bash",
-      "path": "D:\\Install Apps\\Git\\bin\\bash.exe",
+      "path": "C:\\Program Files\\Git\\bin\\bash.exe",
       "icon": "terminal-bash"
     }
   },
-  "terminal.integrated.defaultProfile.windows": "Git Bash"
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "diffEditor.experimental.useTrueInlineView": false,
+  "diffEditor.experimental.showMoves": false,
+  "editor.fontSize": 13,
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 120,
+  "editor.minimap.enabled": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  }
 }

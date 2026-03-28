@@ -1,13 +1,16 @@
 import { DatabaseError } from 'src/database';
-import { User, UserWithoutPassword } from 'src/models/user.model';
+
 import { UserRepository } from 'src/repositories/user.repository';
+import { ReturnResponseType } from 'src/types/base.type';
+import { UpdateUserInput, UserType } from 'src/types/user.type';
+import { AppError } from 'src/utils/errors';
 
 export class UserService {
   private userRepository = new UserRepository();
 
   public async createUser(
-    user: Omit<User, '_id' | 'createAt' | 'updateAt'>
-  ): Promise<UserWithoutPassword> {
+    user: Omit<UserType, '_id' | 'createAt' | 'updateAt'>
+  ): Promise<UserType> {
     try {
       return await this.userRepository.createUser(user);
     } catch (error) {
@@ -18,12 +21,25 @@ export class UserService {
     }
   }
 
+  public async updateUser(input: UpdateUserInput): Promise<ReturnResponseType> {
+    try {
+      if (!input.id) throw new AppError('User ID is required', 400, 'User Repository');
+
+      return await this.userRepository.updateUser(input);
+    } catch (error) {
+      if (error instanceof AppError) {
+        throw error;
+      }
+
+      throw new AppError('Failed to update user!', 500, 'User Service');
+    }
+  }
+
   public async getUserByEmail(
     email: string,
-    password: string
-  ): Promise<UserWithoutPassword | null> {
+  ): Promise<UserType | null> {
     try {
-      return await this.userRepository.getUserByEmail(email, password);
+      return await this.userRepository.getUserByEmail(email);
     } catch (error) {
       if (error instanceof Error && error.message.includes('duplicate key error')) {
         throw new DatabaseError(error as Error, "User doesn't exist");
@@ -32,7 +48,7 @@ export class UserService {
     }
   }
 
-  public async getUserById(id: string): Promise<UserWithoutPassword | null> {
+  public async getUserById(id: string): Promise<UserType | null> {
     try {
       return await this.userRepository.getUserById(id);
     } catch (error) {

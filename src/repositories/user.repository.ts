@@ -1,55 +1,81 @@
 import { ObjectId } from 'mongodb';
-import { User, UserWithoutPassword } from 'src/models/user.model';
+import { UserModel } from 'src/models/user.model';
 
+import { Types } from 'mongoose';
 import { getDatabase } from 'src/database';
-import { PasswordService } from 'src/services/auth/password.service';
+import { ReturnResponseType } from 'src/types/base.type';
+import { UpdateUserInput, UserType } from 'src/types/user.type';
+import { AppError } from 'src/utils/errors';
 
 export class UserRepository {
   private static collectionName = 'users';
 
   private async getCollection() {
     const db = await getDatabase();
-    return db.collection<User>(UserRepository.collectionName);
+    return db.collection<UserType>(UserRepository.collectionName);
   }
 
   public async createUser(
-    user: Omit<User, '_id' | 'createAt' | 'updateAt'>
-  ): Promise<UserWithoutPassword> {
+    user: Omit<UserType, '_id' | 'createAt' | 'updateAt'>
+  ): Promise<UserType> {
     const collection = await this.getCollection();
-    const passwordHash = await PasswordService.hashPassword(user.password);
+
     const now = new Date();
     const newUser = {
       ...user,
-      password: passwordHash,
       createAt: now,
       updateAt: now,
     };
     const result = await collection.insertOne(newUser);
-    const { password, ...userWithoutPassword } = { ...newUser, _id: result.insertedId };
+    const { ...userWithoutPassword } = { ...newUser, _id: result.insertedId };
     return userWithoutPassword;
+  }
+
+  public async updateUser(input: UpdateUserInput): Promise<ReturnResponseType> {
+    try {
+      const { id, ...updatableFields } = input;
+
+      const user = await UserModel.updateOne(
+        { _id: new Types.ObjectId(id) },
+        {
+          $set: {
+            ...updatableFields,
+            updatedAt: new Date(),
+          },
+        }
+      );
+
+      if (!user.modifiedCount) {
+        throw new AppError('Failed to update user', 404, 'User Repository');
+      }
+
+      return { message: 'Profile updated successfully', status: true };
+    } catch (error) {
+      if (error instanceof AppError) {
+        throw error;
+      }
+
+      throw new AppError('Failed to update user!', 500, 'User Repository');
+    }
   }
 
   public async getUserByEmail(
     email: string,
-    password: string
-  ): Promise<UserWithoutPassword | null> {
+  ): Promise<UserType | null> {
     const collection = await this.getCollection();
     const user = await collection.findOne({ email });
     if (!user) return null;
 
-    const isPasswordValid = await PasswordService.verifyPassword(password, user.password);
-    if (!isPasswordValid) return null;
-
-    const { password: undefined, ...userWithoutPassword } = user;
+    const { ...userWithoutPassword } = user;
     return userWithoutPassword;
   }
 
-  public async getUserById(id: string): Promise<UserWithoutPassword | null> {
+  public async getUserById(id: string): Promise<UserType | null> {
     const collection = await this.getCollection();
     const user = await collection.findOne({ _id: new ObjectId(id) });
     if (!user) return null;
 
-    const { password, ...userWithoutPassword } = user;
+    const { ...userWithoutPassword } = user;
     return userWithoutPassword;
   }
 }

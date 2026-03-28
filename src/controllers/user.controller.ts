@@ -14,10 +14,20 @@ export class UserController {
     }
   }
 
+  public async updateUser(req: Request, res: Response): Promise<void> {
+    try {
+      const user = await this.userService.updateUser(req.body);
+      res.status(201).json(user);
+    } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : 'An unknown error occurred';
+      res.status(500).json({ message: errorMessage });
+    }
+  }
+
   public async getUserByEmail(req: Request, res: Response): Promise<void> {
     try {
-      const { email, password } = req.body;
-      const user = await this.userService.getUserByEmail(email, password);
+      const { email } = req.body;
+      const user = await this.userService.getUserByEmail(email);
       if (!user) {
         res.status(401).json({ message: 'Invalid email or password' });
         return;
