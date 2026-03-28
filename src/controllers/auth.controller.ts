@@ -13,7 +13,6 @@ export class AuthController {
   public async googleLogin(req: Request, res: Response): Promise<void> {
     try {
       const { token } = req.body;
-
       const googleRes = await fetch('https://www.googleapis.com/oauth2/v3/userinfo', {
         headers: { Authorization: `Bearer ${token}` },
       });
@@ -113,7 +112,19 @@ export class AuthController {
       }
     }
 
-
     return { status: true, user, token };
+  }
+
+  public async verifyGoogleToken(idToken: string) {
+    const ticket = await client.verifyIdToken({
+      idToken,
+      audience: process.env.GOOGLE_CLIENT_ID,
+    });
+
+    const payload = ticket.getPayload();
+
+    if (!payload) throw new Error('Invalid token');
+
+    return payload;
   }
 }

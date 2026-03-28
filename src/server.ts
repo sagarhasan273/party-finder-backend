@@ -3,8 +3,8 @@ import express from 'express';
 import http from 'http';
 import { closeDatabaseConnection } from 'src/database';
 import { databaseMiddleware } from 'src/middlewares/database.middleware';
-import { UserRoutes } from 'src/routes/user-routes';
 import logger from 'src/utils/logger';
+import { rootRouter } from './routes/root.router';
 import { initSocket } from './socket';
 import { getLocalIp } from './utils/system';
 
@@ -13,7 +13,7 @@ const io = http.createServer(app);
 
 app.use(
   cors({
-    origin: [`http://${getLocalIp()}:5173`, 'http://localhost:5173',],
+    origin: [`http://${getLocalIp()}:8081`, 'http://localhost:8081',],
     credentials: true,
   })
 );
@@ -21,8 +21,7 @@ app.use(
 app.use(express.json());
 app.use(databaseMiddleware); // Use the database middleware for all routes
 
-const userRouters = new UserRoutes().router;
-app.use('/', userRouters); // Use the user router for user-related routes
+app.use('/', rootRouter);
 
 const PORT = process.env.PORT || 3000;
 

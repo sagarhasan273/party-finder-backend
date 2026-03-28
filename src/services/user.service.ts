@@ -1,9 +1,7 @@
-import { DatabaseError } from 'src/database';
-
 import { UserRepository } from 'src/repositories/user.repository';
 import { ReturnResponseType } from 'src/types/base.type';
 import { UpdateUserInput, UserType } from 'src/types/user.type';
-import { AppError } from 'src/utils/errors';
+import { AppError, DatabaseError } from 'src/utils/errors';
 
 export class UserService {
   private userRepository = new UserRepository();
