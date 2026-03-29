@@ -299,3 +299,22 @@
 [2026-03-29 14:37:33] [31merror[39m: Invalid lobby create data!
 [2026-03-29 14:40:51] [32minfo[39m: Server is running on port http://192.168.68.102:5000
 [2026-03-29 14:51:24] [32minfo[39m: Server is running on port http://192.168.68.102:5000
+[2026-03-29 15:03:59] [32minfo[39m: Mongoose connected to DB
+[2026-03-29 15:03:59] [32minfo[39m: Connected to MongoDB via Mongoose
+[2026-03-29 15:20:57] [32minfo[39m: Server is running on port http://192.168.68.102:5000
+[2026-03-29 15:21:50] [32minfo[39m: Server is running on port http://192.168.68.102:5000
+[2026-03-29 15:22:15] [32minfo[39m: Server is running on port http://192.168.68.102:5000
+[2026-03-29 15:23:22] [32minfo[39m: Server is running on port http://192.168.68.102:5000
+[2026-03-29 15:23:50] [32minfo[39m: Server is running on port http://192.168.68.102:5000
+[2026-03-29 15:23:54] [32minfo[39m: Server is running on port http://192.168.68.102:5000
+[2026-03-29 15:23:59] [32minfo[39m: Connected to MongoDB via Mongoose
+[2026-03-29 15:23:59] [32minfo[39m: Mongoose connected to DB
+[2026-03-29 15:23:59] [32minfo[39m: Connected to MongoDB via Mongoose
+[2026-03-29 15:24:18] [32minfo[39m: Server is running on port http://192.168.68.102:5000
+[2026-03-29 15:24:23] [32minfo[39m: Server is running on port http://192.168.68.102:5000
+[2026-03-29 15:24:26] [32minfo[39m: Server is running on port http://192.168.68.102:5000
+[2026-03-29 15:24:33] [32minfo[39m: Server is running on port http://192.168.68.102:5000
+[2026-03-29 15:24:39] [32minfo[39m: Server is running on port http://192.168.68.102:5000
+[2026-03-29 15:24:41] [32minfo[39m: Connected to MongoDB via Mongoose
+[2026-03-29 15:24:41] [32minfo[39m: Mongoose connected to DB
+[2026-03-29 15:24:41] [32minfo[39m: Connected to MongoDB via Mongoose

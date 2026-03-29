@@ -7,6 +7,19 @@ import { CreateLobbyInput, LobbyType, UpdateLobbyInput } from 'src/types/invento
 import { AppError } from 'src/utils/errors';
 
 export class InventoryRepository {
+    public async getLobbies(userId: string): Promise<LobbyType[]> {
+
+        const lobby = await LobbyModel.find({
+            status: {
+                $in: ["open", "full", "in progress"]
+            }
+        });
+
+        if (!lobby) throw new AppError('Lobby not found!', 404, 'Lobby Repository');
+
+        return lobby.map(l => l.toJSON());
+    }
+
     public async getLobbyMe(userId: string): Promise<LobbyType> {
 
         const lobby = await LobbyModel.findById(userId);

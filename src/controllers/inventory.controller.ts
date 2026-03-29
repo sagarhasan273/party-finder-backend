@@ -7,6 +7,28 @@ import logger from 'src/utils/logger';
 export class InventoryController {
     private inventoryService = new InventoryService();
 
+    public async getLobbies(req: Request, res: Response): Promise<void> {
+        try {
+            const authHeader = req.headers['authorization'];
+            const token = authHeader?.split(' ')[1];
+            if (!token) {
+                throw new AppError('Authorization token is required', 401, 'User Service');
+            }
+            const inventory = await this.inventoryService.getLobbies(token);
+
+            res.status(200).json({ data: inventory, status: true });
+        } catch (error) {
+            if (error instanceof AppError) {
+                logger.error(`${error.at}: ${error.message}`);
+                res.status(error.statusCode).json({ message: error.message, status: false });
+                return;
+            }
+
+            logger.error('An error occurred while getting the inventory!');
+            res.status(500).json({ message: 'An error occurred while getting the inventory!', status: false })
+        }
+    }
+
     public async getLobbyMe(req: Request, res: Response): Promise<void> {
         try {
             const authHeader = req.headers['authorization'];

@@ -8,6 +8,49 @@ import { JwtService } from './auth-service/jwt.service';
 export class InventoryService {
     private inventoryRepository = new InventoryRepository();
 
+    public async getLobbies(
+        token: string,
+    ): Promise<LobbyType[] | null> {
+        try {
+            const decodedToken = JwtService.decodeToken(token);
+            if (!decodedToken) throw new Error('Invalid token');
+
+            const userId = decodedToken.id;
+            if (!userId) throw new AppError('User ID not found in token', 400, 'User Service');
+
+            const user = await this.inventoryRepository.getLobbies(userId);
+
+            return user;
+
+        } catch (error) {
+            if (error instanceof Error && error.message.includes('duplicate key error')) {
+                throw new DatabaseError(error as Error, "User doesn't exist");
+            }
+            throw new DatabaseError(error as Error, 'Failed to get user by email');
+        }
+    }
+    public async getLobbyMe(
+        token: string,
+    ): Promise<LobbyType | null> {
+        try {
+            const decodedToken = JwtService.decodeToken(token);
+            if (!decodedToken) throw new Error('Invalid token');
+
+            const userId = decodedToken.id;
+            if (!userId) throw new AppError('User ID not found in token', 400, 'User Service');
+
+            const user = await this.inventoryRepository.getLobbyMe(userId);
+
+            return user;
+
+        } catch (error) {
+            if (error instanceof Error && error.message.includes('duplicate key error')) {
+                throw new DatabaseError(error as Error, "User doesn't exist");
+            }
+            throw new DatabaseError(error as Error, 'Failed to get user by email');
+        }
+    }
+
     public async createLobby(
         lobby: CreateLobbyInput
     ): Promise<LobbyType> {
@@ -32,28 +75,6 @@ export class InventoryService {
             }
 
             throw new AppError('Failed to update user!', 500, 'User Service');
-        }
-    }
-
-    public async getLobbyMe(
-        token: string,
-    ): Promise<LobbyType | null> {
-        try {
-            const decodedToken = JwtService.decodeToken(token);
-            if (!decodedToken) throw new Error('Invalid token');
-
-            const userId = decodedToken.id;
-            if (!userId) throw new AppError('User ID not found in token', 400, 'User Service');
-
-            const user = await this.inventoryRepository.getLobbyMe(userId);
-
-            return user;
-
-        } catch (error) {
-            if (error instanceof Error && error.message.includes('duplicate key error')) {
-                throw new DatabaseError(error as Error, "User doesn't exist");
-            }
-            throw new DatabaseError(error as Error, 'Failed to get user by email');
         }
     }
 
