@@ -13,7 +13,7 @@ const io = http.createServer(app);
 
 app.use(
   cors({
-    origin: [`http://${getLocalIp()}:8081`, 'http://localhost:8081',],
+    origin: [`http://${getLocalIp()}:8081`, 'http://localhost:8081'],
     credentials: true,
   })
 );

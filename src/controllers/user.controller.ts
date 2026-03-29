@@ -1,8 +1,32 @@
 import { Request, Response } from 'express';
 import { UserService } from 'src/services/user.service';
+import { AppError } from 'src/utils/errors';
+import logger from 'src/utils/logger';
 
 export class UserController {
   private userService = new UserService();
+
+  public async getUserMe(req: Request, res: Response): Promise<void> {
+    try {
+      const authHeader = req.headers['authorization'];
+      const token = authHeader?.split(' ')[1];
+      if (!token) {
+        throw new AppError('Authorization token is required', 401, 'User Service');
+      }
+      const user = await this.userService.getUserMe(token);
+
+      res.status(200).json({ data: user, status: true });
+    } catch (error) {
+      if (error instanceof AppError) {
+        logger.error(`${error.at}: ${error.message}`);
+        res.status(error.statusCode).json({ message: error.message, status: false });
+        return;
+      }
+
+      logger.error('An error occurred while getting the user!');
+      res.status(500).json({ message: 'An error occurred while getting the user!', status: false })
+    }
+  }
 
   public async createUser(req: Request, res: Response): Promise<void> {
     try {
@@ -21,23 +45,6 @@ export class UserController {
     } catch (error) {
       const errorMessage = error instanceof Error ? error.message : 'An unknown error occurred';
       res.status(500).json({ message: errorMessage });
-    }
-  }
-
-  public async getUserByEmail(req: Request, res: Response): Promise<void> {
-    try {
-      const { email } = req.body;
-      const user = await this.userService.getUserByEmail(email);
-      if (!user) {
-        res.status(401).json({ message: 'Invalid email or password' });
-        return;
-      }
-      res.status(200).json(user);
-    } catch (error) {
-      const errorMessage = error instanceof Error ? error.message : 'An unknown error occurred';
-      if (errorMessage === 'User already exists') {
-        res.status(409).json({ message: errorMessage });
-      }
     }
   }
 

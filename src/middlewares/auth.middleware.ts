@@ -1,67 +1,18 @@
 import { NextFunction, Request, Response } from 'express';
-import { OAuth2Client } from 'google-auth-library';
+import { JwtService } from 'src/services/auth/jwt.service';
 
-const client = new OAuth2Client(
-    process.env.GOOGLE_CLIENT_ID,
-    process.env.GOOGLE_CLIENT_SECRET
-);
-
-export interface GoogleUser {
-    sub: string;
-    email: string;
-    name: string;
-    picture: string;
-}
-
-// extend Express Request
-declare global {
-    namespace Express {
-        interface Request {
-            googleUser?: GoogleUser;
-        }
-    }
-}
-
-export const googleAuthMiddleware = async (
-    req: Request,
-    res: Response,
-    next: NextFunction
-)
-    : Promise<void> => {
+export const authMiddleware = (req: Request, res: Response, next: NextFunction) => {
     try {
-        const token = req.headers.authorization?.split(' ')[1];
+        const token = req.header('Authorization')?.replace('Bearer ', '');
 
         if (!token) {
-            res.status(401).json({ message: 'No token provided' });
-            return;
+            throw new Error('Authentication required');
         }
 
-        // Verify token with Google
-        const ticket = await client.verifyIdToken({
-            idToken: token,
-            audience: process.env.GOOGLE_CLIENT_ID,
-        });
-
-        const payload = ticket.getPayload();
-
-        if (!payload) {
-            res.status(401).json({ message: 'Invalid token payload' });
-            return;
-        }
-
-        // attach user info to request
-        req.googleUser = {
-            sub: payload.sub!,
-            email: payload.email!,
-            name: payload.name!,
-            picture: payload.picture!,
-        };
-
+        const decoded = JwtService.verifyToken(token);
+        req.user = decoded;
         next();
     } catch (error) {
-        res.status(401).json({
-            message: 'Invalid or expired Google token',
-        });
-        return;
+        res.status(401).json({ error: 'Authentication required' });
     }
 };

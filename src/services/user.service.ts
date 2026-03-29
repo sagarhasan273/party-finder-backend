@@ -2,6 +2,7 @@ import { UserRepository } from 'src/repositories/user.repository';
 import { ReturnResponseType } from 'src/types/base.type';
 import { UpdateUserInput, UserType } from 'src/types/user.type';
 import { AppError, DatabaseError } from 'src/utils/errors';
+import { JwtService } from './auth/jwt.service';
 
 export class UserService {
   private userRepository = new UserRepository();
@@ -33,11 +34,20 @@ export class UserService {
     }
   }
 
-  public async getUserByEmail(
-    email: string,
+  public async getUserMe(
+    token: string,
   ): Promise<UserType | null> {
     try {
-      return await this.userRepository.getUserByEmail(email);
+      const decodedToken = JwtService.decodeToken(token);
+      if (!decodedToken) throw new Error('Invalid token');
+
+      const userId = decodedToken.id;
+      if (!userId) throw new AppError('User ID not found in token', 400, 'User Service');
+
+      const user = await this.userRepository.getUserMe(userId);
+
+      return user;
+
     } catch (error) {
       if (error instanceof Error && error.message.includes('duplicate key error')) {
         throw new DatabaseError(error as Error, "User doesn't exist");

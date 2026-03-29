@@ -15,6 +15,15 @@ export class UserRepository {
     return db.collection<UserType>(UserRepository.collectionName);
   }
 
+  public async getUserMe(userId: string): Promise<UserType> {
+
+    const user = await UserModel.findById(userId);
+
+    if (!user) throw new AppError('User not found!', 404, 'User Repository');
+
+    return user.toJSON();
+  }
+
   public async createUser(
     user: Omit<UserType, '_id' | 'createAt' | 'updateAt'>
   ): Promise<UserType> {

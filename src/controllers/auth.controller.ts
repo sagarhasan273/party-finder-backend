@@ -1,6 +1,7 @@
 import { Request, Response } from 'express';
 import { OAuth2Client } from 'google-auth-library';
 import { UserModel } from 'src/models/user.model';
+import { JwtService } from 'src/services/auth/jwt.service';
 import { AppError } from 'src/utils/errors';
 import { generateUserId } from 'src/utils/generate.userId';
 const client = new OAuth2Client(
@@ -112,7 +113,9 @@ export class AuthController {
       }
     }
 
-    return { status: true, user, token };
+    const accessToken = JwtService.generateToken(user);
+
+    return { status: true, user, token: accessToken };
   }
 
   public async verifyGoogleToken(idToken: string) {
