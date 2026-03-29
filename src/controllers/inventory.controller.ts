@@ -34,6 +34,7 @@ export class InventoryController {
         try {
             validatedInput = CreateLobbySchema.parse(req.body);
         } catch (error) {
+            console.log(error);
             logger.error('Invalid lobby create data!');
             res.status(400).json({ status: false, message: 'Invalid lobby data!' });
             return;

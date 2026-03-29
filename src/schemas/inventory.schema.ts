@@ -42,7 +42,7 @@ export const LobbySchema = z.object({
     rankMax: RankTierEnum,
     hostGamename: z.string().min(1, "Host gamename is required"),
     hostTagline: z.string().min(1, "Host tagline is required"),
-    rolesNeeded: z.string(),
+    rolesNeeded: z.array(z.string()),
     region: z.string(),
     server: z.string(),
     status: LobbyStatusEnum,

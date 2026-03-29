@@ -20,12 +20,12 @@ const LobbySchema = new Schema<LobbyType & Document>(
         },
         hostGamename: { type: String, required: true },
         hostTagline: { type: String, required: true },
-        rolesNeeded: { type: String, required: true },
+        rolesNeeded: { type: [String], required: true },
         region: { type: String, required: true },
         server: { type: String, required: true },
         status: { type: String, enum: ["open", "full", "in progress", "closed"], required: true },
         discordLink: { type: String },
-        currentPlayers: { type: Number, default: 0, min: 0 },
+        currentPlayers: { type: Number, default: 0, min: 0, max: 5 },
         map: {
             type: String, enum: [
                 "Any", "Ascent", "Bind", "Breeze", "Fracture", "Haven", "Icebox", "Lotus", "Pearl", "Split", "Sunset"
