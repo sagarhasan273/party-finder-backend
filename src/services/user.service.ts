@@ -2,7 +2,7 @@ import { UserRepository } from 'src/repositories/user.repository';
 import { ReturnResponseType } from 'src/types/base.type';
 import { UpdateUserInput, UserType } from 'src/types/user.type';
 import { AppError, DatabaseError } from 'src/utils/errors';
-import { JwtService } from './auth/jwt.service';
+import { JwtService } from './auth-service/jwt.service';
 
 export class UserService {
   private userRepository = new UserRepository();
