@@ -29,6 +29,20 @@ export class InventoryRepository {
         return lobby.toJSON();
     }
 
+    public async getJoinRequestedLobbies(userId: string): Promise<LobbyType[]> {
+
+        const lobby = await LobbyModel.find({
+            applicants: {
+                $elemMatch: {
+                    user: new Types.ObjectId(userId),
+                    status: { $in: ["pending", "accepted", "rejected"] },
+                },
+            },
+        }).populate("applicants.user", "country rank gamename tagline mainRole playStyle");
+
+        return lobby.map(l => l.toJSON());
+    }
+
     public async createLobby(
         lobby: CreateLobbyInput
     ): Promise<LobbyType> {

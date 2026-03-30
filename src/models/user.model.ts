@@ -38,7 +38,7 @@ const UserModalSchema = new Schema<UserType & Document>({
 
   mainRole: {
     type: String,
-    enum: ["Duelist", "Initiator", "Controller", "Sentinel"],
+    enum: ["Any", "Duelist", "Initiator", "Controller", "Sentinel"],
   },
 
   gamename: { type: String },

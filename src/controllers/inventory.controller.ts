@@ -51,6 +51,29 @@ export class InventoryController {
         }
     }
 
+    public async getJoinRequestedLobbies(req: Request, res: Response): Promise<void> {
+        try {
+            const authHeader = req.headers['authorization'];
+            const token = authHeader?.split(' ')[1];
+            if (!token) {
+                throw new AppError('Authorization token is required', 401, 'User Service');
+            }
+            const inventory = await this.inventoryService.getJoinRequestedLobbies(token);
+
+            res.status(200).json({ data: inventory, status: true });
+        }
+        catch (error) {
+            if (error instanceof AppError) {
+                logger.error(`${error.at}: ${error.message}`);
+                res.status(error.statusCode).json({ message: error.message, status: false });
+                return;
+            }
+
+            logger.error('An error occurred while getting the inventory!');
+            res.status(500).json({ message: 'An error occurred while getting the inventory!', status: false })
+        }
+    }
+
     public async createLobby(req: Request, res: Response): Promise<void> {
         let validatedInput;
         try {

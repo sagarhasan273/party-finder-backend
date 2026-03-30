@@ -52,6 +52,28 @@ export class InventoryService {
         }
     }
 
+    public async getJoinRequestedLobbies(
+        token: string,
+    ): Promise<LobbyType[] | null> {
+        try {
+            const decodedToken = JwtService.decodeToken(token);
+            if (!decodedToken) throw new Error('Invalid token');
+
+            const userId = decodedToken.id;
+            if (!userId) throw new AppError('User ID not found in token', 400, 'User Service');
+
+            const lobbies = await this.inventoryRepository.getJoinRequestedLobbies(userId);
+
+            return lobbies;
+        } catch (error) {
+            if (error instanceof AppError) {
+                throw error;
+            }
+
+            throw error instanceof Error ? new AppError(error.message, 500, 'Inventory Service') : new AppError('Failed to get join requested lobbies', 500, 'Inventory Service');
+        }
+    }
+
     public async createLobby(
         lobby: CreateLobbyInput
     ): Promise<LobbyType> {
