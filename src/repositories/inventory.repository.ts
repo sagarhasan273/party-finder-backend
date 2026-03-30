@@ -22,7 +22,7 @@ export class InventoryRepository {
 
     public async getLobbyMe(userId: string): Promise<LobbyType> {
 
-        const lobby = await LobbyModel.findById(userId);
+        const lobby = await LobbyModel.findOne({ userId });
 
         if (!lobby) throw new AppError('Lobby not found!', 404, 'Lobby Repository');
 

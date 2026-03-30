@@ -49,6 +49,11 @@ export const LobbySchema = z.object({
     discordLink: z.string().url().optional(),
     currentPlayers: z.number().int().nonnegative().optional(),
     map: ValorantMapEnum.optional(), // optional map if needed
+
+    applicants: z.array(z.object({
+        user: objectIdSchema,
+        status: z.enum(["pending", "accepted", "rejected"]),
+    })).optional(),
 });
 
 export const CreateLobbySchema = LobbySchema.omit({ id: true });

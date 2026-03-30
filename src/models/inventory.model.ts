@@ -31,6 +31,22 @@ const LobbySchema = new Schema<LobbyType & Document>(
                 "Any", "Ascent", "Bind", "Breeze", "Fracture", "Haven", "Icebox", "Lotus", "Pearl", "Split", "Sunset"
             ], default: "Any"
         },
+
+        applicants: {
+            type: [{
+                user: {
+                    type: Schema.Types.ObjectId,
+                    ref: "users",
+                    required: true,
+                },
+                status: {
+                    type: String,
+                    enum: ["pending", "accepted", "rejected"],
+                    default: "pending",
+                },
+            }],
+            default: [],
+        },
     },
     {
         timestamps: true,

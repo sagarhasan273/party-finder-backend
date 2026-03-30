@@ -4,38 +4,62 @@ import { UserType } from 'src/types/user.type';
 
 // Main User Schema
 const UserModalSchema = new Schema<UserType & Document>({
-  googleId: {
-    type: String,
-    required: true,
-    unique: true,
-  },
+  googleId: { type: String, required: true, unique: true },
   userId: {
     type: String,
     required: true,
     unique: true,
     match: [/^USR\d{6}\d{4}$/, 'User ID must follow the format USRYYMMDDCOUNTER']
   },
-  name: {
-    type: String,
-  },
-  username: {
-    type: String,
-  },
+
+  name: String,
+  username: String,
+
   email: {
     type: String,
     required: true,
     unique: true,
-    match: [/^\S+@\S+\.\S+$/, 'Please use a valid email address']
   },
-  profilePhoto: {
-    type: String
-  },
+
+  profilePhoto: String,
+
   gender: {
     type: String,
     enum: ['male', 'female', 'other', 'prefer-not-to-say'],
     default: 'prefer-not-to-say'
   },
+
   verified: { type: Boolean, default: false },
+
+  // 🔥 NEW FIELDS
+  country: { type: String },
+  rank: { type: String },
+  pickRank: { type: String },
+
+  mainRole: {
+    type: String,
+    enum: ["Duelist", "Initiator", "Controller", "Sentinel"],
+  },
+
+  gamename: { type: String },
+  tagline: { type: String },
+
+  playstyle: {
+    type: String,
+    enum: ["😌 Chill", "⚖️ Balanced", "⚔️ Competitive", "🎯 Serious", "🔥 Tryhard"],
+    default: "😌 Chill",
+  },
+
+  region: {
+    type: String,
+    default: "ap",
+  },
+
+  agents: {
+    type: [String],
+    default: [],
+  },
+
 }, {
   timestamps: true,
   toJSON: {
