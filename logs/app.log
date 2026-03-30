@@ -459,3 +459,84 @@
 [2026-03-30 08:47:23] [32minfo[39m: Server is running on port http://192.168.68.105:5000
 [2026-03-30 08:47:27] [32minfo[39m: Server is running on port http://192.168.68.105:5000
 [2026-03-30 08:47:31] [32minfo[39m: Server is running on port http://192.168.68.105:5000
+[2026-03-30 08:48:10] [32minfo[39m: Server is running on port http://192.168.68.105:5000
+[2026-03-30 08:48:20] [32minfo[39m: Connected to MongoDB via Mongoose
+[2026-03-30 08:48:20] [32minfo[39m: Mongoose connected to DB
+[2026-03-30 08:48:20] [32minfo[39m: Connected to MongoDB via Mongoose
+[2026-03-30 09:12:33] [32minfo[39m: Server is running on port http://192.168.68.105:5000
+[2026-03-30 09:12:36] [32minfo[39m: Server is running on port http://192.168.68.105:5000
+[2026-03-30 09:12:36] [32minfo[39m: Mongoose connected to DB
+[2026-03-30 09:12:36] [32minfo[39m: Connected to MongoDB via Mongoose
+[2026-03-30 09:13:04] [31merror[39m: User Service: Authorization token is required
+[2026-03-30 09:16:16] [32minfo[39m: Server is running on port http://192.168.68.105:5000
+[2026-03-30 09:16:36] [32minfo[39m: Server is running on port http://192.168.68.105:5000
+[2026-03-30 09:17:47] [32minfo[39m: Server is running on port http://192.168.68.105:5000
+[2026-03-30 09:17:57] [32minfo[39m: Server is running on port http://192.168.68.105:5000
+[2026-03-30 09:18:10] [32minfo[39m: Server is running on port http://192.168.68.105:5000
+[2026-03-30 09:18:31] [32minfo[39m: Connected to MongoDB via Mongoose
+[2026-03-30 09:18:31] [32minfo[39m: Mongoose connected to DB
+[2026-03-30 09:18:31] [32minfo[39m: Connected to MongoDB via Mongoose
+[2026-03-30 09:23:38] [32minfo[39m: Server is running on port http://192.168.68.105:5000
+[2026-03-30 09:23:49] [32minfo[39m: Mongoose connected to DB
+[2026-03-30 09:23:49] [32minfo[39m: Connected to MongoDB via Mongoose
+[2026-03-30 09:24:15] [32minfo[39m: Server is running on port http://192.168.68.105:5000
+[2026-03-30 09:24:18] [32minfo[39m: Mongoose connected to DB
+[2026-03-30 09:24:18] [32minfo[39m: Connected to MongoDB via Mongoose
+[2026-03-30 09:24:35] [32minfo[39m: Server is running on port http://192.168.68.105:5000
+[2026-03-30 09:24:44] [32minfo[39m: Connected to MongoDB via Mongoose
+[2026-03-30 09:24:44] [32minfo[39m: Connected to MongoDB via Mongoose
+[2026-03-30 09:24:44] [32minfo[39m: Connected to MongoDB via Mongoose
+[2026-03-30 09:24:44] [32minfo[39m: Mongoose connected to DB
+[2026-03-30 09:24:44] [32minfo[39m: Connected to MongoDB via Mongoose
+[2026-03-30 09:25:52] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-30 09:27:12] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-30 09:27:14] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-30 09:28:18] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-30 09:28:21] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-30 09:28:23] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-30 09:28:26] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-30 09:28:29] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-30 09:29:04] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-30 09:29:57] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-30 09:29:57] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-30 09:30:10] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-30 09:30:57] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-30 09:31:57] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-30 09:32:23] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-30 09:32:27] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-30 09:32:30] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-30 09:32:42] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-30 09:32:44] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-30 09:33:41] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-30 09:33:43] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-30 09:33:45] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-30 09:33:57] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-30 09:35:02] [32minfo[39m: Server is running on port http://192.168.68.105:5000
+[2026-03-30 09:37:33] [32minfo[39m: Mongoose connected to DB
+[2026-03-30 09:37:33] [32minfo[39m: Connected to MongoDB via Mongoose
+[2026-03-30 09:39:37] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-30 09:52:41] [32minfo[39m: Server is running on port http://192.168.68.105:5000
+[2026-03-30 09:53:11] [32minfo[39m: Server is running on port http://192.168.68.105:5000
+[2026-03-30 09:54:07] [32minfo[39m: Server is running on port http://192.168.68.105:5000
+[2026-03-30 09:55:02] [32minfo[39m: Server is running on port http://192.168.68.105:5000
+[2026-03-30 09:55:14] [32minfo[39m: Server is running on port http://192.168.68.105:5000
+[2026-03-30 09:55:21] [32minfo[39m: Server is running on port http://192.168.68.105:5000
+[2026-03-30 09:55:26] [32minfo[39m: Server is running on port http://192.168.68.105:5000
+[2026-03-30 09:55:29] [32minfo[39m: Server is running on port http://192.168.68.105:5000
+[2026-03-30 09:55:35] [32minfo[39m: Server is running on port http://192.168.68.105:5000
+[2026-03-30 09:55:35] [32minfo[39m: Connected to MongoDB via Mongoose
+[2026-03-30 09:55:35] [32minfo[39m: Mongoose connected to DB
+[2026-03-30 09:55:35] [32minfo[39m: Connected to MongoDB via Mongoose
+[2026-03-30 10:43:25] [32minfo[39m: Server is running on port http://192.168.68.105:5000
+[2026-03-30 10:43:27] [32minfo[39m: Connected to MongoDB via Mongoose
+[2026-03-30 10:43:27] [32minfo[39m: Mongoose connected to DB
+[2026-03-30 10:43:27] [32minfo[39m: Connected to MongoDB via Mongoose
+[2026-03-30 10:44:37] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-30 10:53:31] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-30 11:02:32] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-30 11:16:09] [32minfo[39m: Server is running on port http://192.168.68.105:5000
+[2026-03-30 11:17:34] [32minfo[39m: Connected to MongoDB via Mongoose
+[2026-03-30 11:17:34] [32minfo[39m: Mongoose connected to DB
+[2026-03-30 11:17:34] [32minfo[39m: Connected to MongoDB via Mongoose
+[2026-03-30 11:24:12] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-30 11:29:07] [31merror[39m: Lobby Repository: Lobby not found!

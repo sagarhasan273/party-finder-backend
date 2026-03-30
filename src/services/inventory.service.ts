@@ -90,6 +90,17 @@ export class InventoryService {
         }
     }
 
+    public async deleteLobby(lobbyId: string, userId: string): Promise<ReturnResponseType> {
+        try {
+            return await this.inventoryRepository.deleteLobby(lobbyId, userId);
+        } catch (error) {
+            if (error instanceof AppError) {
+                throw error;
+            }
+            throw error instanceof Error ? new AppError(error.message, 500, 'Inventory Service') : new AppError('Failed to delete lobby', 500, 'Inventory Service');
+        }
+    }
+
     public async requestToJoinLobby(lobbyId: string, userId: string): Promise<ReturnResponseType> {
         try {
             return await this.inventoryRepository.requestToJoinLobby(lobbyId, userId);

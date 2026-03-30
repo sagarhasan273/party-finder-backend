@@ -98,6 +98,25 @@ export class InventoryController {
         }
     }
 
+    public async deleteLobby(req: Request, res: Response): Promise<void> {
+        const { userId, lobbyId } = req.body;
+
+        try {
+            if (!userId) {
+                res.status(400).json({ message: 'User ID not found in token', status: false });
+                return;
+            }
+
+            const result = await this.inventoryService.deleteLobby(lobbyId, userId);
+
+            res.status(200).json(result);
+        }
+        catch (error) {
+            const errorMessage = error instanceof Error ? error.message : 'An unknown error occurred';
+            res.status(500).json({ message: errorMessage });
+        }
+    }
+
     public async requestToJoinLobby(req: Request, res: Response): Promise<void> {
         const { userId, lobbyId } = req.body;
 

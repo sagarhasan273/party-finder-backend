@@ -27,11 +27,6 @@ const LobbySchema = new Schema<LobbyType & Document>(
         status: { type: String, enum: ["open", "full", "in progress", "closed"], required: true },
         discordLink: { type: String },
         currentPlayers: { type: Number, default: 0, min: 0, max: 5 },
-        map: {
-            type: String, enum: [
-                "Any", "Ascent", "Bind", "Breeze", "Fracture", "Haven", "Icebox", "Lotus", "Pearl", "Split", "Sunset"
-            ], default: "Any"
-        },
 
         applicants: {
             type: [{

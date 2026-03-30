@@ -22,7 +22,7 @@ export class InventoryRepository {
 
     public async getLobbyMe(userId: string): Promise<LobbyType> {
 
-        const lobby = await LobbyModel.findOne({ userId });
+        const lobby = await LobbyModel.findOne({ userId }).populate("applicants.user", "country rank gamename tagline mainRole playStyle");
 
         if (!lobby) throw new AppError('Lobby not found!', 404, 'Lobby Repository');
 
@@ -83,6 +83,39 @@ export class InventoryRepository {
 
         const { ...lobbyWithoutPassword } = lobby;
         return lobbyWithoutPassword;
+    }
+
+    public async deleteLobby(
+        lobbyId: string,
+        userId: string
+    ): Promise<ReturnResponseType> {
+        try {
+            const result = await LobbyModel.deleteOne({
+                _id: lobbyId,
+                userId, // 🔒 ensure only owner can delete
+            });
+
+            if (!result.deletedCount) {
+                throw new AppError(
+                    "Lobby not found or you are not authorized",
+                    404,
+                    "Lobby Repository"
+                );
+            }
+
+            return {
+                message: "Lobby deleted successfully",
+                status: true,
+            };
+        } catch (error) {
+            if (error instanceof AppError) throw error;
+
+            throw new AppError(
+                "Failed to delete lobby!",
+                500,
+                "Lobby Repository"
+            );
+        }
     }
 
     public async requestToJoinLobby(
