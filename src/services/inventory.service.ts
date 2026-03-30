@@ -2,7 +2,7 @@ import { InventoryRepository } from 'src/repositories/inventory.repository';
 import { ReturnResponseType } from 'src/types/base.type';
 import { CreateLobbyInput, LobbyType } from 'src/types/inventory.type';
 import { UpdateUserInput } from 'src/types/user.type';
-import { AppError, DatabaseError } from 'src/utils/errors';
+import { AppError } from 'src/utils/errors';
 import { JwtService } from './auth-service/jwt.service';
 
 export class InventoryService {
@@ -23,10 +23,10 @@ export class InventoryService {
             return user;
 
         } catch (error) {
-            if (error instanceof Error && error.message.includes('duplicate key error')) {
-                throw new DatabaseError(error as Error, "User doesn't exist");
+            if (error instanceof AppError) {
+                throw error;
             }
-            throw new DatabaseError(error as Error, 'Failed to get user by email');
+            throw error instanceof Error ? new AppError(error.message, 500, 'Inventory Service') : new AppError('Failed to get lobbies', 500, 'Inventory Service');
         }
     }
     public async getLobbyMe(
@@ -44,10 +44,11 @@ export class InventoryService {
             return user;
 
         } catch (error) {
-            if (error instanceof Error && error.message.includes('duplicate key error')) {
-                throw new DatabaseError(error as Error, "User doesn't exist");
+            if (error instanceof AppError) {
+                throw error;
             }
-            throw new DatabaseError(error as Error, 'Failed to get user by email');
+
+            throw error instanceof Error ? new AppError(error.message, 500, 'Inventory Service') : new AppError('Failed to get lobby by ID', 500, 'Inventory Service');
         }
     }
 
@@ -57,10 +58,10 @@ export class InventoryService {
         try {
             return await this.inventoryRepository.createLobby(lobby);
         } catch (error) {
-            if (error instanceof Error && error.message.includes('duplicate key error')) {
-                throw new DatabaseError(error as Error, 'User already exists');
+            if (error instanceof AppError) {
+                throw error;
             }
-            throw new DatabaseError(error as Error, 'Failed to create user');
+            throw error instanceof Error ? new AppError(error.message, 500, 'Inventory Service') : new AppError('Failed to create lobby!', 500, 'Inventory Service');
         }
     }
 
@@ -74,7 +75,7 @@ export class InventoryService {
                 throw error;
             }
 
-            throw new AppError('Failed to update user!', 500, 'User Service');
+            throw error instanceof Error ? new AppError(error.message, 500, 'Inventory Service') : new AppError('Failed to update lobby!', 500, 'Inventory Service');
         }
     }
 
@@ -82,7 +83,33 @@ export class InventoryService {
         try {
             return await this.inventoryRepository.getLobbyById(id);
         } catch (error) {
-            throw new DatabaseError(error as Error, 'Failed to get lobby by ID');
+            if (error instanceof AppError) {
+                throw error;
+            }
+            throw error instanceof Error ? new AppError(error.message, 500, 'Inventory Service') : new AppError('Failed to get lobby by ID', 500, 'Inventory Service');
+        }
+    }
+
+    public async requestToJoinLobby(lobbyId: string, userId: string): Promise<ReturnResponseType> {
+        try {
+            return await this.inventoryRepository.requestToJoinLobby(lobbyId, userId);
+        } catch (error) {
+            if (error instanceof AppError) {
+                throw error;
+            }
+
+            throw error instanceof Error ? new AppError(error.message, 500, 'Inventory Service') : new AppError('Failed to request to join lobby', 500, 'Inventory Service');
+        }
+    }
+
+    public async acceptJoinRequest(lobbyId: string, userId: string): Promise<ReturnResponseType> {
+        try {
+            return await this.inventoryRepository.acceptJoinRequest(lobbyId, userId);
+        } catch (error) {
+            if (error instanceof AppError) {
+                throw error;
+            }
+            throw error instanceof Error ? new AppError(error.message, 500, 'Inventory Service') : new AppError('Failed to accept join request', 500, 'Inventory Service');
         }
     }
 }

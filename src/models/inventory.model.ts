@@ -8,6 +8,7 @@ const LobbySchema = new Schema<LobbyType & Document>(
         userId: { type: String, required: true }, // host user id
         title: { type: String, required: true },
         description: { type: String },
+        partyCode: { type: String, unique: true, required: true },
         rankMin: {
             type: String, enum: [
                 "Iron", "Bronze", "Silver", "Gold", "Platinum", "Diamond", "Ascendant", "Immortal", "Radiant"

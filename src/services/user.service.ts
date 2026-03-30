@@ -22,7 +22,7 @@ export class UserService {
 
   public async updateUser(input: UpdateUserInput): Promise<ReturnResponseType> {
     try {
-      if (!input.id) throw new AppError('User ID is required', 400, 'User Repository');
+      if (!input.id) throw new AppError('User ID is required', 400, 'User Service');
 
       return await this.userRepository.updateUser(input);
     } catch (error) {

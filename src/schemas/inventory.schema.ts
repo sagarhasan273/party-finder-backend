@@ -38,6 +38,7 @@ export const LobbySchema = z.object({
     userId: z.string(),
     title: z.string().min(1, "Title is required"),
     description: z.string().optional(),
+    partyCode: z.string().min(1, "Party code is required"),
     rankMin: RankTierEnum,
     rankMax: RankTierEnum,
     hostGamename: z.string().min(1, "Host gamename is required"),
