@@ -145,4 +145,26 @@ export class InventoryService {
             throw error instanceof Error ? new AppError(error.message, 500, 'Inventory Service') : new AppError('Failed to accept join request', 500, 'Inventory Service');
         }
     }
+
+    public async rejectJoinRequest(lobbyId: string, userId: string): Promise<ReturnResponseType> {
+        try {
+            return await this.inventoryRepository.rejectJoinRequest(lobbyId, userId);
+        } catch (error) {
+            if (error instanceof AppError) {
+                throw error;
+            }
+            throw error instanceof Error ? new AppError(error.message, 500, 'Inventory Service') : new AppError('Failed to reject join request', 500, 'Inventory Service');
+        }
+    }
+
+    public async cancelJoinRequest(lobbyId: string, userId: string): Promise<ReturnResponseType> {
+        try {
+            return await this.inventoryRepository.cancelJoinRequest(lobbyId, userId);
+        } catch (error) {
+            if (error instanceof AppError) {
+                throw error;
+            }
+            throw error instanceof Error ? new AppError(error.message, 500, 'Inventory Service') : new AppError('Failed to cancel join request', 500, 'Inventory Service');
+        }
+    }
 }

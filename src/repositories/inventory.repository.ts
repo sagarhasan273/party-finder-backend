@@ -283,7 +283,7 @@ export class InventoryRepository {
 
             if (!updated.modifiedCount) {
                 throw new AppError(
-                    "Join request not found!",
+                    "Join request not found. May be request got cancelled!",
                     404,
                     "Lobby Repository"
                 );
@@ -298,6 +298,90 @@ export class InventoryRepository {
 
             throw new AppError(
                 "Failed to accept join request!",
+                500,
+                "Lobby Repository"
+            );
+        }
+    }
+
+    public async rejectJoinRequest(
+        lobbyId: string,
+        userId: string
+    ): Promise<ReturnResponseType> {
+        try {
+            const userObjectId = new Types.ObjectId(userId);
+            const updated = await LobbyModel.updateOne(
+                {
+                    _id: lobbyId,
+                    "applicants.user": userObjectId,
+                },
+                {
+                    $set: {
+                        "applicants.$.status": "rejected",
+                    },
+                }
+            );
+
+            if (!updated.modifiedCount) {
+                throw new AppError(
+                    "Join request not found!",
+                    404,
+                    "Lobby Repository"
+                );
+            }
+
+            return {
+                message: "Join request rejected successfully",
+                status: true,
+            };
+        } catch (error) {
+            if (error instanceof AppError) throw error;
+
+            throw new AppError(
+                "Failed to reject join request!",
+                500,
+                "Lobby Repository"
+            );
+        }
+    }
+
+    public async cancelJoinRequest(
+        lobbyId: string,
+        userId: string
+    ): Promise<ReturnResponseType> {
+        try {
+            const userObjectId = new Types.ObjectId(userId);
+            const updated = await LobbyModel.updateOne(
+                {
+                    _id: lobbyId,
+                    "applicants.user": userObjectId,
+                },
+                {
+                    $pull: {
+                        applicants: {
+                            user: userObjectId,
+                        },
+                    },
+                }
+            );
+
+            if (!updated.modifiedCount) {
+                throw new AppError(
+                    "Join request not found!",
+                    404,
+                    "Lobby Repository"
+                );
+            }
+
+            return {
+                message: "Join request cancelled successfully",
+                status: true,
+            };
+        } catch (error) {
+            if (error instanceof AppError) throw error;
+
+            throw new AppError(
+                "Failed to cancel join request!",
                 500,
                 "Lobby Repository"
             );

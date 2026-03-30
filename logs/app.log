@@ -591,3 +591,81 @@
 [2026-03-30 13:17:26] [32minfo[39m: Connected to MongoDB via Mongoose
 [2026-03-30 13:17:26] [32minfo[39m: Mongoose connected to DB
 [2026-03-30 13:17:26] [32minfo[39m: Connected to MongoDB via Mongoose
+[2026-03-30 15:40:58] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-30 15:41:00] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-30 15:41:08] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-31 01:42:10] [32minfo[39m: Server is running on port http://192.168.68.106:5000
+[2026-03-31 01:51:04] [32minfo[39m: Connected to MongoDB via Mongoose
+[2026-03-31 01:51:04] [31merror[39m: User Service: Authorization token is required
+[2026-03-31 01:51:04] [32minfo[39m: Mongoose connected to DB
+[2026-03-31 01:51:04] [32minfo[39m: Connected to MongoDB via Mongoose
+[2026-03-31 01:51:04] [31merror[39m: User Service: Authorization token is required
+[2026-03-31 01:51:05] [31merror[39m: User Service: Authorization token is required
+[2026-03-31 01:51:07] [31merror[39m: User Service: Authorization token is required
+[2026-03-31 01:51:07] [31merror[39m: User Service: Authorization token is required
+[2026-03-31 01:51:07] [31merror[39m: User Service: Authorization token is required
+[2026-03-31 01:51:07] [31merror[39m: User Service: Authorization token is required
+[2026-03-31 01:51:07] [31merror[39m: User Service: Authorization token is required
+[2026-03-31 01:51:08] [31merror[39m: User Service: Authorization token is required
+[2026-03-31 01:51:08] [31merror[39m: User Service: Authorization token is required
+[2026-03-31 01:51:08] [31merror[39m: User Service: Authorization token is required
+[2026-03-31 01:51:08] [31merror[39m: User Service: Authorization token is required
+[2026-03-31 01:51:08] [31merror[39m: User Service: Authorization token is required
+[2026-03-31 01:51:09] [31merror[39m: User Service: Authorization token is required
+[2026-03-31 01:51:10] [31merror[39m: User Service: Authorization token is required
+[2026-03-31 01:51:36] [31merror[39m: User Service: Authorization token is required
+[2026-03-31 01:56:39] [31merror[39m: User Service: Authorization token is required
+[2026-03-31 01:56:48] [31merror[39m: User Service: Authorization token is required
+[2026-03-31 02:17:45] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-31 02:18:07] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-31 02:18:47] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-31 02:20:42] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-31 02:21:37] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-31 02:27:55] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-31 02:27:59] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-31 02:28:01] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-31 02:28:03] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-31 02:28:04] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-31 02:30:07] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-31 02:51:14] [32minfo[39m: Server is running on port http://192.168.68.106:5000
+[2026-03-31 02:51:47] [32minfo[39m: Server is running on port http://192.168.68.106:5000
+[2026-03-31 02:52:13] [32minfo[39m: Server is running on port http://192.168.68.106:5000
+[2026-03-31 02:55:21] [32minfo[39m: Server is running on port http://192.168.68.106:5000
+[2026-03-31 02:58:18] [32minfo[39m: Mongoose connected to DB
+[2026-03-31 02:58:18] [32minfo[39m: Connected to MongoDB via Mongoose
+[2026-03-31 03:03:08] [32minfo[39m: Server is running on port http://192.168.68.106:5000
+[2026-03-31 03:03:30] [32minfo[39m: Server is running on port http://192.168.68.106:5000
+[2026-03-31 03:03:34] [32minfo[39m: Server is running on port http://192.168.68.106:5000
+[2026-03-31 03:05:55] [32minfo[39m: Server is running on port http://192.168.68.106:5000
+[2026-03-31 03:06:01] [32minfo[39m: Server is running on port http://192.168.68.106:5000
+[2026-03-31 03:06:14] [32minfo[39m: Server is running on port http://192.168.68.106:5000
+[2026-03-31 03:06:19] [32minfo[39m: Server is running on port http://192.168.68.106:5000
+[2026-03-31 03:06:46] [32minfo[39m: Server is running on port http://192.168.68.106:5000
+[2026-03-31 03:06:49] [32minfo[39m: Server is running on port http://192.168.68.106:5000
+[2026-03-31 03:07:20] [32minfo[39m: Server is running on port http://192.168.68.106:5000
+[2026-03-31 03:07:30] [32minfo[39m: Server is running on port http://192.168.68.106:5000
+[2026-03-31 03:07:34] [32minfo[39m: Server is running on port http://192.168.68.106:5000
+[2026-03-31 03:07:56] [32minfo[39m: Server is running on port http://192.168.68.106:5000
+[2026-03-31 03:07:58] [32minfo[39m: Server is running on port http://192.168.68.106:5000
+[2026-03-31 03:08:02] [32minfo[39m: Server is running on port http://192.168.68.106:5000
+[2026-03-31 03:08:43] [32minfo[39m: Connected to MongoDB via Mongoose
+[2026-03-31 03:08:43] [32minfo[39m: Connected to MongoDB via Mongoose
+[2026-03-31 03:08:43] [32minfo[39m: Connected to MongoDB via Mongoose
+[2026-03-31 03:08:43] [32minfo[39m: Mongoose connected to DB
+[2026-03-31 03:08:43] [32minfo[39m: Connected to MongoDB via Mongoose
+[2026-03-31 03:24:39] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-31 03:24:42] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-31 03:26:17] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-31 03:26:19] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-31 03:34:08] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-31 03:34:08] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-31 03:35:05] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-31 03:35:05] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-31 03:35:21] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-31 03:35:21] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-31 03:36:38] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-31 03:36:38] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-31 03:37:08] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-31 03:37:08] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-31 03:37:16] [31merror[39m: Lobby Repository: Lobby not found!
+[2026-03-31 03:37:16] [31merror[39m: Lobby Repository: Lobby not found!
