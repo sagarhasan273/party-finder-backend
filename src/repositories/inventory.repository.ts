@@ -3,7 +3,7 @@ import { Types } from 'mongoose';
 import { ReturnResponseType } from 'src/types/base.type';
 
 import { LobbyModel } from 'src/models/inventory.model';
-import { CreateLobbyInput, LobbyType, UpdateLobbyInput } from 'src/types/inventory.type';
+import { CreateLobbyInput, LobbyStatus, LobbyType, UpdateLobbyInput } from 'src/types/inventory.type';
 import { AppError } from 'src/utils/errors';
 
 export class InventoryRepository {
@@ -382,6 +382,30 @@ export class InventoryRepository {
 
             throw new AppError(
                 "Failed to cancel join request!",
+                500,
+                "Lobby Repository"
+            );
+        }
+    }
+
+    public async lobbyStatus(lobbyId: string, userId: string): Promise<LobbyStatus> {
+        try {
+            const lobby = await LobbyModel.findById(lobbyId);
+
+            if (!lobby) {
+                throw new AppError("Lobby not found", 404, "Lobby Repository");
+            }
+
+            lobby.status = lobby.status === 'open' ? 'closed' : lobby.status === 'closed' ? 'open' : 'closed';
+
+            lobby.save()
+
+            return lobby.status
+        } catch (error) {
+            if (error instanceof AppError) throw error;
+
+            throw new AppError(
+                "Lobby Status Update failed!",
                 500,
                 "Lobby Repository"
             );

@@ -1,6 +1,6 @@
 import { InventoryRepository } from 'src/repositories/inventory.repository';
 import { ReturnResponseType } from 'src/types/base.type';
-import { CreateLobbyInput, LobbyType } from 'src/types/inventory.type';
+import { CreateLobbyInput, LobbyStatus, LobbyType } from 'src/types/inventory.type';
 import { UpdateUserInput } from 'src/types/user.type';
 import { AppError } from 'src/utils/errors';
 import { JwtService } from './auth-service/jwt.service';
@@ -165,6 +165,17 @@ export class InventoryService {
                 throw error;
             }
             throw error instanceof Error ? new AppError(error.message, 500, 'Inventory Service') : new AppError('Failed to cancel join request', 500, 'Inventory Service');
+        }
+    }
+
+    public async lobbyStatus(lobbyId: string, userId: string): Promise<LobbyStatus> {
+        try {
+            return await this.inventoryRepository.lobbyStatus(lobbyId, userId);
+        } catch (error) {
+            if (error instanceof AppError) {
+                throw error;
+            }
+            throw error instanceof Error ? new AppError(error.message, 500, 'Inventory Service') : new AppError('Failed to change lobby status', 500, 'Inventory Service');
         }
     }
 }

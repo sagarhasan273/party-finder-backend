@@ -202,4 +202,20 @@ export class InventoryController {
             res.status(500).json({ message: errorMessage, status: false });
         }
     }
+
+    public async lobbyStatus(req: Request, res: Response): Promise<void> {
+        const { userId, lobbyId } = req.body;
+        try {
+            const lobby = await this.inventoryService.lobbyStatus(lobbyId, userId);
+            res.status(200).json({ data: lobby, status: true });
+        }
+        catch (error) {
+            if (error instanceof AppError) {
+                res.status(error.statusCode).json({ message: error.message, status: false });
+                return;
+            }
+            const errorMessage = error instanceof Error ? error.message : 'An unknown error occurred';
+            res.status(500).json({ message: errorMessage, status: false });
+        }
+    }
 }

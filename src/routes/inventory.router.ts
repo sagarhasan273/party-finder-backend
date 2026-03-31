@@ -18,5 +18,6 @@ export class InventoryRoutes extends BaseRouter {
         this.router.post('/lobby/accept-join-request', authMiddleware, (req, res) => this.inventoryController.acceptJoinRequest(req, res));
         this.router.post('/lobby/reject-join-request', authMiddleware, (req, res) => this.inventoryController.rejectJoinRequest(req, res));
         this.router.post('/lobby/cancel-join-request', authMiddleware, (req, res) => this.inventoryController.cancelJoinRequest(req, res));
+        this.router.post('/lobby/status', authMiddleware, (req, res) => this.inventoryController.lobbyStatus(req, res))
     }
 }
