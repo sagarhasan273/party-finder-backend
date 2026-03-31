@@ -21,7 +21,7 @@ const UserModalSchema = new Schema<UserType & Document>({
     unique: true,
   },
 
-  profilePhoto: String,
+  profilePhoto: { type: String },
 
   gender: {
     type: String,

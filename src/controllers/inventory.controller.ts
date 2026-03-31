@@ -38,7 +38,7 @@ export class InventoryController {
             }
             const inventory = await this.inventoryService.getLobbyMe(token);
 
-            res.status(200).json({ data: inventory, status: true });
+            res.status(200).json({ data: inventory, message: inventory ? "Lobby not found!" : undefined, status: true });
         } catch (error) {
             if (error instanceof AppError) {
                 logger.error(`${error.at}: ${error.message}`);

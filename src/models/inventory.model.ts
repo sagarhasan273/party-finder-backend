@@ -37,8 +37,12 @@ const LobbySchema = new Schema<LobbyType & Document>(
                 },
                 status: {
                     type: String,
-                    enum: ["pending", "accepted", "rejected"],
+                    enum: ["pending", "accepted", "rejected", "in-party"],
                     default: "pending",
+                },
+                createdAt: {
+                    type: Date,
+                    default: Date.now,
                 },
             }],
             default: [],

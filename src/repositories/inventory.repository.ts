@@ -20,11 +20,11 @@ export class InventoryRepository {
         return lobby.map(l => l.toJSON());
     }
 
-    public async getLobbyMe(userId: string): Promise<LobbyType> {
+    public async getLobbyMe(userId: string): Promise<LobbyType | null> {
 
         const lobby = await LobbyModel.findOne({ userId }).populate("applicants.user", "country rank gamename tagline mainRole playStyle");
 
-        if (!lobby) throw new AppError('Lobby not found!', 404, 'Lobby Repository');
+        if (!lobby) return null;
 
         return lobby.toJSON();
     }
