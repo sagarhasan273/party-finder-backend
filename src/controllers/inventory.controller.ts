@@ -141,10 +141,10 @@ export class InventoryController {
     }
 
     public async requestToJoinLobby(req: Request, res: Response): Promise<void> {
-        const { userId, lobbyId } = req.body;
+        const { applicantId, lobbyId } = req.body;
 
         try {
-            const lobby = await this.inventoryService.requestToJoinLobby(lobbyId, userId);
+            const lobby = await this.inventoryService.requestToJoinLobby(lobbyId, applicantId);
             res.status(200).json(lobby);
         } catch (error) {
             if (error instanceof AppError) {
@@ -157,9 +157,9 @@ export class InventoryController {
     }
 
     public async acceptJoinRequest(req: Request, res: Response): Promise<void> {
-        const { userId, lobbyId } = req.body;
+        const { applicantId, lobbyId } = req.body;
         try {
-            const lobby = await this.inventoryService.acceptJoinRequest(lobbyId, userId);
+            const lobby = await this.inventoryService.acceptJoinRequest(lobbyId, applicantId);
             res.status(200).json(lobby);
         } catch (error) {
             if (error instanceof AppError) {
@@ -172,9 +172,10 @@ export class InventoryController {
     }
 
     public async rejectJoinRequest(req: Request, res: Response): Promise<void> {
-        const { userId, lobbyId } = req.body;
+        const { applicantId, lobbyId } = req.body;
         try {
-            const lobby = await this.inventoryService.rejectJoinRequest(lobbyId, userId);
+            const lobby = await this.inventoryService.rejectJoinRequest(lobbyId, applicantId);
+
             res.status(200).json(lobby);
         }
         catch (error) {

@@ -134,15 +134,15 @@ export class InventoryRepository {
 
     public async requestToJoinLobby(
         lobbyId: string,
-        userId: string
-    ): Promise<ReturnResponseType> {
+        applicantId: string
+    ): Promise<LobbyType> {
         try {
-            const userObjectId = new Types.ObjectId(userId);
+            const userObjectId = new Types.ObjectId(applicantId);
 
             // ✅ Check if user already in another lobby (host or accepted)
             const isUserBusy = await LobbyModel.exists({
                 $or: [
-                    { userId }, // host
+                    { userId: applicantId }, // host
                     {
                         applicants: {
                             $elemMatch: {
@@ -156,14 +156,14 @@ export class InventoryRepository {
 
             if (isUserBusy) {
                 throw new AppError(
-                    "You are already in another lobby!",
+                    "You are already accepted in another lobby!",
                     400,
                     "Lobby Repository"
                 );
             }
 
             // ✅ Atomic update (prevents duplicates)
-            const updated = await LobbyModel.updateOne(
+            const updated = await LobbyModel.findOneAndUpdate(
                 {
                     _id: lobbyId,
                     applicants: {
@@ -181,11 +181,15 @@ export class InventoryRepository {
                             status: "pending",
                         },
                     },
+                },
+                {
+                    returnDocument: 'after', // Returns the updated or inserted document
+                    upsert: false, // Don't create if not exists
                 }
             );
 
             // ❗ If nothing updated → user already exists
-            if (!updated.modifiedCount) {
+            if (!updated) {
                 const lobby = await LobbyModel.findById(lobbyId).select("applicants");
 
                 if (!lobby) {
@@ -193,7 +197,7 @@ export class InventoryRepository {
                 }
 
                 const existing = lobby.applicants?.find(
-                    (a) => a.user.toString() === userId
+                    (a) => a.user.toString() === applicantId
                 );
 
                 if (existing?.status === "pending") {
@@ -223,10 +227,7 @@ export class InventoryRepository {
                 throw new AppError("Failed to join lobby!", 400, "Lobby Repository");
             }
 
-            return {
-                message: "Request sent successfully",
-                status: true,
-            };
+            return updated;
         } catch (error) {
             if (error instanceof AppError) throw error;
 
@@ -240,15 +241,15 @@ export class InventoryRepository {
 
     public async acceptJoinRequest(
         lobbyId: string,
-        userId: string
+        applicantId: string
     ): Promise<ReturnResponseType> {
         try {
-            const userObjectId = new Types.ObjectId(userId);
+            const userObjectId = new Types.ObjectId(applicantId);
 
             // 🔒 Check if user already in another lobby FIRST
             const isUserInAnyLobby = await LobbyModel.exists({
                 $or: [
-                    { userId }, // host
+                    { userId: applicantId }, // host
                     {
                         applicants: {
                             $elemMatch: {
@@ -306,11 +307,11 @@ export class InventoryRepository {
 
     public async rejectJoinRequest(
         lobbyId: string,
-        userId: string
-    ): Promise<ReturnResponseType> {
+        applicantId: string
+    ): Promise<LobbyType> {
         try {
-            const userObjectId = new Types.ObjectId(userId);
-            const updated = await LobbyModel.updateOne(
+            const userObjectId = new Types.ObjectId(applicantId);
+            const lobby = await LobbyModel.findOneAndUpdate(
                 {
                     _id: lobbyId,
                     "applicants.user": userObjectId,
@@ -319,10 +320,14 @@ export class InventoryRepository {
                     $set: {
                         "applicants.$.status": "rejected",
                     },
+                },
+                {
+                    returnDocument: 'after', // Returns the updated or inserted document
+                    upsert: false, // Don't create if not exists
                 }
             );
 
-            if (!updated.modifiedCount) {
+            if (!lobby) {
                 throw new AppError(
                     "Join request not found!",
                     404,
@@ -330,10 +335,7 @@ export class InventoryRepository {
                 );
             }
 
-            return {
-                message: "Join request rejected successfully",
-                status: true,
-            };
+            return lobby.toJSON();
         } catch (error) {
             if (error instanceof AppError) throw error;
 
@@ -347,10 +349,10 @@ export class InventoryRepository {
 
     public async cancelJoinRequest(
         lobbyId: string,
-        userId: string
+        applicantId: string
     ): Promise<ReturnResponseType> {
         try {
-            const userObjectId = new Types.ObjectId(userId);
+            const userObjectId = new Types.ObjectId(applicantId);
             const updated = await LobbyModel.updateOne(
                 {
                     _id: lobbyId,

@@ -1,4 +1,5 @@
 import { InventoryRepository } from 'src/repositories/inventory.repository';
+import { emitToUser } from 'src/socket';
 import { ReturnResponseType } from 'src/types/base.type';
 import { CreateLobbyInput, LobbyStatus, LobbyType } from 'src/types/inventory.type';
 import { UpdateUserInput } from 'src/types/user.type';
@@ -123,9 +124,19 @@ export class InventoryService {
         }
     }
 
-    public async requestToJoinLobby(lobbyId: string, userId: string): Promise<ReturnResponseType> {
+    public async requestToJoinLobby(lobbyId: string, applicantId: string): Promise<ReturnResponseType> {
         try {
-            return await this.inventoryRepository.requestToJoinLobby(lobbyId, userId);
+            const lobby = await this.inventoryRepository.requestToJoinLobby(lobbyId, applicantId);
+
+            emitToUser(lobby.userId, 'receive-join-request', {
+                applicantId,
+                message: "You have a join request."
+            });
+
+            return {
+                message: "Request sent successfully",
+                status: true,
+            }
         } catch (error) {
             if (error instanceof AppError) {
                 throw error;
@@ -135,9 +146,9 @@ export class InventoryService {
         }
     }
 
-    public async acceptJoinRequest(lobbyId: string, userId: string): Promise<ReturnResponseType> {
+    public async acceptJoinRequest(lobbyId: string, applicantId: string): Promise<ReturnResponseType> {
         try {
-            return await this.inventoryRepository.acceptJoinRequest(lobbyId, userId);
+            return await this.inventoryRepository.acceptJoinRequest(lobbyId, applicantId);
         } catch (error) {
             if (error instanceof AppError) {
                 throw error;
@@ -146,9 +157,17 @@ export class InventoryService {
         }
     }
 
-    public async rejectJoinRequest(lobbyId: string, userId: string): Promise<ReturnResponseType> {
+    public async rejectJoinRequest(lobbyId: string, applicantId: string): Promise<ReturnResponseType> {
         try {
-            return await this.inventoryRepository.rejectJoinRequest(lobbyId, userId);
+            const lobby = await this.inventoryRepository.rejectJoinRequest(lobbyId, applicantId);
+
+            emitToUser(applicantId, 'receive-request-reject', {
+                lobbyId,
+                lobbyTitle: lobby?.title,
+                message: "You are rejected by host."
+            });
+
+            return { message: "Request rejected successfully", status: true }
         } catch (error) {
             if (error instanceof AppError) {
                 throw error;
