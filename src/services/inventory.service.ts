@@ -1,8 +1,7 @@
 import { InventoryRepository } from 'src/repositories/inventory.repository';
-import { emitToUser } from 'src/socket';
+import { emitToRoom, emitToUser } from 'src/socket';
 import { ReturnResponseType } from 'src/types/base.type';
-import { CreateLobbyInput, LobbyStatus, LobbyType } from 'src/types/inventory.type';
-import { UpdateUserInput } from 'src/types/user.type';
+import { CreateLobbyInput, LobbyStatus, LobbyType, UpdateLobbyInput } from 'src/types/inventory.type';
 import { AppError } from 'src/utils/errors';
 import { JwtService } from './auth-service/jwt.service';
 
@@ -79,7 +78,11 @@ export class InventoryService {
         lobby: CreateLobbyInput
     ): Promise<LobbyType> {
         try {
-            return await this.inventoryRepository.createLobby(lobby);
+            const result = await this.inventoryRepository.createLobby(lobby);
+
+            emitToRoom(`region:${result.region}`, 'new-lobby-created', { data: result })
+
+            return result;
         } catch (error) {
             if (error instanceof AppError) {
                 throw error;
@@ -88,11 +91,13 @@ export class InventoryService {
         }
     }
 
-    public async updateLobby(input: UpdateUserInput): Promise<ReturnResponseType> {
+    public async updateLobby(input: UpdateLobbyInput): Promise<ReturnResponseType> {
         try {
             if (!input.id) throw new AppError('User ID is required', 400, 'User Repository');
 
-            return await this.inventoryRepository.updateLobby(input);
+            const result = await this.inventoryRepository.updateLobby(input);
+
+            return result
         } catch (error) {
             if (error instanceof AppError) {
                 throw error;
@@ -131,6 +136,11 @@ export class InventoryService {
             emitToUser(lobby.userId, 'receive-join-request', {
                 applicantId,
                 message: "You have a join request."
+            });
+
+            emitToUser(applicantId, 'receive-join-request', {
+                applicantId,
+                message: "Request sent."
             });
 
             return {
@@ -189,7 +199,14 @@ export class InventoryService {
 
     public async lobbyStatus(lobbyId: string, userId: string): Promise<LobbyStatus> {
         try {
-            return await this.inventoryRepository.lobbyStatus(lobbyId, userId);
+            const result = await this.inventoryRepository.lobbyStatus(lobbyId, userId);
+
+            emitToUser(userId, 'receive-lobby-status', { sentTo: 'host', lobbyId, status: result.status, message: result.status === "open" ? "Lobby closed." : "Lobby reopened!" })
+
+            result.applicants?.forEach(applicant => {
+                emitToUser(applicant.user.toString(), 'receive-lobby-status', { sentTo: 'applicant', lobbyId, status: result.status, message: result.status === "open" ? "Lobby closed." : "Lobby reopened!" })
+            })
+            return result.status;
         } catch (error) {
             if (error instanceof AppError) {
                 throw error;

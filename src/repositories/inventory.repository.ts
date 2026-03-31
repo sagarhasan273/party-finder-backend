@@ -3,7 +3,7 @@ import { Types } from 'mongoose';
 import { ReturnResponseType } from 'src/types/base.type';
 
 import { LobbyModel } from 'src/models/inventory.model';
-import { CreateLobbyInput, LobbyStatus, LobbyType, UpdateLobbyInput } from 'src/types/inventory.type';
+import { CreateLobbyInput, LobbyType, UpdateLobbyInput } from 'src/types/inventory.type';
 import { AppError } from 'src/utils/errors';
 
 export class InventoryRepository {
@@ -46,6 +46,14 @@ export class InventoryRepository {
     public async createLobby(
         lobby: CreateLobbyInput
     ): Promise<LobbyType> {
+        const { userId } = lobby;
+
+        const exsits = await LobbyModel.findOne({ userId });
+
+        if (exsits) {
+            throw new AppError("Lobby already exists", 404, "Lobby Repository");
+        }
+
         const result = await LobbyModel.create(lobby);
 
         return result.toJSON();
@@ -390,7 +398,7 @@ export class InventoryRepository {
         }
     }
 
-    public async lobbyStatus(lobbyId: string, userId: string): Promise<LobbyStatus> {
+    public async lobbyStatus(lobbyId: string, userId: string): Promise<LobbyType> {
         try {
             const lobby = await LobbyModel.findById(lobbyId);
 
@@ -402,7 +410,7 @@ export class InventoryRepository {
 
             lobby.save()
 
-            return lobby.status
+            return lobby
         } catch (error) {
             if (error instanceof AppError) throw error;
 

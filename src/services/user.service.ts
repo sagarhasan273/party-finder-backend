@@ -1,4 +1,5 @@
 import { UserRepository } from 'src/repositories/user.repository';
+
 import { ReturnResponseType } from 'src/types/base.type';
 import { UpdateUserInput, UserType } from 'src/types/user.type';
 import { AppError, DatabaseError } from 'src/utils/errors';
@@ -24,7 +25,9 @@ export class UserService {
     try {
       if (!input.id) throw new AppError('User ID is required', 400, 'User Service');
 
-      return await this.userRepository.updateUser(input);
+      const result = await this.userRepository.updateUser(input);
+
+      return result;
     } catch (error) {
       if (error instanceof AppError) {
         throw error;

@@ -24,6 +24,7 @@ export const initSocket = (server: http.Server) => {
     io.on('connection', (socket: Socket) => {
         logger.info(`New client connected: ${socket.id}`);
         const userId = socket.handshake.query?.userId;
+        const region = socket.handshake.query?.region;
 
         // If user ID is available, join user room
         if (userId) {
@@ -43,6 +44,17 @@ export const initSocket = (server: http.Server) => {
                 message: 'Connected, but no user ID provided'
             });
         }
+
+        // Handle custom room joining from services
+        socket.on('join-room', (roomName: string) => {
+            socket.join(roomName);
+            logger.info(`Socket ${socket.id} joined room: ${roomName}`);
+        });
+
+        socket.on('leave-room', (roomName: string) => {
+            socket.leave(roomName);
+            logger.info(`Socket ${socket.id} left room: ${roomName}`);
+        });
 
         // Handle registration event (for clients that connect first then send user ID)
         socket.on("register", (data) => {
@@ -77,14 +89,6 @@ export const initSocket = (server: http.Server) => {
         // Handle disconnection
         socket.on('disconnect', (reason) => {
             logger.info(`Client disconnected: ${socket.id}, reason: ${reason}`);
-
-            // Optional: Notify other users in the same room
-            if (socket.data.userId) {
-                socket.to(`user:${socket.data.userId}`).emit('user:disconnected', {
-                    userId: socket.data.userId,
-                    socketId: socket.id
-                });
-            }
         });
 
         // Handle errors
@@ -106,7 +110,14 @@ export const getIO = () => {
     return io;
 };
 
-// Helper function to emit to specific user
+export const emitToRoom = (roomName: string, event: string, data: any) => {
+    if (!io) {
+        console.error('Socket.io not initialized');
+        return false;
+    }
+    io.to(roomName).emit(event, data);
+};
+
 export const emitToUser = (userId: string, event: string, data: any) => {
     if (!io) {
         console.error('Socket.io not initialized');
