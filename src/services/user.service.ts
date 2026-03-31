@@ -55,12 +55,4 @@ export class UserService {
       throw new DatabaseError(error as Error, 'Failed to get user by email');
     }
   }
-
-  public async getUserById(id: string): Promise<UserType | null> {
-    try {
-      return await this.userRepository.getUserById(id);
-    } catch (error) {
-      throw new DatabaseError(error as Error, 'Failed to get user by ID');
-    }
-  }
 }

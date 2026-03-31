@@ -7,7 +7,6 @@ export class UserRoutes extends BaseRouter {
 
   protected routes(): void {
     this.router.get('/me', authMiddleware, (req, res) => this.userController.getUserMe(req, res));
-    this.router.get('/:id', authMiddleware, (req, res) => this.userController.getUserById(req, res));
     this.router.post('/create', authMiddleware, (req, res) => this.userController.createUser(req, res));
     this.router.post('/update', authMiddleware, (req, res) => this.userController.updateUser(req, res));
   }

@@ -1,18 +1,14 @@
 import { NextFunction, Request, Response } from 'express';
-import { Db } from 'mongodb';
-import { getDatabase } from 'src/database';
+import { connectToDatabase } from 'src/database';
 
-declare module 'express' {
-  interface Request {
-    db?: Db;
-  }
-}
-
-export async function databaseMiddleware(req: Request, res: Response, next: NextFunction) {
+export async function databaseMiddleware(
+  req: Request,
+  res: Response,
+  next: NextFunction
+) {
   try {
-    const db = await getDatabase();
-    req.db = db; // Attach the database instance to the request object
-    next(); // Call the next middleware or route handler
+    await connectToDatabase();
+    next();
   } catch (error) {
     next(error);
   }
