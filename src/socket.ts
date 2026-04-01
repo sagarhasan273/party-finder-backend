@@ -99,7 +99,7 @@ export const initSocket = (server: http.Server) => {
 
     // Log when server starts
     io.engine.on("connection", (socket) => {
-        logger.info(`Engine.io connection established: ${socket.id}`);
+        // logger.info(`Engine.io connection established: ${socket.id}`);
     });
 
     return io;
@@ -108,6 +108,38 @@ export const initSocket = (server: http.Server) => {
 export const getIO = () => {
     if (!io) throw new Error('Socket.io not initialized');
     return io;
+};
+
+// Add these helper functions to your socket.ts file
+
+export const joinUserRoom = (userId: string, roomName: string) => {
+    if (!io) {
+        console.error('Socket.io not initialized');
+        return false;
+    }
+    io.to(`user:${userId}`).emit('join-room', roomName);
+    logger.info(`Emitted join-room to user ${userId} for room: ${roomName}`);
+    return true;
+};
+
+export const leaveUserRoom = (userId: string, roomName: string) => {
+    if (!io) {
+        console.error('Socket.io not initialized');
+        return false;
+    }
+    io.to(`user:${userId}`).emit('leave-room', roomName);
+    logger.info(`Emitted leave-room to user ${userId} for room: ${roomName}`);
+    return true;
+};
+
+// Or a more generic function to emit any socket event to a user
+export const emitToUserSocket = (userId: string, event: string, data: any) => {
+    if (!io) {
+        console.error('Socket.io not initialized');
+        return false;
+    }
+    io.to(`user:${userId}`).emit(event, data);
+    return true;
 };
 
 export const emitToRoom = (roomName: string, event: string, data: any) => {

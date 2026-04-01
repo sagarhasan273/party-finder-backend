@@ -209,3 +209,38 @@
 [2026-03-31 17:04:24] [31merror[39m: Failed to create lobby: E11000 duplicate key error collection: party-finder-db.lobbies index: partyCode_1 dup key: { partyCode: "sdfs" }
 [2026-03-31 17:09:19] [31merror[39m: Failed to create lobby: E11000 duplicate key error collection: party-finder-db.lobbies index: partyCode_1 dup key: { partyCode: "sdfs" }
 [2026-03-31 17:09:34] [31merror[39m: Failed to create lobby: E11000 duplicate key error collection: party-finder-db.lobbies index: partyCode_1 dup key: { partyCode: "sdfs" }
+[2026-04-01 06:26:23] [31merror[39m: User Service: Authorization token is required
+[2026-04-01 06:26:23] [31merror[39m: User Service: Authorization token is required
+[2026-04-01 06:26:27] [31merror[39m: User Service: Authorization token is required
+[2026-04-01 06:26:28] [31merror[39m: User Service: Authorization token is required
+[2026-04-01 06:44:33] [31merror[39m: Failed to create lobby: E11000 duplicate key error collection: party-finder-db.lobbies index: partyCode_1 dup key: { partyCode: "sdfs" }
+[2026-04-01 07:15:29] [31merror[39m: An error occurred while getting the user!
+[2026-04-01 07:15:29] [31merror[39m: An error occurred while getting the user!
+[2026-04-01 07:18:17] [31merror[39m: An error occurred while getting the user!
+[2026-04-01 07:18:17] [31merror[39m: An error occurred while getting the user!
+[2026-04-01 07:18:19] [31merror[39m: An error occurred while getting the user!
+[2026-04-01 07:18:19] [31merror[39m: An error occurred while getting the user!
+[2026-04-01 07:48:00] [31merror[39m: An error occurred while getting the user!
+[2026-04-01 07:48:00] [31merror[39m: An error occurred while getting the user!
+[2026-04-01 07:48:01] [31merror[39m: An error occurred while getting the user!
+[2026-04-01 07:48:01] [31merror[39m: An error occurred while getting the user!
+[2026-04-01 07:48:17] [31merror[39m: An error occurred while getting the user!
+[2026-04-01 07:48:17] [31merror[39m: An error occurred while getting the user!
+[2026-04-01 07:51:18] [31merror[39m: An error occurred while getting the user!
+[2026-04-01 07:51:29] [31merror[39m: An error occurred while getting the user!
+[2026-04-01 07:51:30] [31merror[39m: An error occurred while getting the user!
+[2026-04-01 07:52:04] [31merror[39m: An error occurred while getting the user!
+[2026-04-01 07:57:37] [31merror[39m: An error occurred while getting the user!
+[2026-04-01 07:57:37] [31merror[39m: An error occurred while getting the user!
+[2026-04-01 07:59:14] [31merror[39m: An error occurred while getting the user!
+[2026-04-01 07:59:14] [31merror[39m: An error occurred while getting the user!
+[2026-04-01 07:59:17] [31merror[39m: An error occurred while getting the user!
+[2026-04-01 07:59:17] [31merror[39m: An error occurred while getting the user!
+[2026-04-01 08:00:47] [31merror[39m: An error occurred while getting the user!
+[2026-04-01 08:01:28] [31merror[39m: An error occurred while getting the user!
+[2026-04-01 08:01:28] [31merror[39m: An error occurred while getting the user!
+[2026-04-01 08:01:35] [31merror[39m: An error occurred while getting the user!
+[2026-04-01 08:01:35] [31merror[39m: An error occurred while getting the user!
+[2026-04-01 08:01:42] [31merror[39m: An error occurred while getting the user!
+[2026-04-01 08:01:46] [31merror[39m: An error occurred while getting the user!
+[2026-04-01 08:01:46] [31merror[39m: An error occurred while getting the user!

@@ -10,6 +10,8 @@
 /build
 
 /logs
+/logs/app.log
+/logs/error.log
 
 # misc
 .DS_Store

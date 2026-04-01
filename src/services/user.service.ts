@@ -1,5 +1,6 @@
 import { UserRepository } from 'src/repositories/user.repository';
 
+import { joinUserRoom, leaveUserRoom } from 'src/socket';
 import { ReturnResponseType } from 'src/types/base.type';
 import { UpdateUserInput, UserType } from 'src/types/user.type';
 import { AppError, DatabaseError } from 'src/utils/errors';
@@ -27,6 +28,10 @@ export class UserService {
 
       const result = await this.userRepository.updateUser(input);
 
+      if (input.region) {
+        joinUserRoom(input.id.toString(), `region:${input.region}`);
+      }
+
       return result;
     } catch (error) {
       if (error instanceof AppError) {
@@ -48,6 +53,12 @@ export class UserService {
       if (!userId) throw new AppError('User ID not found in token', 400, 'User Service');
 
       const user = await this.userRepository.getUserMe(userId);
+
+      if (user.region) {
+        joinUserRoom(user.id.toString(), `region:${user.region}`);
+      } else {
+        leaveUserRoom(user.id.toString(), `region:${user.region}`)
+      }
 
       return user;
 
