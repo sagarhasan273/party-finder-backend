@@ -5,6 +5,8 @@ import { ReturnResponseType } from 'src/types/base.type';
 import { LobbyModel } from 'src/models/inventory.model';
 import { CreateLobbyInput, LobbyType, UpdateLobbyInput } from 'src/types/inventory.type';
 import { AppError } from 'src/utils/errors';
+import { UserInfoPopulateQuery } from './user.repository';
+
 
 export class InventoryRepository {
     public async getLobbies(userId: string): Promise<LobbyType[]> {
@@ -13,16 +15,18 @@ export class InventoryRepository {
             status: {
                 $in: ["open", "full", "in progress"]
             }
-        });
+        }).populate('host', UserInfoPopulateQuery);
 
         if (!lobby) throw new AppError('Lobby not found!', 404, 'Lobby Repository');
 
         return lobby.map(l => l.toJSON());
     }
 
-    public async getLobbyMe(userId: string): Promise<LobbyType | null> {
+    public async getLobbyMe(hostId: string): Promise<LobbyType | null> {
 
-        const lobby = await LobbyModel.findOne({ userId }).populate("applicants.user", "country rank gamename tagline mainRole playStyle");
+        const lobby = await LobbyModel.findOne({ host: hostId })
+            .populate("applicants.user", UserInfoPopulateQuery)
+            .populate('host', UserInfoPopulateQuery);
 
         if (!lobby) return null;
 
@@ -38,7 +42,9 @@ export class InventoryRepository {
                     status: { $in: ["pending", "accepted", "rejected"] },
                 },
             },
-        }).populate("applicants.user", "country rank gamename tagline mainRole playStyle");
+        })
+            .populate('host', UserInfoPopulateQuery)
+            .populate("applicants.user", UserInfoPopulateQuery)
 
         return lobby.map(l => l.toJSON());
     }
@@ -46,9 +52,9 @@ export class InventoryRepository {
     public async createLobby(
         lobby: CreateLobbyInput
     ): Promise<LobbyType> {
-        const { userId } = lobby;
+        const { host } = lobby;
 
-        const exsits = await LobbyModel.findOne({ userId });
+        const exsits = await LobbyModel.findOne({ host });
 
         if (exsits) {
             throw new AppError("Lobby already exists", 404, "Lobby Repository");
@@ -56,7 +62,10 @@ export class InventoryRepository {
 
         const result = await LobbyModel.create(lobby);
 
-        return result.toJSON();
+        // Populate after creation
+        const populatedLobby = await result.populate('host', UserInfoPopulateQuery);
+
+        return populatedLobby.toJSON();
     }
 
     public async updateLobby(input: UpdateLobbyInput): Promise<ReturnResponseType> {
@@ -109,12 +118,12 @@ export class InventoryRepository {
 
     public async deleteLobby(
         lobbyId: string,
-        userId: string
+        hostId: string
     ): Promise<LobbyType> {
         try {
             const result = await LobbyModel.findOneAndDelete({
                 _id: lobbyId,
-                userId, // 🔒 ensure only owner can delete
+                host: hostId, // 🔒 ensure only owner can delete
             });
 
             if (!result) {
@@ -184,6 +193,7 @@ export class InventoryRepository {
                         applicants: {
                             user: userObjectId,
                             status: "pending",
+                            createdAt: new Date(),
                         },
                     },
                 },

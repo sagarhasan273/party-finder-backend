@@ -122,15 +122,15 @@ export class InventoryController {
     }
 
     public async deleteLobby(req: Request, res: Response): Promise<void> {
-        const { userId, lobbyId } = req.body;
+        const { hostId, lobbyId } = req.body;
 
         try {
-            if (!userId) {
+            if (!hostId) {
                 res.status(400).json({ message: 'User ID not found in token', status: false });
                 return;
             }
 
-            const result = await this.inventoryService.deleteLobby(lobbyId, userId);
+            const result = await this.inventoryService.deleteLobby(lobbyId, hostId);
 
             res.status(200).json(result);
         }
@@ -189,9 +189,9 @@ export class InventoryController {
     }
 
     public async cancelJoinRequest(req: Request, res: Response): Promise<void> {
-        const { userId, lobbyId } = req.body;
+        const { applicantId, lobbyId } = req.body;
         try {
-            const lobby = await this.inventoryService.cancelJoinRequest(lobbyId, userId);
+            const lobby = await this.inventoryService.cancelJoinRequest(lobbyId, applicantId);
             res.status(200).json(lobby);
         }
         catch (error) {

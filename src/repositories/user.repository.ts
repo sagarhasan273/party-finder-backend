@@ -5,6 +5,8 @@ import { ReturnResponseType } from 'src/types/base.type';
 import { UpdateUserInput, UserType } from 'src/types/user.type';
 import { AppError } from 'src/utils/errors';
 
+export const UserInfoPopulateQuery = "name email profilePhoto verified gamename tagline rank country playStyle"
+
 export class UserRepository {
 
   public async getUserMe(userId: string): Promise<UserType> {
@@ -71,5 +73,13 @@ export class UserRepository {
     return userWithoutPassword;
   }
 
+  public async getApplicant(userId: string): Promise<UserType> {
+    const user = await UserModel.findById(userId)
+      .select(UserInfoPopulateQuery);
+
+    if (!user) throw new AppError('User not found!', 404, 'User Repository');
+
+    return user.toJSON();
+  }
 
 }

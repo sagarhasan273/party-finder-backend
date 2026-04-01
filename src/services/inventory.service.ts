@@ -1,4 +1,5 @@
 import { InventoryRepository } from 'src/repositories/inventory.repository';
+import { UserRepository } from 'src/repositories/user.repository';
 import { broadcastToRegion, emitToUser } from 'src/socket';
 import { ReturnResponseType } from 'src/types/base.type';
 import { CreateLobbyInput, LobbyStatus, LobbyType, UpdateLobbyInput } from 'src/types/inventory.type';
@@ -6,6 +7,7 @@ import { AppError } from 'src/utils/errors';
 import { JwtService } from './auth-service/jwt.service';
 
 export class InventoryService {
+    private userRepository = new UserRepository();
     private inventoryRepository = new InventoryRepository();
 
     public async getLobbies(
@@ -118,11 +120,11 @@ export class InventoryService {
         }
     }
 
-    public async deleteLobby(lobbyId: string, userId: string): Promise<ReturnResponseType> {
+    public async deleteLobby(lobbyId: string, hostId: string): Promise<ReturnResponseType> {
         try {
-            const result = await this.inventoryRepository.deleteLobby(lobbyId, userId);
+            const result = await this.inventoryRepository.deleteLobby(lobbyId, hostId);
 
-            broadcastToRegion(result.region.toString(), 'receive-deleted-lobby', { lobbyId, message: "A lobby you requested for is deleted." });
+            broadcastToRegion(result.region.toString(), 'receive-deleted-lobby', { lobbyId, hostId, message: "A lobby you requested for is deleted." });
 
             return {
                 message: "Lobby deleted successfully",
@@ -139,14 +141,25 @@ export class InventoryService {
     public async requestToJoinLobby(lobbyId: string, applicantId: string): Promise<ReturnResponseType> {
         try {
             const lobby = await this.inventoryRepository.requestToJoinLobby(lobbyId, applicantId);
+            const applicant = await this.userRepository.getApplicant(applicantId)
 
-            emitToUser(lobby.userId, 'receive-join-request', {
+            emitToUser(lobby.host.toString(), 'receive-join-request', {
+                lobbyId,
                 applicantId,
+                applicant: {
+                    user: applicant,
+                    status: 'pending',
+                },
                 message: "You have a join request."
             });
 
             emitToUser(applicantId, 'receive-join-request', {
+                lobbyId,
                 applicantId,
+                applicant: {
+                    user: applicantId,
+                    status: 'pending',
+                },
                 message: "Request sent."
             });
 
@@ -193,9 +206,9 @@ export class InventoryService {
         }
     }
 
-    public async cancelJoinRequest(lobbyId: string, userId: string): Promise<ReturnResponseType> {
+    public async cancelJoinRequest(lobbyId: string, applicantId: string): Promise<ReturnResponseType> {
         try {
-            return await this.inventoryRepository.cancelJoinRequest(lobbyId, userId);
+            return await this.inventoryRepository.cancelJoinRequest(lobbyId, applicantId);
         } catch (error) {
             if (error instanceof AppError) {
                 throw error;

@@ -5,7 +5,11 @@ import { LobbyType } from 'src/types/inventory.type';
 // Lobby Mongoose Schema
 const LobbySchema = new Schema<LobbyType & Document>(
     {
-        userId: { type: String, required: true }, // host user id
+        host: {
+            type: Schema.Types.ObjectId,
+            ref: "users",
+            required: true,
+        },
         title: { type: String, required: true },
         description: { type: String },
         partyCode: { type: String, required: true },

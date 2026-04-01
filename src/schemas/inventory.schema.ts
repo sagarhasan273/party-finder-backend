@@ -35,7 +35,7 @@ export const LobbyStatusEnum = z.enum(["open", "full", "in progress", "closed"])
 
 export const LobbySchema = z.object({
     id: objectIdSchema,
-    userId: z.string(),
+    host: objectIdSchema,
     title: z.string().min(1, "Title is required"),
     description: z.string().optional(),
     partyCode: z.string().min(1, "Party code is required"),
@@ -57,7 +57,9 @@ export const LobbySchema = z.object({
     })).optional(),
 });
 
-export const CreateLobbySchema = LobbySchema.omit({ id: true });
+export const CreateLobbySchema = LobbySchema.omit({ id: true, host: true }).extend({
+    host: z.string()
+});
 
 export const UpdateLobbySchema = LobbySchema.partial().required({
     id: true,

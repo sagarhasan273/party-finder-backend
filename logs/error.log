@@ -259,3 +259,9 @@
 [2026-04-01 12:58:34] [31merror[39m: An error occurred while getting the user!
 [2026-04-01 12:59:11] [31merror[39m: Failed to create lobby: E11000 duplicate key error collection: party-finder-db.lobbies index: partyCode_1 dup key: { partyCode: "sdfs" }
 [2026-04-01 13:00:11] [31merror[39m: Failed to create lobby: E11000 duplicate key error collection: party-finder-db.lobbies index: partyCode_1 dup key: { partyCode: "sdfs" }
+[2026-04-01 14:48:34] [31merror[39m: An error occurred while getting the user!
+[2026-04-01 14:48:37] [31merror[39m: An error occurred while getting the user!
+[2026-04-01 14:48:42] [31merror[39m: An error occurred while getting the user!
+[2026-04-01 15:37:02] [31merror[39m: Invalid lobby create data!
+[2026-04-01 15:41:12] [31merror[39m: Failed to create lobby: Unsupported BSON version, bson types must be from bson 7.x.x
+[2026-04-01 15:42:55] [31merror[39m: Failed to create lobby: E11000 duplicate key error collection: party-finder-db.lobbies index: partyCode_1 dup key: { partyCode: "sdfs" }
