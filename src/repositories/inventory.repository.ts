@@ -110,14 +110,14 @@ export class InventoryRepository {
     public async deleteLobby(
         lobbyId: string,
         userId: string
-    ): Promise<ReturnResponseType> {
+    ): Promise<LobbyType> {
         try {
-            const result = await LobbyModel.deleteOne({
+            const result = await LobbyModel.findOneAndDelete({
                 _id: lobbyId,
                 userId, // 🔒 ensure only owner can delete
             });
 
-            if (!result.deletedCount) {
+            if (!result) {
                 throw new AppError(
                     "Lobby not found or you are not authorized",
                     404,
@@ -125,10 +125,7 @@ export class InventoryRepository {
                 );
             }
 
-            return {
-                message: "Lobby deleted successfully",
-                status: true,
-            };
+            return result.toJSON();
         } catch (error) {
             if (error instanceof AppError) throw error;
 

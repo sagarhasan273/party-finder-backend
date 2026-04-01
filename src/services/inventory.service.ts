@@ -118,13 +118,16 @@ export class InventoryService {
         }
     }
 
-    public async deleteLobby(lobbyId: string, userId: string, applicantIds: string[]): Promise<ReturnResponseType> {
+    public async deleteLobby(lobbyId: string, userId: string): Promise<ReturnResponseType> {
         try {
             const result = await this.inventoryRepository.deleteLobby(lobbyId, userId);
 
-            applicantIds.forEach(applicantId => emitToUser(applicantId, 'receive-deleted-lobby', { lobbyId }))
+            broadcastToRegion(result.region.toString(), 'receive-deleted-lobby', { lobbyId, message: "A lobby you requested for is deleted." });
 
-            return result
+            return {
+                message: "Lobby deleted successfully",
+                status: true,
+            }
         } catch (error) {
             if (error instanceof AppError) {
                 throw error;

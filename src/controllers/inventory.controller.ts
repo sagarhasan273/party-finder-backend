@@ -88,7 +88,7 @@ export class InventoryController {
         try {
             const lobby = await this.inventoryService.createLobby(validatedInput);
 
-            res.status(201).json(lobby);
+            res.status(201).json({ data: lobby, status: true });
         } catch (error) {
             const errorMessage = error instanceof Error ? error.message : 'An unknown error occurred';
 
@@ -122,7 +122,7 @@ export class InventoryController {
     }
 
     public async deleteLobby(req: Request, res: Response): Promise<void> {
-        const { userId, lobbyId, applicantIds } = req.body;
+        const { userId, lobbyId } = req.body;
 
         try {
             if (!userId) {
@@ -130,7 +130,7 @@ export class InventoryController {
                 return;
             }
 
-            const result = await this.inventoryService.deleteLobby(lobbyId, userId, applicantIds);
+            const result = await this.inventoryService.deleteLobby(lobbyId, userId);
 
             res.status(200).json(result);
         }

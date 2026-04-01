@@ -256,3 +256,6 @@
 [2026-04-01 12:55:08] [31merror[39m: An error occurred while getting the user!
 [2026-04-01 12:56:01] [31merror[39m: An error occurred while getting the user!
 [2026-04-01 12:56:13] [31merror[39m: An error occurred while getting the user!
+[2026-04-01 12:58:34] [31merror[39m: An error occurred while getting the user!
+[2026-04-01 12:59:11] [31merror[39m: Failed to create lobby: E11000 duplicate key error collection: party-finder-db.lobbies index: partyCode_1 dup key: { partyCode: "sdfs" }
+[2026-04-01 13:00:11] [31merror[39m: Failed to create lobby: E11000 duplicate key error collection: party-finder-db.lobbies index: partyCode_1 dup key: { partyCode: "sdfs" }
