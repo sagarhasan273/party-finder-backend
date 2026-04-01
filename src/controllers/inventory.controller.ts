@@ -145,7 +145,7 @@ export class InventoryController {
 
         try {
             const lobby = await this.inventoryService.requestToJoinLobby(lobbyId, applicantId);
-            res.status(200).json(lobby);
+            res.status(200).json({ data: lobby, status: true });
         } catch (error) {
             if (error instanceof AppError) {
                 res.status(error.statusCode).json({ message: error.message, status: false });

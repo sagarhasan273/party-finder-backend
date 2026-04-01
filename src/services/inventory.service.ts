@@ -138,7 +138,7 @@ export class InventoryService {
         }
     }
 
-    public async requestToJoinLobby(lobbyId: string, applicantId: string): Promise<ReturnResponseType> {
+    public async requestToJoinLobby(lobbyId: string, applicantId: string): Promise<LobbyType> {
         try {
             const lobby = await this.inventoryRepository.requestToJoinLobby(lobbyId, applicantId);
             const applicant = await this.userRepository.getApplicant(applicantId)
@@ -163,10 +163,7 @@ export class InventoryService {
                 message: "Request sent."
             });
 
-            return {
-                message: "Request sent successfully",
-                status: true,
-            }
+            return lobby
         } catch (error) {
             if (error instanceof AppError) {
                 throw error;

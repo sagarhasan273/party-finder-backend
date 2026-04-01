@@ -265,3 +265,5 @@
 [2026-04-01 15:37:02] [31merror[39m: Invalid lobby create data!
 [2026-04-01 15:41:12] [31merror[39m: Failed to create lobby: Unsupported BSON version, bson types must be from bson 7.x.x
 [2026-04-01 15:42:55] [31merror[39m: Failed to create lobby: E11000 duplicate key error collection: party-finder-db.lobbies index: partyCode_1 dup key: { partyCode: "sdfs" }
+[2026-04-01 17:41:03] [31merror[39m: Failed to create lobby: E11000 duplicate key error collection: party-finder-db.lobbies index: partyCode_1 dup key: { partyCode: "sdfs" }
+[2026-04-01 17:41:07] [31merror[39m: Failed to create lobby: E11000 duplicate key error collection: party-finder-db.lobbies index: partyCode_1 dup key: { partyCode: "sdfs" }

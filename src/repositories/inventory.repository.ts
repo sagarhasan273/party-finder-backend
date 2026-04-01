@@ -44,7 +44,7 @@ export class InventoryRepository {
             },
         })
             .populate('host', UserInfoPopulateQuery)
-            .populate("applicants.user", UserInfoPopulateQuery)
+        // .populate("applicants.user", UserInfoPopulateQuery)
 
         return lobby.map(l => l.toJSON());
     }
