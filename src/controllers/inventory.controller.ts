@@ -122,7 +122,7 @@ export class InventoryController {
     }
 
     public async deleteLobby(req: Request, res: Response): Promise<void> {
-        const { userId, lobbyId } = req.body;
+        const { userId, lobbyId, applicantIds } = req.body;
 
         try {
             if (!userId) {
@@ -130,7 +130,7 @@ export class InventoryController {
                 return;
             }
 
-            const result = await this.inventoryService.deleteLobby(lobbyId, userId);
+            const result = await this.inventoryService.deleteLobby(lobbyId, userId, applicantIds);
 
             res.status(200).json(result);
         }

@@ -1,5 +1,5 @@
 import { InventoryRepository } from 'src/repositories/inventory.repository';
-import { emitToRoom, emitToUser } from 'src/socket';
+import { broadcastToRegion, emitToUser } from 'src/socket';
 import { ReturnResponseType } from 'src/types/base.type';
 import { CreateLobbyInput, LobbyStatus, LobbyType, UpdateLobbyInput } from 'src/types/inventory.type';
 import { AppError } from 'src/utils/errors';
@@ -80,7 +80,7 @@ export class InventoryService {
         try {
             const result = await this.inventoryRepository.createLobby(lobby);
 
-            emitToRoom(`region:${result.region}`, 'new-lobby-created', { data: result })
+            broadcastToRegion(result.region.toString(), 'receive-new-lobby', { lobby: result, message: "New Lobby Created!" })
 
             return result;
         } catch (error) {
@@ -118,9 +118,13 @@ export class InventoryService {
         }
     }
 
-    public async deleteLobby(lobbyId: string, userId: string): Promise<ReturnResponseType> {
+    public async deleteLobby(lobbyId: string, userId: string, applicantIds: string[]): Promise<ReturnResponseType> {
         try {
-            return await this.inventoryRepository.deleteLobby(lobbyId, userId);
+            const result = await this.inventoryRepository.deleteLobby(lobbyId, userId);
+
+            applicantIds.forEach(applicantId => emitToUser(applicantId, 'receive-deleted-lobby', { lobbyId }))
+
+            return result
         } catch (error) {
             if (error instanceof AppError) {
                 throw error;

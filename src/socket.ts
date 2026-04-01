@@ -31,6 +31,12 @@ export const initSocket = (server: http.Server) => {
             socket.join(`user:${userId}`);
             logger.info(`Socket ${socket.id} joined user room: user:${userId}`);
 
+            // 🔥 CRITICAL: Join region room if region is provided
+            if (region) {
+                socket.join(`region:${region}`);
+                logger.info(`Socket ${socket.id} joined region room: region:${region}`);
+            }
+
             // Send confirmation back to client
             socket.emit('connection:established', {
                 userId,
@@ -99,7 +105,7 @@ export const initSocket = (server: http.Server) => {
 
     // Log when server starts
     io.engine.on("connection", (socket) => {
-        // logger.info(`Engine.io connection established: ${socket.id}`);
+        logger.info(`Engine.io connection established: ${socket.id}`);
     });
 
     return io;
@@ -114,57 +120,69 @@ export const getIO = () => {
 
 export const joinUserRoom = (userId: string, roomName: string) => {
     if (!io) {
-        console.error('Socket.io not initialized');
-        return false;
+        logger.error('Socket.io not initialized');
+        return;
     }
+
     io.to(`user:${userId}`).emit('join-room', roomName);
+
     logger.info(`Emitted join-room to user ${userId} for room: ${roomName}`);
-    return true;
 };
 
 export const leaveUserRoom = (userId: string, roomName: string) => {
     if (!io) {
-        console.error('Socket.io not initialized');
-        return false;
+        logger.error('Socket.io not initialized');
+        return;
     }
     io.to(`user:${userId}`).emit('leave-room', roomName);
+
     logger.info(`Emitted leave-room to user ${userId} for room: ${roomName}`);
-    return true;
 };
 
 // Or a more generic function to emit any socket event to a user
 export const emitToUserSocket = (userId: string, event: string, data: any) => {
     if (!io) {
-        console.error('Socket.io not initialized');
-        return false;
+        logger.error('Socket.io not initialized');
+        return;
     }
     io.to(`user:${userId}`).emit(event, data);
-    return true;
 };
 
 export const emitToRoom = (roomName: string, event: string, data: any) => {
     if (!io) {
-        console.error('Socket.io not initialized');
-        return false;
+        logger.error('Socket.io not initialized');
+        return;
     }
     io.to(roomName).emit(event, data);
 };
 
+export const broadcastToRegion = (region: string, event: string, data: any) => {
+    if (!io) {
+        logger.error('Socket.io not initialized');
+        return;
+    }
+
+    const roomName = `region:${region}`;
+
+    io.to(roomName).emit(event, data);
+    logger.info(`✅ Broadcasted to users in region ${region}`);
+};
+
+
+
 export const emitToUser = (userId: string, event: string, data: any) => {
     if (!io) {
         console.error('Socket.io not initialized');
-        return false;
+        return;
     }
     io.to(`user:${userId}`).emit(event, data);
-    return true;
 };
 
 // Helper function to emit to all connected clients
 export const emitToAll = (event: string, data: any) => {
     if (!io) {
         console.error('Socket.io not initialized');
-        return false;
+        return;
     }
     io.emit(event, data);
-    return true;
 };

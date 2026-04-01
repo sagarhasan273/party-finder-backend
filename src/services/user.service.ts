@@ -30,6 +30,8 @@ export class UserService {
 
       if (input.region) {
         joinUserRoom(input.id.toString(), `region:${input.region}`);
+      } else {
+        leaveUserRoom(input.id.toString(), `region:${input.region}`)
       }
 
       return result;
@@ -53,12 +55,6 @@ export class UserService {
       if (!userId) throw new AppError('User ID not found in token', 400, 'User Service');
 
       const user = await this.userRepository.getUserMe(userId);
-
-      if (user.region) {
-        joinUserRoom(user.id.toString(), `region:${user.region}`);
-      } else {
-        leaveUserRoom(user.id.toString(), `region:${user.region}`)
-      }
 
       return user;
 
