@@ -5279,3 +5279,311 @@ ParserError: Protocol error, got "H" as reply type byte. Please report this.
 [2026-04-02 13:59:40] [32minfo[39m: New client connected: lky1M39EariOcMCNAAAE
 [2026-04-02 13:59:40] [32minfo[39m: Socket lky1M39EariOcMCNAAAE joined user room: user:69ccc22530b0bad2cec283f7
 [2026-04-02 13:59:40] [32minfo[39m: Socket lky1M39EariOcMCNAAAE joined region room: region:ap
+[2026-04-02 14:06:13] [32minfo[39m: Client disconnected: lky1M39EariOcMCNAAAE, reason: transport close
+[2026-04-02 14:06:14] [32minfo[39m: Engine.io connection established: wG0lxYDJMnYyPoC6AAAG
+[2026-04-02 14:06:14] [32minfo[39m: New client connected: iTKMegOcXIumwE2BAAAH
+[2026-04-02 14:06:14] [32minfo[39m: Socket iTKMegOcXIumwE2BAAAH joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-02 14:06:14] [32minfo[39m: Socket iTKMegOcXIumwE2BAAAH joined region room: region:ap
+[2026-04-02 14:06:16] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 14:06:24] [32minfo[39m: Client disconnected: grIL1VigM8eYYfC_AAAB, reason: transport close
+[2026-04-02 14:06:25] [32minfo[39m: Engine.io connection established: WA3FmIdJozP4T-rqAAAJ
+[2026-04-02 14:06:25] [32minfo[39m: New client connected: O210uUH3LeU_7vi5AAAK
+[2026-04-02 14:06:25] [32minfo[39m: Socket O210uUH3LeU_7vi5AAAK joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-02 14:06:25] [32minfo[39m: Socket O210uUH3LeU_7vi5AAAK joined region room: region:ap
+[2026-04-02 14:07:30] [32minfo[39m: Deleted Key: 69ce23780dad833fe4b7d751:69ccc1ae30b0bad2cec283e9
+[2026-04-02 14:11:38] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 14:11:41] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 14:12:46] [32minfo[39m: Deleted Key: 69ce24bd0dad833fe4b7d769:69ccc1ae30b0bad2cec283e9
+[2026-04-02 14:15:18] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 14:15:21] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 14:16:29] [32minfo[39m: Deleted Key: 69ce25990dad833fe4b7d77f:69ccc1ae30b0bad2cec283e9
+[2026-04-02 14:20:04] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 14:20:12] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 14:20:25] [32minfo[39m: Client disconnected: O210uUH3LeU_7vi5AAAK, reason: transport close
+[2026-04-02 14:20:26] [32minfo[39m: Engine.io connection established: SaDMAU9anY4saCWsAAAM
+[2026-04-02 14:20:26] [32minfo[39m: New client connected: NeyOyTGqM6Hx08OLAAAN
+[2026-04-02 14:20:26] [32minfo[39m: Socket NeyOyTGqM6Hx08OLAAAN joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-02 14:20:26] [32minfo[39m: Socket NeyOyTGqM6Hx08OLAAAN joined region room: region:ap
+[2026-04-02 14:20:26] [32minfo[39m: Client disconnected: iTKMegOcXIumwE2BAAAH, reason: transport close
+[2026-04-02 14:20:27] [32minfo[39m: Engine.io connection established: Qh7YpmBUI5-CO5cZAAAP
+[2026-04-02 14:20:27] [32minfo[39m: New client connected: qjx83EewYt5_bh3yAAAQ
+[2026-04-02 14:20:27] [32minfo[39m: Socket qjx83EewYt5_bh3yAAAQ joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-02 14:20:27] [32minfo[39m: Socket qjx83EewYt5_bh3yAAAQ joined region room: region:ap
+[2026-04-02 14:21:30] [32minfo[39m: Deleted Key: 69ce26bc0dad833fe4b7d794:69ccc1ae30b0bad2cec283e9
+[2026-04-02 14:25:11] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 14:25:15] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 14:26:17] [32minfo[39m: Deleted Key: 69ce27eb0dad833fe4b7d7b4:69ccc1ae30b0bad2cec283e9
+[2026-04-02 14:35:21] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 14:35:24] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 14:35:51] [32minfo[39m: Client disconnected: NeyOyTGqM6Hx08OLAAAN, reason: transport close
+[2026-04-02 14:35:51] [32minfo[39m: Engine.io connection established: gm6Kem6VRplI5Q-4AAAS
+[2026-04-02 14:35:51] [32minfo[39m: New client connected: mjZm9Ll-eLZ60NL7AAAT
+[2026-04-02 14:35:51] [32minfo[39m: Socket mjZm9Ll-eLZ60NL7AAAT joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-02 14:35:51] [32minfo[39m: Socket mjZm9Ll-eLZ60NL7AAAT joined region room: region:ap
+[2026-04-02 14:36:01] [32minfo[39m: Client disconnected: qjx83EewYt5_bh3yAAAQ, reason: transport close
+[2026-04-02 14:36:02] [32minfo[39m: Engine.io connection established: zBMsMkiVhcZo8I-iAAAV
+[2026-04-02 14:36:02] [32minfo[39m: New client connected: FRKIgb9rJ2VzHE5NAAAW
+[2026-04-02 14:36:02] [32minfo[39m: Socket FRKIgb9rJ2VzHE5NAAAW joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-02 14:36:02] [32minfo[39m: Socket FRKIgb9rJ2VzHE5NAAAW joined region room: region:ap
+[2026-04-02 14:36:28] [32minfo[39m: Deleted Key: 69ce2a4c0dad833fe4b7d7c7:69ccc1ae30b0bad2cec283e9
+[2026-04-02 15:09:38] [32minfo[39m: Client disconnected: FRKIgb9rJ2VzHE5NAAAW, reason: client namespace disconnect
+[2026-04-02 15:09:38] [32minfo[39m: Client disconnected: mjZm9Ll-eLZ60NL7AAAT, reason: client namespace disconnect
+[2026-04-02 15:09:38] [32minfo[39m: Engine.io connection established: _V7FZLPUzEwB9Z08AAAY
+[2026-04-02 15:09:38] [32minfo[39m: Engine.io connection established: SQ30tdt_Oj7zEj25AAAZ
+[2026-04-02 15:09:38] [32minfo[39m: New client connected: J1iPzs_-xSjhNe55AAAa
+[2026-04-02 15:09:38] [32minfo[39m: Socket J1iPzs_-xSjhNe55AAAa joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-02 15:09:38] [32minfo[39m: Socket J1iPzs_-xSjhNe55AAAa joined region room: region:ap
+[2026-04-02 15:09:38] [32minfo[39m: New client connected: ffX2EWZJP0xx-CM_AAAc
+[2026-04-02 15:09:38] [32minfo[39m: Socket ffX2EWZJP0xx-CM_AAAc joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-02 15:09:38] [32minfo[39m: Socket ffX2EWZJP0xx-CM_AAAc joined region room: region:ap
+[2026-04-02 15:09:39] [32minfo[39m: Engine.io connection established: nqcG-mGizoXa8OxDAAAe
+[2026-04-02 15:09:39] [32minfo[39m: New client connected: aF38k7oBTBaaT7OYAAAf
+[2026-04-02 15:09:39] [32minfo[39m: Socket aF38k7oBTBaaT7OYAAAf joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-02 15:09:39] [32minfo[39m: Socket aF38k7oBTBaaT7OYAAAf joined region room: region:ap
+[2026-04-02 15:09:43] [32minfo[39m: Client disconnected: ffX2EWZJP0xx-CM_AAAc, reason: client namespace disconnect
+[2026-04-02 15:09:43] [32minfo[39m: Client disconnected: J1iPzs_-xSjhNe55AAAa, reason: client namespace disconnect
+[2026-04-02 15:09:43] [32minfo[39m: Engine.io connection established: 2tHKoD9tdncPPOVwAAAh
+[2026-04-02 15:09:43] [32minfo[39m: Engine.io connection established: otTzA59SGh_JZYd1AAAi
+[2026-04-02 15:09:43] [32minfo[39m: New client connected: Xfw1z6eskR0bhfFFAAAj
+[2026-04-02 15:09:43] [32minfo[39m: Socket Xfw1z6eskR0bhfFFAAAj joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-02 15:09:43] [32minfo[39m: Socket Xfw1z6eskR0bhfFFAAAj joined region room: region:ap
+[2026-04-02 15:09:43] [32minfo[39m: New client connected: iTvce9Y-INyRvT8jAAAl
+[2026-04-02 15:09:43] [32minfo[39m: Socket iTvce9Y-INyRvT8jAAAl joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-02 15:09:43] [32minfo[39m: Socket iTvce9Y-INyRvT8jAAAl joined region room: region:ap
+[2026-04-02 15:09:43] [32minfo[39m: Client disconnected: aF38k7oBTBaaT7OYAAAf, reason: client namespace disconnect
+[2026-04-02 15:09:43] [32minfo[39m: Engine.io connection established: oVsR7-N9u5SyHDemAAAn
+[2026-04-02 15:09:43] [32minfo[39m: New client connected: gO8oeONB_hP2y_lwAAAo
+[2026-04-02 15:09:43] [32minfo[39m: Socket gO8oeONB_hP2y_lwAAAo joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-02 15:09:43] [32minfo[39m: Socket gO8oeONB_hP2y_lwAAAo joined region room: region:ap
+[2026-04-02 15:10:08] [32minfo[39m: Client disconnected: iTvce9Y-INyRvT8jAAAl, reason: client namespace disconnect
+[2026-04-02 15:10:08] [32minfo[39m: Client disconnected: Xfw1z6eskR0bhfFFAAAj, reason: client namespace disconnect
+[2026-04-02 15:10:08] [32minfo[39m: Engine.io connection established: KktjY9PVh9yWBhAxAAAq
+[2026-04-02 15:10:08] [32minfo[39m: Engine.io connection established: F5LEI-8MHq9eLh-sAAAr
+[2026-04-02 15:10:08] [32minfo[39m: New client connected: qdPSreRN_XpRWJJKAAAs
+[2026-04-02 15:10:08] [32minfo[39m: Socket qdPSreRN_XpRWJJKAAAs joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-02 15:10:08] [32minfo[39m: Socket qdPSreRN_XpRWJJKAAAs joined region room: region:ap
+[2026-04-02 15:10:08] [32minfo[39m: New client connected: 88rR3P3CG9El_RJPAAAu
+[2026-04-02 15:10:08] [32minfo[39m: Socket 88rR3P3CG9El_RJPAAAu joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-02 15:10:08] [32minfo[39m: Socket 88rR3P3CG9El_RJPAAAu joined region room: region:ap
+[2026-04-02 15:10:09] [32minfo[39m: Client disconnected: gO8oeONB_hP2y_lwAAAo, reason: client namespace disconnect
+[2026-04-02 15:10:09] [32minfo[39m: Engine.io connection established: mCjPaqHF7JzHZt03AAAw
+[2026-04-02 15:10:09] [32minfo[39m: New client connected: hA86Se2O1oEvXxvQAAAx
+[2026-04-02 15:10:09] [32minfo[39m: Socket hA86Se2O1oEvXxvQAAAx joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-02 15:10:09] [32minfo[39m: Socket hA86Se2O1oEvXxvQAAAx joined region room: region:ap
+[2026-04-02 15:10:31] [32minfo[39m: Client disconnected: qdPSreRN_XpRWJJKAAAs, reason: client namespace disconnect
+[2026-04-02 15:10:31] [32minfo[39m: Client disconnected: 88rR3P3CG9El_RJPAAAu, reason: client namespace disconnect
+[2026-04-02 15:10:31] [32minfo[39m: Engine.io connection established: TGutzd8kkngABjB5AAAz
+[2026-04-02 15:10:31] [32minfo[39m: Engine.io connection established: heUKTAEn-yLvMGKiAAA0
+[2026-04-02 15:10:31] [32minfo[39m: New client connected: a9BKidXcLCd2M1aBAAA1
+[2026-04-02 15:10:31] [32minfo[39m: Socket a9BKidXcLCd2M1aBAAA1 joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-02 15:10:31] [32minfo[39m: Socket a9BKidXcLCd2M1aBAAA1 joined region room: region:ap
+[2026-04-02 15:10:31] [32minfo[39m: New client connected: 3oWyszyS4ZkZLHNYAAA3
+[2026-04-02 15:10:31] [32minfo[39m: Socket 3oWyszyS4ZkZLHNYAAA3 joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-02 15:10:31] [32minfo[39m: Socket 3oWyszyS4ZkZLHNYAAA3 joined region room: region:ap
+[2026-04-02 15:10:31] [32minfo[39m: Client disconnected: hA86Se2O1oEvXxvQAAAx, reason: client namespace disconnect
+[2026-04-02 15:10:31] [32minfo[39m: Engine.io connection established: VUCUJ8yXzb8hJ9L1AAA5
+[2026-04-02 15:10:31] [32minfo[39m: New client connected: f232gMN35SkSjlOUAAA6
+[2026-04-02 15:10:31] [32minfo[39m: Socket f232gMN35SkSjlOUAAA6 joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-02 15:10:31] [32minfo[39m: Socket f232gMN35SkSjlOUAAA6 joined region room: region:ap
+[2026-04-02 15:10:40] [32minfo[39m: Client disconnected: 3oWyszyS4ZkZLHNYAAA3, reason: client namespace disconnect
+[2026-04-02 15:10:40] [32minfo[39m: Client disconnected: a9BKidXcLCd2M1aBAAA1, reason: client namespace disconnect
+[2026-04-02 15:10:40] [32minfo[39m: Engine.io connection established: SrqXw56oNb0BpY0UAAA8
+[2026-04-02 15:10:40] [32minfo[39m: Engine.io connection established: ootR3_OUKZwfSUItAAA9
+[2026-04-02 15:10:40] [32minfo[39m: New client connected: ZTQGgy6DhjYSEM0AAAA-
+[2026-04-02 15:10:40] [32minfo[39m: Socket ZTQGgy6DhjYSEM0AAAA- joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-02 15:10:40] [32minfo[39m: Socket ZTQGgy6DhjYSEM0AAAA- joined region room: region:ap
+[2026-04-02 15:10:40] [32minfo[39m: New client connected: iilcSJFJWyskuU65AABA
+[2026-04-02 15:10:40] [32minfo[39m: Socket iilcSJFJWyskuU65AABA joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-02 15:10:40] [32minfo[39m: Socket iilcSJFJWyskuU65AABA joined region room: region:ap
+[2026-04-02 15:10:41] [32minfo[39m: Client disconnected: f232gMN35SkSjlOUAAA6, reason: client namespace disconnect
+[2026-04-02 15:10:41] [32minfo[39m: Engine.io connection established: 2CebmEQlA7OaBYzcAABC
+[2026-04-02 15:10:41] [32minfo[39m: New client connected: NyH6mDzzRadFVoU-AABD
+[2026-04-02 15:10:41] [32minfo[39m: Socket NyH6mDzzRadFVoU-AABD joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-02 15:10:41] [32minfo[39m: Socket NyH6mDzzRadFVoU-AABD joined region room: region:ap
+[2026-04-02 15:10:51] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:10:52] [32minfo[39m: Client disconnected: iilcSJFJWyskuU65AABA, reason: transport close
+[2026-04-02 15:10:53] [32minfo[39m: Engine.io connection established: I2PrQ5bgc8-OzUWLAABF
+[2026-04-02 15:10:53] [32minfo[39m: New client connected: tIUYOKF_JcQWJPMAAABG
+[2026-04-02 15:10:53] [32minfo[39m: Socket tIUYOKF_JcQWJPMAAABG joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-02 15:10:53] [32minfo[39m: Socket tIUYOKF_JcQWJPMAAABG joined region room: region:ap
+[2026-04-02 15:10:53] [32minfo[39m: Client disconnected: ZTQGgy6DhjYSEM0AAAA-, reason: transport close
+[2026-04-02 15:10:54] [32minfo[39m: Engine.io connection established: f5OItxJd4uWcRHI1AABI
+[2026-04-02 15:10:54] [32minfo[39m: New client connected: LsiisvHSoh4niLBcAABJ
+[2026-04-02 15:10:54] [32minfo[39m: Socket LsiisvHSoh4niLBcAABJ joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-02 15:10:54] [32minfo[39m: Socket LsiisvHSoh4niLBcAABJ joined region room: region:ap
+[2026-04-02 15:10:56] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:12:20] [32minfo[39m: Deleted Key: 69ce32a00dad833fe4b7d82d:69ccc1ae30b0bad2cec283e9
+[2026-04-02 15:14:08] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:14:11] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:14:44] [32minfo[39m: Client disconnected: LsiisvHSoh4niLBcAABJ, reason: client namespace disconnect
+[2026-04-02 15:14:44] [32minfo[39m: Engine.io connection established: FSlr68OjAuH6L18VAABL
+[2026-04-02 15:14:44] [32minfo[39m: Client disconnected: tIUYOKF_JcQWJPMAAABG, reason: client namespace disconnect
+[2026-04-02 15:14:44] [32minfo[39m: New client connected: hOsiFBN0uTSW1NBdAABM
+[2026-04-02 15:14:44] [32minfo[39m: Socket hOsiFBN0uTSW1NBdAABM joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-02 15:14:44] [32minfo[39m: Socket hOsiFBN0uTSW1NBdAABM joined region room: region:ap
+[2026-04-02 15:14:44] [32minfo[39m: Engine.io connection established: ri0FSI10vCS65mWcAABO
+[2026-04-02 15:14:44] [32minfo[39m: New client connected: qO2Dcwx13AZY4hCFAABP
+[2026-04-02 15:14:44] [32minfo[39m: Socket qO2Dcwx13AZY4hCFAABP joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-02 15:14:44] [32minfo[39m: Socket qO2Dcwx13AZY4hCFAABP joined region room: region:ap
+[2026-04-02 15:14:44] [32minfo[39m: Client disconnected: NyH6mDzzRadFVoU-AABD, reason: client namespace disconnect
+[2026-04-02 15:14:44] [32minfo[39m: Engine.io connection established: bj3l97HhcJV1HBLTAABR
+[2026-04-02 15:14:44] [32minfo[39m: New client connected: UO9sZq3-6IEzYRe6AABS
+[2026-04-02 15:14:44] [32minfo[39m: Socket UO9sZq3-6IEzYRe6AABS joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-02 15:14:44] [32minfo[39m: Socket UO9sZq3-6IEzYRe6AABS joined region room: region:ap
+[2026-04-02 15:15:14] [32minfo[39m: Deleted Key: 69ce33630dad833fe4b7d842:69ccc1ae30b0bad2cec283e9
+[2026-04-02 15:15:16] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:15:18] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:16:28] [32minfo[39m: Deleted Key: 69ce33a60dad833fe4b7d865:69ccc1ae30b0bad2cec283e9
+[2026-04-02 15:16:46] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:16:48] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:17:51] [32minfo[39m: Deleted Key: 69ce34000dad833fe4b7d878:69ccc1ae30b0bad2cec283e9
+[2026-04-02 15:19:50] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:19:52] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:20:13] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:20:15] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:20:19] [31merror[39m: Failed to create lobby: E11000 duplicate key error collection: party-finder-db.lobbies index: partyCode_1 dup key: { partyCode: "sdfs" }
+[2026-04-02 15:20:24] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:20:26] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:20:55] [31merror[39m: Timeout callback failed for 69ce34b80dad833fe4b7d88e:69ccc1ae30b0bad2cec283e9: Join request not found!
+AppError: Join request not found!
+    at InventoryRepository.suspendApplicantJoining (D:\Workplace\Party Finder Backend\src\repositories\inventory.repository.ts:411:23)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async InventoryService.suspendApplicantJoining (D:\Workplace\Party Finder Backend\src\services\inventory.service.ts:223:28)
+    at async D:\Workplace\Party Finder Backend\src\services\inventory.service.ts:184:17
+    at async Timeout._onTimeout (D:\Workplace\Party Finder Backend\src\utils\timeout-manager.ts:38:21)
+[2026-04-02 15:20:55] [32minfo[39m: Deleted Key: 69ce34b80dad833fe4b7d88e:69ccc1ae30b0bad2cec283e9
+[2026-04-02 15:21:15] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:21:19] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:21:32] [31merror[39m: Timeout callback failed for 69ce34da0dad833fe4b7d8a9:69ccc1ae30b0bad2cec283e9: Join request not found!
+AppError: Join request not found!
+    at InventoryRepository.suspendApplicantJoining (D:\Workplace\Party Finder Backend\src\repositories\inventory.repository.ts:411:23)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async InventoryService.suspendApplicantJoining (D:\Workplace\Party Finder Backend\src\services\inventory.service.ts:223:28)
+    at async D:\Workplace\Party Finder Backend\src\services\inventory.service.ts:184:17
+    at async Timeout._onTimeout (D:\Workplace\Party Finder Backend\src\utils\timeout-manager.ts:38:21)
+[2026-04-02 15:21:32] [32minfo[39m: Deleted Key: 69ce34da0dad833fe4b7d8a9:69ccc1ae30b0bad2cec283e9
+[2026-04-02 15:22:21] [32minfo[39m: Deleted Key: 69ce350f0dad833fe4b7d8bb:69ccc1ae30b0bad2cec283e9
+[2026-04-02 15:22:28] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:22:31] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:22:59] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:23:01] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:23:17] [32minfo[39m: Client disconnected: qO2Dcwx13AZY4hCFAABP, reason: transport close
+[2026-04-02 15:23:17] [32minfo[39m: Engine.io connection established: S0BBIYxGV3cx8bwwAABU
+[2026-04-02 15:23:17] [32minfo[39m: New client connected: lHDdehj-bWHD5LvTAABV
+[2026-04-02 15:23:17] [32minfo[39m: Socket lHDdehj-bWHD5LvTAABV joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-02 15:23:17] [32minfo[39m: Socket lHDdehj-bWHD5LvTAABV joined region room: region:ap
+[2026-04-02 15:23:21] [32minfo[39m: Client disconnected: lHDdehj-bWHD5LvTAABV, reason: transport close
+[2026-04-02 15:23:21] [32minfo[39m: Engine.io connection established: F86uixe_CxsqWZA5AABX
+[2026-04-02 15:23:21] [32minfo[39m: New client connected: dH77BhorWuTMOD2xAABY
+[2026-04-02 15:23:21] [32minfo[39m: Socket dH77BhorWuTMOD2xAABY joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-02 15:23:21] [32minfo[39m: Socket dH77BhorWuTMOD2xAABY joined region room: region:ap
+[2026-04-02 15:23:35] [31merror[39m: Timeout callback failed for 69ce35570dad833fe4b7d8cf:69ccc1ae30b0bad2cec283e9: Join request not found!
+AppError: Join request not found!
+    at InventoryRepository.suspendApplicantJoining (D:\Workplace\Party Finder Backend\src\repositories\inventory.repository.ts:411:23)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async InventoryService.suspendApplicantJoining (D:\Workplace\Party Finder Backend\src\services\inventory.service.ts:223:28)
+    at async D:\Workplace\Party Finder Backend\src\services\inventory.service.ts:184:17
+    at async Timeout._onTimeout (D:\Workplace\Party Finder Backend\src\utils\timeout-manager.ts:38:21)
+[2026-04-02 15:23:35] [32minfo[39m: Deleted Key: 69ce35570dad833fe4b7d8cf:69ccc1ae30b0bad2cec283e9
+[2026-04-02 15:24:05] [32minfo[39m: Deleted Key: 69ce35750dad833fe4b7d8e0:69ccc22530b0bad2cec283f7
+[2026-04-02 15:24:26] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:24:31] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:24:47] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:24:53] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:25:34] [31merror[39m: Timeout callback failed for 69ce35cf0dad833fe4b7d906:69ccc1ae30b0bad2cec283e9: Join request not found!
+AppError: Join request not found!
+    at InventoryRepository.suspendApplicantJoining (D:\Workplace\Party Finder Backend\src\repositories\inventory.repository.ts:411:23)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async InventoryService.suspendApplicantJoining (D:\Workplace\Party Finder Backend\src\services\inventory.service.ts:223:28)
+    at async D:\Workplace\Party Finder Backend\src\services\inventory.service.ts:184:17
+    at async Timeout._onTimeout (D:\Workplace\Party Finder Backend\src\utils\timeout-manager.ts:38:21)
+[2026-04-02 15:25:34] [32minfo[39m: Deleted Key: 69ce35cf0dad833fe4b7d906:69ccc1ae30b0bad2cec283e9
+[2026-04-02 15:25:57] [32minfo[39m: Deleted Key: 69ce35e50dad833fe4b7d919:69ccc1ae30b0bad2cec283e9
+[2026-04-02 15:26:33] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:26:36] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:26:47] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:26:49] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:26:59] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:27:02] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:27:39] [31merror[39m: Timeout callback failed for 69ce364c0dad833fe4b7d92d:69ccc1ae30b0bad2cec283e9: Join request not found!
+AppError: Join request not found!
+    at InventoryRepository.suspendApplicantJoining (D:\Workplace\Party Finder Backend\src\repositories\inventory.repository.ts:411:23)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async InventoryService.suspendApplicantJoining (D:\Workplace\Party Finder Backend\src\services\inventory.service.ts:223:28)
+    at async D:\Workplace\Party Finder Backend\src\services\inventory.service.ts:184:17
+    at async Timeout._onTimeout (D:\Workplace\Party Finder Backend\src\utils\timeout-manager.ts:38:21)
+[2026-04-02 15:27:39] [32minfo[39m: Deleted Key: 69ce364c0dad833fe4b7d92d:69ccc1ae30b0bad2cec283e9
+[2026-04-02 15:27:52] [31merror[39m: Timeout callback failed for 69ce36590dad833fe4b7d93e:69ccc1ae30b0bad2cec283e9: Join request not found!
+AppError: Join request not found!
+    at InventoryRepository.suspendApplicantJoining (D:\Workplace\Party Finder Backend\src\repositories\inventory.repository.ts:411:23)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async InventoryService.suspendApplicantJoining (D:\Workplace\Party Finder Backend\src\services\inventory.service.ts:223:28)
+    at async D:\Workplace\Party Finder Backend\src\services\inventory.service.ts:184:17
+    at async Timeout._onTimeout (D:\Workplace\Party Finder Backend\src\utils\timeout-manager.ts:38:21)
+[2026-04-02 15:27:52] [32minfo[39m: Deleted Key: 69ce36590dad833fe4b7d93e:69ccc1ae30b0bad2cec283e9
+[2026-04-02 15:28:08] [32minfo[39m: Deleted Key: 69ce36660dad833fe4b7d94f:69ccc1ae30b0bad2cec283e9
+[2026-04-02 15:28:48] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:28:51] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:29:52] [32minfo[39m: Deleted Key: 69ce36d30dad833fe4b7d964:69ccc1ae30b0bad2cec283e9
+[2026-04-02 15:37:52] [32minfo[39m: Client disconnected: dH77BhorWuTMOD2xAABY, reason: transport close
+[2026-04-02 15:37:52] [32minfo[39m: Engine.io connection established: MWj4e6ACmcmLMJ2zAABa
+[2026-04-02 15:37:52] [32minfo[39m: New client connected: YU3_S-Y3TJT59e7XAABb
+[2026-04-02 15:37:52] [32minfo[39m: Socket YU3_S-Y3TJT59e7XAABb joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-02 15:37:52] [32minfo[39m: Socket YU3_S-Y3TJT59e7XAABb joined region room: region:ap
+[2026-04-02 15:37:53] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:37:55] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:38:08] [32minfo[39m: Client disconnected: YU3_S-Y3TJT59e7XAABb, reason: transport close
+[2026-04-02 15:38:08] [32minfo[39m: Engine.io connection established: _gZY47-kQtbsZkMJAABd
+[2026-04-02 15:38:08] [32minfo[39m: New client connected: GVE4-khgpuSwBI_pAABe
+[2026-04-02 15:38:08] [32minfo[39m: Socket GVE4-khgpuSwBI_pAABe joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-02 15:38:08] [32minfo[39m: Socket GVE4-khgpuSwBI_pAABe joined region room: region:ap
+[2026-04-02 15:39:01] [32minfo[39m: Deleted Key: 69ce38f30dad833fe4b7d97e:69ccc1ae30b0bad2cec283e9
+[2026-04-02 15:39:47] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:40:04] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:41:10] [32minfo[39m: Deleted Key: 69ce39740dad833fe4b7d997:69ccc1ae30b0bad2cec283e9
+[2026-04-02 15:44:26] [32minfo[39m: Client disconnected: hOsiFBN0uTSW1NBdAABM, reason: client namespace disconnect
+[2026-04-02 15:44:26] [32minfo[39m: Client disconnected: GVE4-khgpuSwBI_pAABe, reason: client namespace disconnect
+[2026-04-02 15:44:26] [32minfo[39m: Engine.io connection established: Bpp0BVaZHF5wjd-CAABg
+[2026-04-02 15:44:26] [32minfo[39m: Engine.io connection established: LcgBdTm3v-FTBqh_AABh
+[2026-04-02 15:44:26] [32minfo[39m: New client connected: auFFXbFdQhF3kxruAABi
+[2026-04-02 15:44:26] [32minfo[39m: Socket auFFXbFdQhF3kxruAABi joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-02 15:44:26] [32minfo[39m: Socket auFFXbFdQhF3kxruAABi joined region room: region:ap
+[2026-04-02 15:44:26] [32minfo[39m: New client connected: DAHEN7hcfy1dcIqbAABk
+[2026-04-02 15:44:26] [32minfo[39m: Socket DAHEN7hcfy1dcIqbAABk joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-02 15:44:26] [32minfo[39m: Socket DAHEN7hcfy1dcIqbAABk joined region room: region:ap
+[2026-04-02 15:44:26] [32minfo[39m: Client disconnected: UO9sZq3-6IEzYRe6AABS, reason: client namespace disconnect
+[2026-04-02 15:44:26] [32minfo[39m: Engine.io connection established: 1xtpKDeawE-zGOkDAABm
+[2026-04-02 15:44:26] [32minfo[39m: New client connected: UhKK4IfnkusUc2WRAABn
+[2026-04-02 15:44:26] [32minfo[39m: Socket UhKK4IfnkusUc2WRAABn joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-02 15:44:26] [32minfo[39m: Socket UhKK4IfnkusUc2WRAABn joined region room: region:ap
+[2026-04-02 15:44:29] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:44:31] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:45:36] [32minfo[39m: Deleted Key: 69ce3a7f0dad833fe4b7d9bf:69ccc1ae30b0bad2cec283e9
+[2026-04-02 15:45:57] [32minfo[39m: Client disconnected: DAHEN7hcfy1dcIqbAABk, reason: transport close
+[2026-04-02 15:45:57] [32minfo[39m: Engine.io connection established: 7CfHMYWzPQNc4kmlAABp
+[2026-04-02 15:45:57] [32minfo[39m: New client connected: N30WX-o9CDuMCpPLAABq
+[2026-04-02 15:45:57] [32minfo[39m: Socket N30WX-o9CDuMCpPLAABq joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-02 15:45:57] [32minfo[39m: Socket N30WX-o9CDuMCpPLAABq joined region room: region:ap
+[2026-04-02 15:46:54] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:46:56] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:47:07] [32minfo[39m: Client disconnected: N30WX-o9CDuMCpPLAABq, reason: transport close
+[2026-04-02 15:47:07] [32minfo[39m: Engine.io connection established: TLH0DL6XbR_QaUHJAABs
+[2026-04-02 15:47:07] [32minfo[39m: New client connected: a5To_BcCRN-jmW4JAABt
+[2026-04-02 15:47:07] [32minfo[39m: Socket a5To_BcCRN-jmW4JAABt joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-02 15:47:07] [32minfo[39m: Socket a5To_BcCRN-jmW4JAABt joined region room: region:ap
+[2026-04-02 15:47:12] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:47:15] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:48:01] [31merror[39m: Timeout callback failed for 69ce3b100dad833fe4b7d9d8:69ccc1ae30b0bad2cec283e9: Join request not found!
+AppError: Join request not found!
+    at InventoryRepository.suspendApplicantJoining (D:\Workplace\Party Finder Backend\src\repositories\inventory.repository.ts:411:23)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async InventoryService.suspendApplicantJoining (D:\Workplace\Party Finder Backend\src\services\inventory.service.ts:223:28)
+    at async D:\Workplace\Party Finder Backend\src\services\inventory.service.ts:184:17
+    at async Timeout._onTimeout (D:\Workplace\Party Finder Backend\src\utils\timeout-manager.ts:38:21)
+[2026-04-02 15:48:01] [32minfo[39m: Deleted Key: 69ce3b100dad833fe4b7d9d8:69ccc1ae30b0bad2cec283e9
+[2026-04-02 15:48:19] [32minfo[39m: Deleted Key: 69ce3b230dad833fe4b7d9ef:69ccc1ae30b0bad2cec283e9
+[2026-04-02 15:50:59] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:51:01] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-02 15:54:01] [32minfo[39m: TimeoutManager initialized
+[2026-04-02 15:54:01] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-02 15:54:01] [32minfo[39m: Server running on http://192.168.68.102:5000

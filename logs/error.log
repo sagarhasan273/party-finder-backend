@@ -648,3 +648,53 @@ ParserError: Protocol error, got "H" as reply type byte. Please report this.
 [2026-04-02 13:31:03] [31merror[39m: Failed to create lobby: Lobby already exists
 [2026-04-02 13:32:04] [31merror[39m: Failed to create lobby: Lobby already exists
 [2026-04-02 13:33:02] [31merror[39m: Failed to create lobby: E11000 duplicate key error collection: party-finder-db.lobbies index: partyCode_1 dup key: { partyCode: "sdfs" }
+[2026-04-02 15:20:19] [31merror[39m: Failed to create lobby: E11000 duplicate key error collection: party-finder-db.lobbies index: partyCode_1 dup key: { partyCode: "sdfs" }
+[2026-04-02 15:20:55] [31merror[39m: Timeout callback failed for 69ce34b80dad833fe4b7d88e:69ccc1ae30b0bad2cec283e9: Join request not found!
+AppError: Join request not found!
+    at InventoryRepository.suspendApplicantJoining (D:\Workplace\Party Finder Backend\src\repositories\inventory.repository.ts:411:23)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async InventoryService.suspendApplicantJoining (D:\Workplace\Party Finder Backend\src\services\inventory.service.ts:223:28)
+    at async D:\Workplace\Party Finder Backend\src\services\inventory.service.ts:184:17
+    at async Timeout._onTimeout (D:\Workplace\Party Finder Backend\src\utils\timeout-manager.ts:38:21)
+[2026-04-02 15:21:32] [31merror[39m: Timeout callback failed for 69ce34da0dad833fe4b7d8a9:69ccc1ae30b0bad2cec283e9: Join request not found!
+AppError: Join request not found!
+    at InventoryRepository.suspendApplicantJoining (D:\Workplace\Party Finder Backend\src\repositories\inventory.repository.ts:411:23)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async InventoryService.suspendApplicantJoining (D:\Workplace\Party Finder Backend\src\services\inventory.service.ts:223:28)
+    at async D:\Workplace\Party Finder Backend\src\services\inventory.service.ts:184:17
+    at async Timeout._onTimeout (D:\Workplace\Party Finder Backend\src\utils\timeout-manager.ts:38:21)
+[2026-04-02 15:23:35] [31merror[39m: Timeout callback failed for 69ce35570dad833fe4b7d8cf:69ccc1ae30b0bad2cec283e9: Join request not found!
+AppError: Join request not found!
+    at InventoryRepository.suspendApplicantJoining (D:\Workplace\Party Finder Backend\src\repositories\inventory.repository.ts:411:23)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async InventoryService.suspendApplicantJoining (D:\Workplace\Party Finder Backend\src\services\inventory.service.ts:223:28)
+    at async D:\Workplace\Party Finder Backend\src\services\inventory.service.ts:184:17
+    at async Timeout._onTimeout (D:\Workplace\Party Finder Backend\src\utils\timeout-manager.ts:38:21)
+[2026-04-02 15:25:34] [31merror[39m: Timeout callback failed for 69ce35cf0dad833fe4b7d906:69ccc1ae30b0bad2cec283e9: Join request not found!
+AppError: Join request not found!
+    at InventoryRepository.suspendApplicantJoining (D:\Workplace\Party Finder Backend\src\repositories\inventory.repository.ts:411:23)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async InventoryService.suspendApplicantJoining (D:\Workplace\Party Finder Backend\src\services\inventory.service.ts:223:28)
+    at async D:\Workplace\Party Finder Backend\src\services\inventory.service.ts:184:17
+    at async Timeout._onTimeout (D:\Workplace\Party Finder Backend\src\utils\timeout-manager.ts:38:21)
+[2026-04-02 15:27:39] [31merror[39m: Timeout callback failed for 69ce364c0dad833fe4b7d92d:69ccc1ae30b0bad2cec283e9: Join request not found!
+AppError: Join request not found!
+    at InventoryRepository.suspendApplicantJoining (D:\Workplace\Party Finder Backend\src\repositories\inventory.repository.ts:411:23)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async InventoryService.suspendApplicantJoining (D:\Workplace\Party Finder Backend\src\services\inventory.service.ts:223:28)
+    at async D:\Workplace\Party Finder Backend\src\services\inventory.service.ts:184:17
+    at async Timeout._onTimeout (D:\Workplace\Party Finder Backend\src\utils\timeout-manager.ts:38:21)
+[2026-04-02 15:27:52] [31merror[39m: Timeout callback failed for 69ce36590dad833fe4b7d93e:69ccc1ae30b0bad2cec283e9: Join request not found!
+AppError: Join request not found!
+    at InventoryRepository.suspendApplicantJoining (D:\Workplace\Party Finder Backend\src\repositories\inventory.repository.ts:411:23)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async InventoryService.suspendApplicantJoining (D:\Workplace\Party Finder Backend\src\services\inventory.service.ts:223:28)
+    at async D:\Workplace\Party Finder Backend\src\services\inventory.service.ts:184:17
+    at async Timeout._onTimeout (D:\Workplace\Party Finder Backend\src\utils\timeout-manager.ts:38:21)
+[2026-04-02 15:48:01] [31merror[39m: Timeout callback failed for 69ce3b100dad833fe4b7d9d8:69ccc1ae30b0bad2cec283e9: Join request not found!
+AppError: Join request not found!
+    at InventoryRepository.suspendApplicantJoining (D:\Workplace\Party Finder Backend\src\repositories\inventory.repository.ts:411:23)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async InventoryService.suspendApplicantJoining (D:\Workplace\Party Finder Backend\src\services\inventory.service.ts:223:28)
+    at async D:\Workplace\Party Finder Backend\src\services\inventory.service.ts:184:17
+    at async Timeout._onTimeout (D:\Workplace\Party Finder Backend\src\utils\timeout-manager.ts:38:21)

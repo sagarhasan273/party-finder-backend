@@ -257,6 +257,8 @@ export class InventoryRepository {
                 throw new AppError("Failed to join lobby!", 400, "Lobby Repository");
             }
 
+            await updated.populate('host', UserInfoPopulateQuery);
+
             return updated.toJSON();
         } catch (error) {
             if (error instanceof AppError) throw error;
