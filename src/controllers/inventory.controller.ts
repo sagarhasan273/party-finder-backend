@@ -160,7 +160,7 @@ export class InventoryController {
         const { applicantId, lobbyId } = req.body;
         try {
             const lobby = await this.inventoryService.acceptJoinRequest(lobbyId, applicantId);
-            res.status(200).json(lobby);
+            res.status(200).json({ data: lobby, status: true, message: 'Join request accepted successfully.' });
         } catch (error) {
             if (error instanceof AppError) {
                 res.status(error.statusCode).json({ message: error.message, status: false });

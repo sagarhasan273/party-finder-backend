@@ -173,9 +173,17 @@ export class InventoryService {
         }
     }
 
-    public async acceptJoinRequest(lobbyId: string, applicantId: string): Promise<ReturnResponseType> {
+    public async acceptJoinRequest(lobbyId: string, applicantId: string): Promise<LobbyType> {
         try {
-            return await this.inventoryRepository.acceptJoinRequest(lobbyId, applicantId);
+            const result = await this.inventoryRepository.acceptJoinRequest(lobbyId, applicantId);
+
+            emitToUser(applicantId, 'receive-request-accept', {
+                lobbyId,
+                lobby: result,
+                message: 'You are accepted for the lobby.'
+            });
+
+            return result
         } catch (error) {
             if (error instanceof AppError) {
                 throw error;

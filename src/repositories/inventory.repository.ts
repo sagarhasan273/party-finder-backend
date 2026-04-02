@@ -257,7 +257,7 @@ export class InventoryRepository {
     public async acceptJoinRequest(
         lobbyId: string,
         applicantId: string
-    ): Promise<ReturnResponseType> {
+    ): Promise<LobbyType> {
         try {
             const userObjectId = new Types.ObjectId(applicantId);
 
@@ -285,7 +285,7 @@ export class InventoryRepository {
             }
 
             // ✅ Update directly (atomic)
-            const updated = await LobbyModel.updateOne(
+            const updated = await LobbyModel.findOneAndUpdate(
                 {
                     _id: lobbyId,
                     "applicants.user": userObjectId,
@@ -294,10 +294,14 @@ export class InventoryRepository {
                     $set: {
                         "applicants.$.status": "accepted",
                     },
+                },
+                {
+                    returnDocument: 'after', // Returns the updated or inserted document
+                    upsert: false, // Don't create if not exists
                 }
             );
 
-            if (!updated.modifiedCount) {
+            if (!updated) {
                 throw new AppError(
                     "Join request not found. May be request got cancelled!",
                     404,
@@ -305,10 +309,9 @@ export class InventoryRepository {
                 );
             }
 
-            return {
-                message: "Join request accepted successfully",
-                status: true,
-            };
+            await updated.populate('host', UserInfoPopulateQuery);
+
+            return updated;
         } catch (error) {
             if (error instanceof AppError) throw error;
 
@@ -330,6 +333,7 @@ export class InventoryRepository {
                 {
                     _id: lobbyId,
                     "applicants.user": userObjectId,
+                    "applicants.status": 'pending',
                 },
                 {
                     $set: {
