@@ -5587,3 +5587,19 @@ AppError: Join request not found!
 [2026-04-02 15:54:01] [32minfo[39m: TimeoutManager initialized
 [2026-04-02 15:54:01] [32minfo[39m: ✅ MongoDB connected: localhost
 [2026-04-02 15:54:01] [32minfo[39m: Server running on http://192.168.68.102:5000
+[2026-04-02 15:54:08] [32minfo[39m: TimeoutManager initialized
+[2026-04-02 15:54:08] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-02 15:54:08] [32minfo[39m: Server running on http://192.168.68.102:5000
+[2026-04-02 15:54:09] [32minfo[39m: Engine.io connection established: 8BVKI_oXYESkARWaAAAA
+[2026-04-02 15:54:10] [32minfo[39m: New client connected: 9RxqoIPPMSnlen4MAAAB
+[2026-04-02 15:54:10] [32minfo[39m: Socket 9RxqoIPPMSnlen4MAAAB joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-02 15:54:10] [32minfo[39m: Socket 9RxqoIPPMSnlen4MAAAB joined region room: region:ap
+[2026-04-02 15:54:12] [32minfo[39m: Engine.io connection established: tpx3z5I9cd3uNtFOAAAD
+[2026-04-02 15:54:12] [32minfo[39m: New client connected: YOQX6hmzfJYBPlUUAAAE
+[2026-04-02 15:54:12] [32minfo[39m: Socket YOQX6hmzfJYBPlUUAAAE joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-02 15:54:12] [32minfo[39m: Socket YOQX6hmzfJYBPlUUAAAE joined region room: region:ap
+[2026-04-02 15:54:12] [32minfo[39m: Engine.io connection established: sv6zHFmJWLJpTL1pAAAG
+[2026-04-02 15:54:12] [32minfo[39m: New client connected: BlM6U5ysjYui2V3HAAAH
+[2026-04-02 15:54:12] [32minfo[39m: Socket BlM6U5ysjYui2V3HAAAH joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-02 15:54:12] [32minfo[39m: Socket BlM6U5ysjYui2V3HAAAH joined region room: region:ap
+[2026-04-02 15:55:14] [32minfo[39m: Deleted Key: 69ce3c050dad833fe4b7da05:69ccc1ae30b0bad2cec283e9
