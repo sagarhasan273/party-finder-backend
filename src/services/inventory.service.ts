@@ -5,6 +5,7 @@ import { broadcastToRegion, emitToUser } from 'src/socket';
 import { ReturnResponseType } from 'src/types/base.type';
 import { CreateLobbyInput, LobbyStatus, LobbyType, UpdateLobbyInput } from 'src/types/inventory.type';
 import { AppError } from 'src/utils/errors';
+import logger from 'src/utils/logger';
 import { TimeoutManager } from 'src/utils/timeout-manager';
 import { JwtService } from './auth-service/jwt.service';
 
@@ -144,9 +145,9 @@ export class InventoryService {
     public async requestToJoinLobby(lobbyId: string, applicantId: string): Promise<LobbyType> {
         try {
             const lobby = await this.inventoryRepository.requestToJoinLobby(lobbyId, applicantId);
-            const applicant = await this.userRepository.getApplicant(applicantId)
+            const applicant = await this.userRepository.getApplicant(applicantId);
 
-            emitToUser(lobby.host.toString(), 'receive-join-request', {
+            emitToUser((lobby.host as any)?.id.toString(), 'receive-join-request', {
                 lobbyId,
                 applicantId,
                 applicant: {
@@ -181,7 +182,11 @@ export class InventoryService {
             const result = await this.inventoryRepository.acceptJoinRequest(lobbyId, applicantId);
 
             this.timeOut.schedule(`${lobbyId}:${applicantId}`, async () => {
-                await this.suspendApplicantJoining(lobbyId, applicantId);
+                try {
+                    await this.suspendApplicantJoining(lobbyId, applicantId);
+                } catch {
+                    logger.error('Failed to suspend by timeout!')
+                }
             }, config.applicantSuspendedTime);
 
             emitToUser(applicantId, 'receive-request-accept', {
@@ -238,6 +243,31 @@ export class InventoryService {
 
             return {
                 message: "Join request supanded.",
+                status: true,
+            };
+        } catch (error) {
+            if (error instanceof AppError) {
+                throw error;
+            }
+            throw error instanceof Error ? new AppError(error.message, 500, 'Inventory Service') : new AppError('Failed to cancel join request', 500, 'Inventory Service');
+        }
+    }
+
+    public async applicantJoining(lobbyId: string, applicantId: string, message?: string): Promise<ReturnResponseType> {
+        try {
+            const result = await this.inventoryRepository.applicantJoining(lobbyId, applicantId);
+
+            emitToUser(result.host.toString(), 'receive-joining-applicant', {
+                lobbyId,
+                applicantId,
+                applicantMessage: message,
+                message: "Applicant has responded to join."
+            });
+            console.log('helod', `${lobbyId}:${applicantId}`)
+            this.timeOut.cancel(`${lobbyId}:${applicantId}`);
+
+            return {
+                message: "Applicant is ready to join.",
                 status: true,
             };
         } catch (error) {

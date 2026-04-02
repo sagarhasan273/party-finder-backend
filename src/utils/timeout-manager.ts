@@ -59,7 +59,7 @@ export class TimeoutManager {
         if (entry) {
             clearTimeout(entry.timeout);
             this.timeouts.delete(key);
-            logger.debug(`Cancelled timeout for ${key}`);
+            logger.info(`Cancelled timeout for ${key}`);
             return true;
         }
         return false;

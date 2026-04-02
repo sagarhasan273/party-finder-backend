@@ -39,7 +39,7 @@ export class InventoryRepository {
             applicants: {
                 $elemMatch: {
                     user: new Types.ObjectId(userId),
-                    status: { $in: ["pending", "accepted", "rejected", 'suspended'] },
+                    status: { $in: ["pending", "accepted", "rejected", 'suspended', 'joining'] },
                 },
             },
         })
@@ -422,7 +422,51 @@ export class InventoryRepository {
             if (error instanceof AppError) throw error;
 
             throw new AppError(
-                "Failed to cancel join request!",
+                "Failed to suspend applicant!",
+                500,
+                "Lobby Repository"
+            );
+        }
+    }
+
+    public async applicantJoining(
+        lobbyId: string,
+        applicantId: string
+    ): Promise<LobbyType> {
+        try {
+            const userObjectId = new Types.ObjectId(applicantId);
+            const updated = await LobbyModel.findOneAndUpdate(
+                {
+                    _id: lobbyId,
+                    "applicants.user": userObjectId,
+                    "applicants.status": 'accepted',
+                },
+                {
+                    $set: {
+                        "applicants.$.status": "joining",
+                        "applicants.$.updatedAt": new Date(),
+                    },
+                },
+                {
+                    returnDocument: 'after', // Returns the updated or inserted document
+                    upsert: false, // Don't create if not exists
+                }
+            );
+
+            if (!updated) {
+                throw new AppError(
+                    "Join request not found!",
+                    404,
+                    "Lobby Repository"
+                );
+            }
+
+            return updated.toJSON();
+        } catch (error) {
+            if (error instanceof AppError) throw error;
+
+            throw new AppError(
+                "Failed to join!",
                 500,
                 "Lobby Repository"
             );

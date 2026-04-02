@@ -698,3 +698,18 @@ AppError: Join request not found!
     at async InventoryService.suspendApplicantJoining (D:\Workplace\Party Finder Backend\src\services\inventory.service.ts:223:28)
     at async D:\Workplace\Party Finder Backend\src\services\inventory.service.ts:184:17
     at async Timeout._onTimeout (D:\Workplace\Party Finder Backend\src\utils\timeout-manager.ts:38:21)
+[2026-04-02 16:03:03] [31merror[39m: Failed to create lobby: Lobby already exists
+[2026-04-02 16:05:46] [31merror[39m: Failed to create lobby: Lobby already exists
+[2026-04-02 16:06:07] [31merror[39m: Failed to create lobby: Lobby already exists
+[2026-04-02 16:06:35] [31merror[39m: Failed to create lobby: Lobby already exists
+[2026-04-02 16:06:41] [31merror[39m: Failed to create lobby: Lobby already exists
+[2026-04-02 16:06:52] [31merror[39m: Failed to create lobby: Lobby already exists
+[2026-04-02 16:07:03] [31merror[39m: Failed to create lobby: Lobby already exists
+[2026-04-02 16:07:15] [31merror[39m: Failed to create lobby: Lobby already exists
+[2026-04-02 16:07:23] [31merror[39m: Failed to create lobby: Lobby already exists
+[2026-04-02 16:07:42] [31merror[39m: Failed to create lobby: Lobby already exists
+[2026-04-02 16:08:12] [31merror[39m: Failed to create lobby: Lobby already exists
+[2026-04-02 16:15:10] [31merror[39m: Failed to create lobby: Lobby already exists
+[2026-04-02 16:16:18] [31merror[39m: Failed to create lobby: Lobby already exists
+[2026-04-02 16:16:35] [31merror[39m: Failed to create lobby: Lobby already exists
+[2026-04-02 18:22:40] [31merror[39m: Failed to create lobby: E11000 duplicate key error collection: party-finder-db.lobbies index: partyCode_1 dup key: { partyCode: "sdfs" }

@@ -27,5 +27,5 @@ export const dbConfig: DatabaseConfig = {
 };
 
 export const config: CONFIG = {
-  applicantSuspendedTime: parseInt(process.env.APPLICANT_SUSPENDED_TIME || '60000', 10)
+  applicantSuspendedTime: parseInt(process.env.APPLICANT_SUSPENDED_TIME || '', 10)
 }
