@@ -39,7 +39,7 @@ export class InventoryRepository {
             applicants: {
                 $elemMatch: {
                     user: new Types.ObjectId(userId),
-                    status: { $in: ["pending", "accepted", "rejected"] },
+                    status: { $in: ["pending", "accepted", "rejected", 'suspended'] },
                 },
             },
         })
@@ -54,7 +54,21 @@ export class InventoryRepository {
     ): Promise<LobbyType> {
         const { host } = lobby;
 
-        const exsits = await LobbyModel.findOne({ host });
+        const exsits = await LobbyModel.exists({
+            $or: [
+                { host },
+                {
+                    applicants: {
+                        $elemMatch: {
+                            user: host,
+                            status: {
+                                $in: ['accepted', 'joining', 'not-joining', 'pending']
+                            },
+                        },
+                    },
+                },
+            ],
+        });
 
         if (exsits) {
             throw new AppError("Lobby already exists", 404, "Lobby Repository");

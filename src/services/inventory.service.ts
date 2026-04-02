@@ -1,3 +1,4 @@
+import { config } from 'src/config';
 import { InventoryRepository } from 'src/repositories/inventory.repository';
 import { UserRepository } from 'src/repositories/user.repository';
 import { broadcastToRegion, emitToUser } from 'src/socket';
@@ -181,7 +182,7 @@ export class InventoryService {
 
             this.timeOut.schedule(`${lobbyId}:${applicantId}`, async () => {
                 await this.suspendApplicantJoining(lobbyId, applicantId);
-            }, 10000);
+            }, config.applicantSuspendedTime);
 
             emitToUser(applicantId, 'receive-request-accept', {
                 lobbyId,

@@ -640,3 +640,11 @@ ParserError: Protocol error, got "H" as reply type byte. Please report this.
 ParserError: Protocol error, got "H" as reply type byte. Please report this.
     at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
     at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 12:59:55] [31merror[39m: Failed to create lobby: Lobby already exists
+[2026-04-02 12:59:59] [31merror[39m: Failed to create lobby: Lobby already exists
+[2026-04-02 13:00:03] [31merror[39m: Failed to create lobby: Lobby already exists
+[2026-04-02 13:09:36] [31merror[39m: Failed to create lobby: E11000 duplicate key error collection: party-finder-db.lobbies index: partyCode_1 dup key: { partyCode: "sdfs" }
+[2026-04-02 13:25:39] [31merror[39m: Failed to create lobby: E11000 duplicate key error collection: party-finder-db.lobbies index: partyCode_1 dup key: { partyCode: "sdfs" }
+[2026-04-02 13:31:03] [31merror[39m: Failed to create lobby: Lobby already exists
+[2026-04-02 13:32:04] [31merror[39m: Failed to create lobby: Lobby already exists
+[2026-04-02 13:33:02] [31merror[39m: Failed to create lobby: E11000 duplicate key error collection: party-finder-db.lobbies index: partyCode_1 dup key: { partyCode: "sdfs" }

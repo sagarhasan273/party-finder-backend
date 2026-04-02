@@ -12,6 +12,10 @@ interface DatabaseConfig {
   };
 }
 
+interface CONFIG {
+  applicantSuspendedTime: number
+}
+
 export const dbConfig: DatabaseConfig = {
   url: process.env.DB_URL || '',
   dbName: process.env.DB_NAME || '',
@@ -21,3 +25,7 @@ export const dbConfig: DatabaseConfig = {
     maxPoolSize: parseInt(process.env.DB_MAX_POOL_SIZE || '100', 10),
   },
 };
+
+export const config: CONFIG = {
+  applicantSuspendedTime: parseInt(process.env.APPLICANT_SUSPENDED_TIME || '60000', 10)
+}
