@@ -267,3 +267,376 @@
 [2026-04-01 15:42:55] [31merror[39m: Failed to create lobby: E11000 duplicate key error collection: party-finder-db.lobbies index: partyCode_1 dup key: { partyCode: "sdfs" }
 [2026-04-01 17:41:03] [31merror[39m: Failed to create lobby: E11000 duplicate key error collection: party-finder-db.lobbies index: partyCode_1 dup key: { partyCode: "sdfs" }
 [2026-04-01 17:41:07] [31merror[39m: Failed to create lobby: E11000 duplicate key error collection: party-finder-db.lobbies index: partyCode_1 dup key: { partyCode: "sdfs" }
+[2026-04-02 11:12:28] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:12:28] [31merror[39m: Failed to connect Redis: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:12:28] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:12:28] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:12:28] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:12:28] [31merror[39m: Redis error: Reached the max retries per request limit (which is 3). Refer to "maxRetriesPerRequest" option for details.
+MaxRetriesPerRequestError: Reached the max retries per request limit (which is 3). Refer to "maxRetriesPerRequest" option for details.
+    at Socket.<anonymous> (D:\Workplace\Party Finder Backend\node_modules\ioredis\built\redis\event_handler.js:207:37)
+    at Object.onceWrapper (node:events:633:26)
+    at Socket.emit (node:events:530:35)
+    at Socket.emit (node:domain:489:12)
+    at TCP.<anonymous> (node:net:346:12)
+[2026-04-02 11:12:29] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:12:29] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:12:29] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:12:30] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:12:30] [31merror[39m: Redis error: Reached the max retries per request limit (which is 3). Refer to "maxRetriesPerRequest" option for details.
+MaxRetriesPerRequestError: Reached the max retries per request limit (which is 3). Refer to "maxRetriesPerRequest" option for details.
+    at Socket.<anonymous> (D:\Workplace\Party Finder Backend\node_modules\ioredis\built\redis\event_handler.js:207:37)
+    at Object.onceWrapper (node:events:633:26)
+    at Socket.emit (node:events:530:35)
+    at Socket.emit (node:domain:489:12)
+    at TCP.<anonymous> (node:net:346:12)
+[2026-04-02 11:12:30] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:12:30] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:12:31] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:12:31] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:12:31] [31merror[39m: Redis error: Reached the max retries per request limit (which is 3). Refer to "maxRetriesPerRequest" option for details.
+MaxRetriesPerRequestError: Reached the max retries per request limit (which is 3). Refer to "maxRetriesPerRequest" option for details.
+    at Socket.<anonymous> (D:\Workplace\Party Finder Backend\node_modules\ioredis\built\redis\event_handler.js:207:37)
+    at Object.onceWrapper (node:events:633:26)
+    at Socket.emit (node:events:530:35)
+    at Socket.emit (node:domain:489:12)
+    at TCP.<anonymous> (node:net:346:12)
+[2026-04-02 11:12:32] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:13:43] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:13:43] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:13:43] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:13:43] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:13:43] [31merror[39m: Redis error: Reached the max retries per request limit (which is 3). Refer to "maxRetriesPerRequest" option for details.
+MaxRetriesPerRequestError: Reached the max retries per request limit (which is 3). Refer to "maxRetriesPerRequest" option for details.
+    at Socket.<anonymous> (D:\Workplace\Party Finder Backend\node_modules\ioredis\built\redis\event_handler.js:207:37)
+    at Object.onceWrapper (node:events:633:26)
+    at Socket.emit (node:events:530:35)
+    at Socket.emit (node:domain:489:12)
+    at TCP.<anonymous> (node:net:346:12)
+[2026-04-02 11:13:43] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:13:44] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:13:44] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:13:44] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:13:44] [31merror[39m: Redis error: Reached the max retries per request limit (which is 3). Refer to "maxRetriesPerRequest" option for details.
+MaxRetriesPerRequestError: Reached the max retries per request limit (which is 3). Refer to "maxRetriesPerRequest" option for details.
+    at Socket.<anonymous> (D:\Workplace\Party Finder Backend\node_modules\ioredis\built\redis\event_handler.js:207:37)
+    at Object.onceWrapper (node:events:633:26)
+    at Socket.emit (node:events:530:35)
+    at Socket.emit (node:domain:489:12)
+    at TCP.<anonymous> (node:net:346:12)
+[2026-04-02 11:13:45] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:13:45] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:13:46] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:13:46] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:13:46] [31merror[39m: Redis error: Reached the max retries per request limit (which is 3). Refer to "maxRetriesPerRequest" option for details.
+MaxRetriesPerRequestError: Reached the max retries per request limit (which is 3). Refer to "maxRetriesPerRequest" option for details.
+    at Socket.<anonymous> (D:\Workplace\Party Finder Backend\node_modules\ioredis\built\redis\event_handler.js:207:37)
+    at Object.onceWrapper (node:events:633:26)
+    at Socket.emit (node:events:530:35)
+    at Socket.emit (node:domain:489:12)
+    at TCP.<anonymous> (node:net:346:12)
+[2026-04-02 11:13:47] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:13:48] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:13:48] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:13:49] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:13:49] [31merror[39m: Redis error: Reached the max retries per request limit (which is 3). Refer to "maxRetriesPerRequest" option for details.
+MaxRetriesPerRequestError: Reached the max retries per request limit (which is 3). Refer to "maxRetriesPerRequest" option for details.
+    at Socket.<anonymous> (D:\Workplace\Party Finder Backend\node_modules\ioredis\built\redis\event_handler.js:207:37)
+    at Object.onceWrapper (node:events:633:26)
+    at Socket.emit (node:events:530:35)
+    at Socket.emit (node:domain:489:12)
+    at TCP.<anonymous> (node:net:346:12)
+[2026-04-02 11:13:50] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:13:51] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:13:52] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:13:53] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:13:53] [31merror[39m: Redis error: Reached the max retries per request limit (which is 3). Refer to "maxRetriesPerRequest" option for details.
+MaxRetriesPerRequestError: Reached the max retries per request limit (which is 3). Refer to "maxRetriesPerRequest" option for details.
+    at Socket.<anonymous> (D:\Workplace\Party Finder Backend\node_modules\ioredis\built\redis\event_handler.js:207:37)
+    at Object.onceWrapper (node:events:633:26)
+    at Socket.emit (node:events:530:35)
+    at Socket.emit (node:domain:489:12)
+    at TCP.<anonymous> (node:net:346:12)
+[2026-04-02 11:13:54] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:13:55] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:13:56] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:13:57] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:13:57] [31merror[39m: Redis error: Reached the max retries per request limit (which is 3). Refer to "maxRetriesPerRequest" option for details.
+MaxRetriesPerRequestError: Reached the max retries per request limit (which is 3). Refer to "maxRetriesPerRequest" option for details.
+    at Socket.<anonymous> (D:\Workplace\Party Finder Backend\node_modules\ioredis\built\redis\event_handler.js:207:37)
+    at Object.onceWrapper (node:events:633:26)
+    at Socket.emit (node:events:530:35)
+    at Socket.emit (node:domain:489:12)
+    at TCP.<anonymous> (node:net:346:12)
+[2026-04-02 11:13:58] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:13:59] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:14:01] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:14:02] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:14:02] [31merror[39m: Redis error: Reached the max retries per request limit (which is 3). Refer to "maxRetriesPerRequest" option for details.
+MaxRetriesPerRequestError: Reached the max retries per request limit (which is 3). Refer to "maxRetriesPerRequest" option for details.
+    at Socket.<anonymous> (D:\Workplace\Party Finder Backend\node_modules\ioredis\built\redis\event_handler.js:207:37)
+    at Object.onceWrapper (node:events:633:26)
+    at Socket.emit (node:events:530:35)
+    at Socket.emit (node:domain:489:12)
+    at TCP.<anonymous> (node:net:346:12)
+[2026-04-02 11:14:03] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:14:05] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:14:08] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:14:09] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:14:09] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:14:09] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:14:09] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:14:09] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:14:10] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:14:10] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:14:10] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:14:11] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:14:11] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:14:12] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:14:12] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:14:13] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:14:14] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:14:15] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:14:15] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:14:16] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:14:17] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:14:18] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:14:19] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:14:19] [31merror[39m: Redis error: Reached the max retries per request limit (which is 20). Refer to "maxRetriesPerRequest" option for details.
+MaxRetriesPerRequestError: Reached the max retries per request limit (which is 20). Refer to "maxRetriesPerRequest" option for details.
+    at Socket.<anonymous> (D:\Workplace\Party Finder Backend\node_modules\ioredis\built\redis\event_handler.js:207:37)
+    at Object.onceWrapper (node:events:633:26)
+    at Socket.emit (node:events:530:35)
+    at Socket.emit (node:domain:489:12)
+    at TCP.<anonymous> (node:net:346:12)
+[2026-04-02 11:14:20] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:14:21] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:14:22] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:14:24] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:14:25] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:14:26] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:14:28] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:14:29] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)
+[2026-04-02 11:14:31] [31merror[39m: Redis error: Protocol error, got "H" as reply type byte. Please report this.
+ParserError: Protocol error, got "H" as reply type byte. Please report this.
+    at handleError (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:190:15)
+    at parseType (D:\Workplace\Party Finder Backend\node_modules\redis-parser\lib\parser.js:304:14)

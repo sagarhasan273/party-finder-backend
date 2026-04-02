@@ -194,6 +194,7 @@ export class InventoryRepository {
                             user: userObjectId,
                             status: "pending",
                             createdAt: new Date(),
+                            updatedAt: new Date(),
                         },
                     },
                 },
@@ -242,7 +243,7 @@ export class InventoryRepository {
                 throw new AppError("Failed to join lobby!", 400, "Lobby Repository");
             }
 
-            return updated;
+            return updated.toJSON();
         } catch (error) {
             if (error instanceof AppError) throw error;
 
@@ -269,7 +270,7 @@ export class InventoryRepository {
                         applicants: {
                             $elemMatch: {
                                 user: userObjectId,
-                                status: "accepted",
+                                status: { $in: ["accepted", "joining"] },
                             },
                         },
                     },
@@ -293,6 +294,7 @@ export class InventoryRepository {
                 {
                     $set: {
                         "applicants.$.status": "accepted",
+                        "applicants.$.updatedAt": new Date(),
                     },
                 },
                 {
@@ -311,7 +313,7 @@ export class InventoryRepository {
 
             await updated.populate('host', UserInfoPopulateQuery);
 
-            return updated;
+            return updated.toJSON();
         } catch (error) {
             if (error instanceof AppError) throw error;
 
@@ -338,6 +340,7 @@ export class InventoryRepository {
                 {
                     $set: {
                         "applicants.$.status": "rejected",
+                        "applicants.$.updatedAt": new Date(),
                     },
                 },
                 {
@@ -366,6 +369,50 @@ export class InventoryRepository {
         }
     }
 
+    public async suspendApplicantJoining(
+        lobbyId: string,
+        applicantId: string
+    ): Promise<LobbyType> {
+        try {
+            const userObjectId = new Types.ObjectId(applicantId);
+            const updated = await LobbyModel.findOneAndUpdate(
+                {
+                    _id: lobbyId,
+                    "applicants.user": userObjectId,
+                    "applicants.status": 'accepted',
+                },
+                {
+                    $set: {
+                        "applicants.$.status": "suspended",
+                        "applicants.$.updatedAt": new Date(),
+                    },
+                },
+                {
+                    returnDocument: 'after', // Returns the updated or inserted document
+                    upsert: false, // Don't create if not exists
+                }
+            );
+
+            if (!updated) {
+                throw new AppError(
+                    "Join request not found!",
+                    404,
+                    "Lobby Repository"
+                );
+            }
+
+            return updated.toJSON();
+        } catch (error) {
+            if (error instanceof AppError) throw error;
+
+            throw new AppError(
+                "Failed to cancel join request!",
+                500,
+                "Lobby Repository"
+            );
+        }
+    }
+
     public async cancelJoinRequest(
         lobbyId: string,
         applicantId: string
@@ -378,10 +425,9 @@ export class InventoryRepository {
                     "applicants.user": userObjectId,
                 },
                 {
-                    $pull: {
-                        applicants: {
-                            user: userObjectId,
-                        },
+                    $set: {
+                        "applicants.$.status": "cancelled",
+                        "applicants.$.updatedAt": new Date(),
                     },
                 }
             );

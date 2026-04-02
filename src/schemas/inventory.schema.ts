@@ -53,7 +53,9 @@ export const LobbySchema = z.object({
 
     applicants: z.array(z.object({
         user: objectIdSchema,
-        status: z.enum(["pending", "accepted", "rejected"]),
+        status: z.enum(["pending", "accepted", "rejected", "joining", 'not-joining', "suspended", "cancelled"]),
+        createdAt: z.string(),
+        updatedAt: z.string(),
     })).optional(),
 });
 

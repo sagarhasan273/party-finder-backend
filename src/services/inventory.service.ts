@@ -4,9 +4,11 @@ import { broadcastToRegion, emitToUser } from 'src/socket';
 import { ReturnResponseType } from 'src/types/base.type';
 import { CreateLobbyInput, LobbyStatus, LobbyType, UpdateLobbyInput } from 'src/types/inventory.type';
 import { AppError } from 'src/utils/errors';
+import { TimeoutManager } from 'src/utils/timeout-manager';
 import { JwtService } from './auth-service/jwt.service';
 
 export class InventoryService {
+    private timeOut = new TimeoutManager();
     private userRepository = new UserRepository();
     private inventoryRepository = new InventoryRepository();
 
@@ -177,6 +179,10 @@ export class InventoryService {
         try {
             const result = await this.inventoryRepository.acceptJoinRequest(lobbyId, applicantId);
 
+            this.timeOut.schedule(`${lobbyId}:${applicantId}`, async () => {
+                await this.suspendApplicantJoining(lobbyId, applicantId);
+            }, 10000);
+
             emitToUser(applicantId, 'receive-request-accept', {
                 lobbyId,
                 lobby: result,
@@ -208,6 +214,36 @@ export class InventoryService {
                 throw error;
             }
             throw error instanceof Error ? new AppError(error.message, 500, 'Inventory Service') : new AppError('Failed to reject join request', 500, 'Inventory Service');
+        }
+    }
+
+    public async suspendApplicantJoining(lobbyId: string, applicantId: string): Promise<ReturnResponseType> {
+        try {
+            const result = await this.inventoryRepository.suspendApplicantJoining(lobbyId, applicantId);
+
+            emitToUser(applicantId, 'receive-suspended-applicant', {
+                lobbyId,
+                applicantId,
+                message: "You are suspended."
+            });
+
+            emitToUser(result.host.toString(), 'receive-suspended-applicant', {
+                lobbyId,
+                applicantId,
+                message: "Applicant has suspended."
+            });
+
+            this.timeOut.cancel(`${lobbyId}:${applicantId}`);
+
+            return {
+                message: "Join request supanded.",
+                status: true,
+            };
+        } catch (error) {
+            if (error instanceof AppError) {
+                throw error;
+            }
+            throw error instanceof Error ? new AppError(error.message, 500, 'Inventory Service') : new AppError('Failed to cancel join request', 500, 'Inventory Service');
         }
     }
 
