@@ -160,35 +160,60 @@ export class InventoryRepository {
         }
     }
 
+    private async isApplicantEngageWithALobby(applicantId: string) {
+        const userObjectId = new Types.ObjectId(applicantId);
+        // ✅ Check if user already in another lobby (host or accepted)
+        const existingLobby = await LobbyModel.findOne({
+            $or: [
+                { host: applicantId }, // as host
+                {
+                    applicants: {
+                        $elemMatch: {
+                            user: userObjectId,
+                            status: "accepted",
+                        },
+                    },
+                },
+            ],
+        });
+
+        if (existingLobby) {
+            // Determine the role (host or member)
+            const isHost = existingLobby.host.toString() === applicantId;
+
+            const applicants = existingLobby.applicants || [];
+
+            const isMember = applicants.some(
+                a => a.user.toString() === applicantId && a.status === "accepted"
+            );
+
+            let role = "";
+            let message = "";
+
+            if (isHost) {
+                role = "host";
+                message = `You are already the host of lobby "${existingLobby.title}"`;
+            } else if (isMember) {
+                role = "member";
+                message = `You are already a member of lobby "${existingLobby.title}"`;
+            }
+
+            throw new AppError(
+                `You are already ${role} in another lobby: ${existingLobby.title}`,
+                400,
+                "Lobby Repository"
+            );
+        }
+    }
+
     public async requestToJoinLobby(
         lobbyId: string,
         applicantId: string
     ): Promise<LobbyType> {
         try {
+            await this.isApplicantEngageWithALobby(applicantId);
+
             const userObjectId = new Types.ObjectId(applicantId);
-
-            // ✅ Check if user already in another lobby (host or accepted)
-            const isUserBusy = await LobbyModel.exists({
-                $or: [
-                    { userId: applicantId }, // host
-                    {
-                        applicants: {
-                            $elemMatch: {
-                                user: userObjectId,
-                                status: "accepted",
-                            },
-                        },
-                    },
-                ],
-            });
-
-            if (isUserBusy) {
-                throw new AppError(
-                    "You are already accepted in another lobby!",
-                    400,
-                    "Lobby Repository"
-                );
-            }
 
             // ✅ Atomic update (prevents duplicates)
             const updated = await LobbyModel.findOneAndUpdate(
@@ -271,11 +296,41 @@ export class InventoryRepository {
         }
     }
 
+    private async isLobbyFull(lobbyId: string): Promise<boolean> {
+        const lobby = await LobbyModel.findById(lobbyId).select('applicants currentPlayers');
+
+        if (!lobby) return true;
+
+        const MAX_PLAYERS = 5;
+        const currentPlayers = lobby.currentPlayers || 0;
+        const applicants = lobby.applicants ?? [];
+
+        // Count applicants with accepted or joining status
+        const activeApplicantsCount = applicants.filter(
+            a => a.status === "accepted" || a.status === "joining"
+        ).length;
+
+        // Total players = currentPlayers + activeApplicantsCount
+        const totalPlayers = currentPlayers + activeApplicantsCount;
+
+        return totalPlayers >= MAX_PLAYERS;
+    }
+
     public async acceptJoinRequest(
         lobbyId: string,
         applicantId: string
     ): Promise<LobbyType> {
         try {
+            const isFullLobby = await this.isLobbyFull(lobbyId);
+
+            if (isFullLobby) {
+                throw new AppError(
+                    `You can not accepted more than you need. Wait for their response and try again.`,
+                    400,
+                    "Lobby Repository"
+                );
+            }
+
             const userObjectId = new Types.ObjectId(applicantId);
 
             // 🔒 Check if user already in another lobby FIRST
@@ -295,7 +350,7 @@ export class InventoryRepository {
 
             if (isUserInAnyLobby) {
                 throw new AppError(
-                    "User is already in another lobby!",
+                    "Sorry, User get accepted in another lobby!",
                     400,
                     "Lobby Repository"
                 );
@@ -435,6 +490,48 @@ export class InventoryRepository {
     ): Promise<LobbyType> {
         try {
             const userObjectId = new Types.ObjectId(applicantId);
+            const MAX_PLAYERS = 5;
+
+            // First, get the lobby to check current counts
+            const lobby = await LobbyModel.findById(lobbyId);
+
+            if (!lobby) {
+                throw new AppError("Lobby not found!", 404, "Lobby Repository");
+            }
+
+            const applicants = lobby.applicants ?? [];
+
+            // Calculate total players (accepted + joining)
+            const totalActivePlayers = applicants.filter(
+                a => a.status === "accepted" || a.status === "joining"
+            ).length;
+
+            // Check if lobby is full
+            if (totalActivePlayers >= MAX_PLAYERS) {
+                throw new AppError(
+                    `Lobby is full! Maximum ${MAX_PLAYERS} players allowed.`,
+                    400,
+                    "Lobby Repository"
+                );
+            }
+
+            // Check if applicant exists and has correct status
+            const applicant = applicants.find(
+                a => a.user.toString() === applicantId
+            );
+
+            if (!applicant) {
+                throw new AppError("Join request not found!", 404, "Lobby Repository");
+            }
+
+            if (applicant.status !== "accepted") {
+                throw new AppError(
+                    `Cannot join. Request status is ${applicant.status}`,
+                    400,
+                    "Lobby Repository"
+                );
+            }
+
             const updated = await LobbyModel.findOneAndUpdate(
                 {
                     _id: lobbyId,

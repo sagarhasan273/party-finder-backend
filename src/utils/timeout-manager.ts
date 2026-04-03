@@ -35,6 +35,7 @@ export class TimeoutManager {
             const entry = this.timeouts.get(key);
             if (entry && entry.expiresAt === expiresAt) {
                 try {
+                    logger.info(`Timeout callback initiated for ${key}`)
                     await callback();
                 } catch (error) {
                     logger.error(`Timeout callback failed for ${key}:`, error);

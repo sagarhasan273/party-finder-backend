@@ -263,7 +263,7 @@ export class InventoryService {
                 applicantMessage: message,
                 message: "Applicant has responded to join."
             });
-            console.log('helod', `${lobbyId}:${applicantId}`)
+
             this.timeOut.cancel(`${lobbyId}:${applicantId}`);
 
             return {
