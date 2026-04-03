@@ -145,6 +145,7 @@ export class InventoryService {
     public async requestToJoinLobby(lobbyId: string, applicantId: string): Promise<LobbyType> {
         try {
             const lobby = await this.inventoryRepository.requestToJoinLobby(lobbyId, applicantId);
+
             const applicant = await this.userRepository.getApplicant(applicantId);
 
             emitToUser((lobby.host as any)?.id.toString(), 'receive-join-request', {
@@ -166,6 +167,14 @@ export class InventoryService {
                 },
                 message: "Request sent."
             });
+
+            if (lobby.status === 'closed') {
+                broadcastToRegion(lobby.region.toString(), 'receive-lobby-status', {
+                    lobbyId: lobby.id,
+                    status: 'closed',
+                    sentTo: 'broadcast'
+                })
+            }
 
             return lobby
         } catch (error) {
@@ -286,6 +295,17 @@ export class InventoryService {
                 throw error;
             }
             throw error instanceof Error ? new AppError(error.message, 500, 'Inventory Service') : new AppError('Failed to cancel join request', 500, 'Inventory Service');
+        }
+    }
+
+    public async removeJoinRequest(lobbyId: string, applicantId: string): Promise<ReturnResponseType> {
+        try {
+            return await this.inventoryRepository.removeJoinRequest(lobbyId, applicantId);
+        } catch (error) {
+            if (error instanceof AppError) {
+                throw error;
+            }
+            throw error instanceof Error ? new AppError(error.message, 500, 'Inventory Service') : new AppError('Failed to remove join request', 500, 'Inventory Service');
         }
     }
 

@@ -715,3 +715,9 @@ AppError: Join request not found!
 [2026-04-02 18:22:40] [31merror[39m: Failed to create lobby: E11000 duplicate key error collection: party-finder-db.lobbies index: partyCode_1 dup key: { partyCode: "sdfs" }
 [2026-04-02 19:36:37] [31merror[39m: Failed to create lobby: Lobby already exists
 [2026-04-03 11:08:59] [31merror[39m: Failed to create lobby: Lobby already exists
+[2026-04-03 15:58:50] [31merror[39m: Failed to create lobby: E11000 duplicate key error collection: party-finder-db.lobbies index: partyCode_1 dup key: { partyCode: "sdfs" }
+[2026-04-03 15:59:06] [31merror[39m: Failed to create lobby: E11000 duplicate key error collection: party-finder-db.lobbies index: partyCode_1 dup key: { partyCode: "sdfs" }
+[2026-04-03 15:59:18] [31merror[39m: Failed to create lobby: E11000 duplicate key error collection: party-finder-db.lobbies index: partyCode_1 dup key: { partyCode: "sdfs" }
+[2026-04-03 15:59:44] [31merror[39m: Failed to create lobby: E11000 duplicate key error collection: party-finder-db.lobbies index: partyCode_1 dup key: { partyCode: "sdfs" }
+[2026-04-03 20:11:38] [31merror[39m: Failed to create lobby: Lobby already exists
+[2026-04-03 20:11:43] [31merror[39m: Failed to create lobby: Lobby already exists

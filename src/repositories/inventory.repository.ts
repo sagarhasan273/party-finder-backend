@@ -214,6 +214,27 @@ export class InventoryRepository {
             await this.isApplicantEngageWithALobby(applicantId);
 
             const userObjectId = new Types.ObjectId(applicantId);
+            const MAX_REQUESTS = 5; // Maximum number of active requests allowed
+
+            // Check if lobby has too many active requests
+            const lobby = await LobbyModel.findById(lobbyId).select("applicants");
+
+            if (!lobby) {
+                throw new AppError("Lobby not found!", 404, "Lobby Repository");
+            }
+
+            // Count active requests (pending, accepted, joining)
+            const activeRequestsCount = lobby.applicants?.filter(
+                (a) => ["pending", "accepted", "joining"].includes(a.status)
+            ).length || 0;
+
+            if (activeRequestsCount >= MAX_REQUESTS) {
+                throw new AppError(
+                    `This lobby has reached the maximum number of active requests (${MAX_REQUESTS}). Please try again later.`,
+                    400,
+                    "Lobby Repository"
+                );
+            }
 
             // ✅ Atomic update (prevents duplicates)
             const updated = await LobbyModel.findOneAndUpdate(
@@ -236,21 +257,18 @@ export class InventoryRepository {
                             updatedAt: new Date(),
                         },
                     },
+                    $set: {
+                        ...(activeRequestsCount + 1 === MAX_REQUESTS && { status: 'closed' })
+                    }
                 },
                 {
-                    returnDocument: 'after', // Returns the updated or inserted document
-                    upsert: false, // Don't create if not exists
+                    returnDocument: 'after',
+                    upsert: false,
                 }
             );
 
             // ❗ If nothing updated → user already exists
             if (!updated) {
-                const lobby = await LobbyModel.findById(lobbyId).select("applicants");
-
-                if (!lobby) {
-                    throw new AppError("Lobby not found!", 404, "Lobby Repository");
-                }
-
                 const existing = lobby.applicants?.find(
                     (a) => a.user.toString() === applicantId
                 );
@@ -606,6 +624,47 @@ export class InventoryRepository {
 
             throw new AppError(
                 "Failed to cancel join request!",
+                500,
+                "Lobby Repository"
+            );
+        }
+    }
+
+    public async removeJoinRequest(
+        lobbyId: string,
+        applicantId: string
+    ): Promise<ReturnResponseType> {
+        try {
+            const userObjectId = new Types.ObjectId(applicantId);
+            const updated = await LobbyModel.updateOne(
+                {
+                    _id: lobbyId,
+                    "applicants.user": userObjectId,
+                },
+                {
+                    $pull: {
+                        applicants: { user: userObjectId }
+                    }
+                }
+            );
+
+            if (!updated.modifiedCount) {
+                throw new AppError(
+                    "Join request not found!",
+                    404,
+                    "Lobby Repository"
+                );
+            }
+
+            return {
+                message: "Join request removed successfully",
+                status: true,
+            };
+        } catch (error) {
+            if (error instanceof AppError) throw error;
+
+            throw new AppError(
+                "Failed to remove join request!",
                 500,
                 "Lobby Repository"
             );
