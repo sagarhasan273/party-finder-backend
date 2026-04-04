@@ -12,7 +12,10 @@ export class InventoryController {
             const authHeader = req.headers['authorization'];
             const token = authHeader?.split(' ')[1];
             if (!token) {
-                throw new AppError('Authorization token is required', 401, 'User Service');
+
+                const inventory = await this.inventoryService.getLobbies();
+                res.status(200).json({ data: inventory, status: true });
+                return;
             }
             const inventory = await this.inventoryService.getLobbies(token);
 

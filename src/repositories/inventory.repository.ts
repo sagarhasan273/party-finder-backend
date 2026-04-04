@@ -9,7 +9,7 @@ import { UserInfoPopulateQuery } from './user.repository';
 
 
 export class InventoryRepository {
-    public async getLobbies(userId: string): Promise<LobbyType[]> {
+    public async getLobbies(userId?: string): Promise<LobbyType[]> {
 
         const lobby = await LobbyModel.find({
             status: {
@@ -199,7 +199,7 @@ export class InventoryRepository {
             }
 
             throw new AppError(
-                `You are already ${role} in another lobby: ${existingLobby.title}`,
+                `You are already ${role} in a lobby: ${existingLobby.title}`,
                 400,
                 "Lobby Repository"
             );

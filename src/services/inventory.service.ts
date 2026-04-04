@@ -15,18 +15,25 @@ export class InventoryService {
     private inventoryRepository = new InventoryRepository();
 
     public async getLobbies(
-        token: string,
+        token?: string,
     ): Promise<LobbyType[] | null> {
         try {
-            const decodedToken = JwtService.decodeToken(token);
-            if (!decodedToken) throw new Error('Invalid token');
+            if (token) {
 
-            const userId = decodedToken.id;
-            if (!userId) throw new AppError('User ID not found in token', 400, 'User Service');
+                const decodedToken = JwtService.decodeToken(token);
+                if (!decodedToken) throw new Error('Invalid token');
 
-            const user = await this.inventoryRepository.getLobbies(userId);
+                const userId = decodedToken.id;
+                if (!userId) throw new AppError('User ID not found in token', 400, 'User Service');
 
-            return user;
+                const lobbies = await this.inventoryRepository.getLobbies(userId);
+
+                return lobbies;
+            } else {
+                const lobbies = await this.inventoryRepository.getLobbies();
+
+                return lobbies;
+            }
 
         } catch (error) {
             if (error instanceof AppError) {

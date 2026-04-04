@@ -721,3 +721,15 @@ AppError: Join request not found!
 [2026-04-03 15:59:44] [31merror[39m: Failed to create lobby: E11000 duplicate key error collection: party-finder-db.lobbies index: partyCode_1 dup key: { partyCode: "sdfs" }
 [2026-04-03 20:11:38] [31merror[39m: Failed to create lobby: Lobby already exists
 [2026-04-03 20:11:43] [31merror[39m: Failed to create lobby: Lobby already exists
+[2026-04-03 21:02:40] [31merror[39m: Failed to create lobby: Lobby already exists
+[2026-04-04 11:23:47] [31merror[39m: Failed to suspend by timeout!
+[2026-04-04 15:45:16] [31merror[39m: User Service: Authorization token is required
+[2026-04-04 15:45:16] [31merror[39m: User Service: Authorization token is required
+[2026-04-04 15:45:20] [31merror[39m: User Service: Authorization token is required
+[2026-04-04 15:45:21] [31merror[39m: User Service: Authorization token is required
+[2026-04-04 15:46:06] [31merror[39m: User Service: Authorization token is required
+[2026-04-04 15:46:08] [31merror[39m: User Service: Authorization token is required
+[2026-04-04 16:42:56] [31merror[39m: Failed to create lobby: Lobby already exists
+[2026-04-04 16:45:10] [31merror[39m: Failed to create lobby: Lobby already exists
+[2026-04-04 16:46:41] [31merror[39m: Failed to create lobby: Lobby already exists
+[2026-04-04 17:51:34] [31merror[39m: Failed to create lobby: Lobby already exists
