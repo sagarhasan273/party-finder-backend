@@ -50,6 +50,7 @@ export const LobbySchema = z.object({
     discordLink: z.string().url().optional(),
     currentPlayers: z.number().int().nonnegative().optional(),
     map: ValorantMapEnum.optional(), // optional map if needed
+    createdAt: z.string(),
 
     applicants: z.array(z.object({
         user: objectIdSchema,

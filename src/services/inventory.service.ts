@@ -52,9 +52,21 @@ export class InventoryService {
             const userId = decodedToken.id;
             if (!userId) throw new AppError('User ID not found in token', 400, 'User Service');
 
-            const user = await this.inventoryRepository.getLobbyMe(userId);
+            const lobby = await this.inventoryRepository.getLobbyMe(userId);
 
-            return user;
+            if (lobby) {
+                const TWENTY_MINUTES = 20 * 60 * 1000
+                const now = new Date();
+                const createdAt = new Date(lobby.createdAt);
+                const timeDifference = now.getTime() - createdAt.getTime();
+
+                if (timeDifference > TWENTY_MINUTES) {
+                    this.deleteLobby(lobby.id as string, userId);
+                    return null;
+                }
+            }
+
+            return lobby;
 
         } catch (error) {
             if (error instanceof AppError) {
