@@ -12,7 +12,7 @@ const app = express();
 const server = http.createServer(app);
 
 app.use(cors({
-  origin: [`http://${getLocalIp()}:8081`, 'http://localhost:8081'],
+  origin: [`http://${getLocalIp()}:8081`, 'http://localhost:8081', 'https://party-finder-nine.vercel.app'],
   credentials: true,
 }));
 
