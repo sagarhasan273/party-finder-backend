@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
-import { UserService } from 'src/services/user.service';
-import { AppError } from 'src/utils/errors';
-import logger from 'src/utils/logger';
+import { UserService } from '../services/user.service';
+import { AppError } from '../utils/errors';
+import logger from '../utils/logger';
 
 export class UserController {
   private userService = new UserService();

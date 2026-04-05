@@ -1,10 +1,10 @@
 
 import { Types } from 'mongoose';
-import { ReturnResponseType } from 'src/types/base.type';
+import { ReturnResponseType } from '../types/base.type';
 
-import { LobbyModel } from 'src/models/inventory.model';
-import { CreateLobbyInput, LobbyType, UpdateLobbyInput } from 'src/types/inventory.type';
-import { AppError } from 'src/utils/errors';
+import { LobbyModel } from '../models/inventory.model';
+import { CreateLobbyInput, LobbyType, UpdateLobbyInput } from '../types/inventory.type';
+import { AppError } from '../utils/errors';
 import { UserInfoPopulateQuery } from './user.repository';
 
 

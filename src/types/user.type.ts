@@ -1,5 +1,5 @@
-import { CreateUserSchema, UpdateUserRecentRoomsSchema, UpdateUserSchema, UserSchema } from 'src/schemas/user.schema';
 import { z as zod } from 'zod';
+import { CreateUserSchema, UpdateUserRecentRoomsSchema, UpdateUserSchema, UserSchema } from '../schemas/user.schema';
 
 // Type Definitions
 export type UserType = zod.infer<typeof UserSchema>;

@@ -9366,3 +9366,6 @@ AppError: Join request not found!
 [2026-04-05 15:19:48] [32minfo[39m: New client connected: HnW_F143f5nKt_r_AAAH
 [2026-04-05 15:19:48] [32minfo[39m: Socket HnW_F143f5nKt_r_AAAH joined user room: user:69ccc1ae30b0bad2cec283e9
 [2026-04-05 15:19:48] [32minfo[39m: Socket HnW_F143f5nKt_r_AAAH joined region room: region:ap
+[2026-04-05 16:13:31] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 16:13:31] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 16:13:31] [32minfo[39m: Server running on http://192.168.68.103:5000

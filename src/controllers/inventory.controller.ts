@@ -1,8 +1,8 @@
 import { Request, Response } from 'express';
-import { CreateLobbySchema } from 'src/schemas/inventory.schema';
-import { InventoryService } from 'src/services/inventory.service';
-import { AppError } from 'src/utils/errors';
-import logger from 'src/utils/logger';
+import { CreateLobbySchema } from '../schemas/inventory.schema';
+import { InventoryService } from '../services/inventory.service';
+import { AppError } from '../utils/errors';
+import logger from '../utils/logger';
 
 export class InventoryController {
     private inventoryService = new InventoryService();

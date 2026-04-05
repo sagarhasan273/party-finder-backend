@@ -1,6 +1,6 @@
 
-import { InventoryController } from 'src/controllers/inventory.controller';
-import { authMiddleware } from 'src/middlewares/auth.middleware';
+import { InventoryController } from '../controllers/inventory.controller';
+import { authMiddleware } from '../middlewares/auth.middleware';
 import { BaseRouter } from './base-router';
 
 export class InventoryRoutes extends BaseRouter {

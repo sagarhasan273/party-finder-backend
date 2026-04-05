@@ -1,6 +1,6 @@
 // models/lobby.model.ts
 import mongoose, { Document, Schema } from 'mongoose';
-import { LobbyType } from 'src/types/inventory.type';
+import { LobbyType } from '../types/inventory.type';
 
 // Lobby Mongoose Schema
 const LobbySchema = new Schema<LobbyType & Document>(

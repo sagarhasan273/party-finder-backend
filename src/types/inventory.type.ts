@@ -1,5 +1,5 @@
-import { CreateLobbySchema, LobbySchema, UpdateLobbySchema } from "src/schemas/inventory.schema";
 import { z } from "zod";
+import { CreateLobbySchema, LobbySchema, UpdateLobbySchema } from "../schemas/inventory.schema";
 
 export type RankTier =
     | "Iron"

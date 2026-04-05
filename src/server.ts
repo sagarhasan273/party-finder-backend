@@ -1,8 +1,8 @@
 import cors from 'cors';
 import express from 'express';
 import http from 'http';
-import logger from 'src/utils/logger';
 import { connectToDatabase } from './database';
+import logger from './utils/logger';
 
 import { rootRouter } from './routes/root.router';
 import { initSocket } from './socket';

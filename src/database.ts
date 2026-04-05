@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import logger from 'src/utils/logger';
+import logger from './utils/logger';
 import { dbConfig } from './config';
 import { DatabaseError } from './utils/errors';
 

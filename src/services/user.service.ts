@@ -1,9 +1,9 @@
-import { UserRepository } from 'src/repositories/user.repository';
+import { UserRepository } from '../repositories/user.repository';
 
-import { joinUserRoom, leaveUserRoom } from 'src/socket';
-import { ReturnResponseType } from 'src/types/base.type';
-import { UpdateUserInput, UserType } from 'src/types/user.type';
-import { AppError, DatabaseError } from 'src/utils/errors';
+import { joinUserRoom, leaveUserRoom } from '../socket';
+import { ReturnResponseType } from '../types/base.type';
+import { UpdateUserInput, UserType } from '../types/user.type';
+import { AppError, DatabaseError } from '../utils/errors';
 import { JwtService } from './auth-service/jwt.service';
 
 export class UserService {

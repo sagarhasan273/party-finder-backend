@@ -1,9 +1,9 @@
 import { Request, Response } from 'express';
 import { OAuth2Client } from 'google-auth-library';
-import { UserModel } from 'src/models/user.model';
-import { JwtService } from 'src/services/auth-service/jwt.service';
-import { AppError } from 'src/utils/errors';
-import { generateUserId } from 'src/utils/generate.userId';
+import { UserModel } from '../models/user.model';
+import { JwtService } from '../services/auth-service/jwt.service';
+import { AppError } from '../utils/errors';
+import { generateUserId } from '../utils/generate.userId';
 const client = new OAuth2Client(
   process.env.GOOGLE_CLIENT_ID,
   process.env.GOOGLE_CLIENT_SECRET,

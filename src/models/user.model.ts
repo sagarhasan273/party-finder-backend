@@ -1,6 +1,6 @@
 // models/user.model.ts
 import mongoose, { Document, Schema } from 'mongoose';
-import { UserType } from 'src/types/user.type';
+import { UserType } from '../types/user.type';
 
 // Main User Schema
 const UserModalSchema = new Schema<UserType & Document>({

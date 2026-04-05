@@ -1,5 +1,5 @@
-import { UserController } from 'src/controllers/user.controller';
-import { authMiddleware } from 'src/middlewares/auth.middleware';
+import { UserController } from '../controllers/user.controller';
+import { authMiddleware } from '../middlewares/auth.middleware';
 import { BaseRouter } from './base-router';
 
 export class UserRoutes extends BaseRouter {

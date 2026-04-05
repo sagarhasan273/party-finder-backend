@@ -1,4 +1,4 @@
-import { AuthController } from 'src/controllers/auth.controller';
+import { AuthController } from '../controllers/auth.controller';
 import { BaseRouter } from './base-router';
 
 

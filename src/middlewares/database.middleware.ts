@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from 'express';
-import { connectToDatabase } from 'src/database';
+import { connectToDatabase } from '../database';
 
 export async function databaseMiddleware(
   req: Request,

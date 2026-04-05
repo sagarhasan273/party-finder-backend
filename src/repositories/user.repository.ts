@@ -1,9 +1,9 @@
-import { UserModel } from 'src/models/user.model';
+import { UserModel } from '../models/user.model';
 
 import { Types } from 'mongoose';
-import { ReturnResponseType } from 'src/types/base.type';
-import { UpdateUserInput, UserType } from 'src/types/user.type';
-import { AppError } from 'src/utils/errors';
+import { ReturnResponseType } from '../types/base.type';
+import { UpdateUserInput, UserType } from '../types/user.type';
+import { AppError } from '../utils/errors';
 
 export const UserInfoPopulateQuery = "name email profilePhoto verified gamename tagline rank country playStyle"
 
