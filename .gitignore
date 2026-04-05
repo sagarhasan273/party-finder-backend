@@ -9,6 +9,8 @@
 # production
 /build
 
+/dist
+
 /logs
 /logs/app.log
 /logs/error.log

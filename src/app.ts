@@ -1,2 +1,2 @@
-require('../database');
-require('../server');
+import './database';
+import './server';

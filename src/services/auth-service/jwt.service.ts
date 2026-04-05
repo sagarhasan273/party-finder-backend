@@ -1,6 +1,6 @@
 import jwt from 'jsonwebtoken';
 
-import { UserType } from '../types/user.type';
+import { UserType } from '../../types/user.type';
 
 export class JwtService {
     private static readonly SECRET = process.env.JWT_SECRET || 'secret';
