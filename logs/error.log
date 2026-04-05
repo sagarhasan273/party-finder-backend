@@ -733,3 +733,7 @@ AppError: Join request not found!
 [2026-04-04 16:45:10] [31merror[39m: Failed to create lobby: Lobby already exists
 [2026-04-04 16:46:41] [31merror[39m: Failed to create lobby: Lobby already exists
 [2026-04-04 17:51:34] [31merror[39m: Failed to create lobby: Lobby already exists
+[2026-04-04 21:53:18] [31merror[39m: Invalid lobby create data!
+[2026-04-04 21:53:36] [31merror[39m: Invalid lobby create data!
+[2026-04-04 21:54:06] [31merror[39m: Invalid lobby create data!
+[2026-04-04 21:55:43] [31merror[39m: Invalid lobby create data!

@@ -4,6 +4,7 @@ import logger from './utils/logger';
 import { getLocalIp } from './utils/system';
 
 let io: IOServer;
+let connectedUsers: number = 0;
 
 export const initSocket = (server: http.Server) => {
     io = new IOServer(server, {
@@ -23,8 +24,13 @@ export const initSocket = (server: http.Server) => {
 
     io.on('connection', (socket: Socket) => {
         logger.info(`New client connected: ${socket.id}`);
+
+        connectedUsers += 1;
+        io.emit("users:count", { count: connectedUsers });
+
         const userId = socket.handshake.query?.userId;
         const region = socket.handshake.query?.region;
+
 
         // If user ID is available, join user room
         if (userId) {
@@ -80,9 +86,6 @@ export const initSocket = (server: http.Server) => {
                     socketId: socket.id,
                     success: true
                 });
-
-                // Optional: Notify others that user is online
-                // socket.broadcast.emit("user:online", { userId: data.userId });
             } else {
                 socket.emit("registered", {
                     success: false,
@@ -91,9 +94,15 @@ export const initSocket = (server: http.Server) => {
             }
         });
 
+        socket.on("users:count:request", () => {
+            socket.emit("users:count", { count: connectedUsers });
+        });
 
         // Handle disconnection
         socket.on('disconnect', (reason) => {
+            connectedUsers -= 1;
+            io.emit('users:count', { count: connectedUsers });
+
             logger.info(`Client disconnected: ${socket.id}, reason: ${reason}`);
         });
 
@@ -115,6 +124,11 @@ export const getIO = () => {
     if (!io) throw new Error('Socket.io not initialized');
     return io;
 };
+
+export const getConnectedUsersCount = () => {
+    if (!io) throw new Error('Socket.io not initialized');
+    return connectedUsers;
+}
 
 // Add these helper functions to your socket.ts file
 

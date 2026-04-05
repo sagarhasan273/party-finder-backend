@@ -8233,3 +8233,1136 @@ AppError: Join request not found!
 [2026-04-04 18:02:17] [32minfo[39m: New client connected: r-bs21WOF6M3wHd4AAAE
 [2026-04-04 18:02:17] [32minfo[39m: Socket r-bs21WOF6M3wHd4AAAE joined user room: user:69ccc22530b0bad2cec283f7
 [2026-04-04 18:02:17] [32minfo[39m: Socket r-bs21WOF6M3wHd4AAAE joined region room: region:ap
+[2026-04-04 18:02:32] [32minfo[39m: TimeoutManager initialized
+[2026-04-04 18:02:32] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-04 18:02:32] [32minfo[39m: Server running on http://192.168.68.105:5000
+[2026-04-04 18:02:32] [32minfo[39m: Engine.io connection established: hff52vDxzvgEmml6AAAA
+[2026-04-04 18:02:32] [32minfo[39m: New client connected: yas2uPSmO9zNkj5SAAAB
+[2026-04-04 18:02:32] [32minfo[39m: Socket yas2uPSmO9zNkj5SAAAB joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-04 18:02:32] [32minfo[39m: Socket yas2uPSmO9zNkj5SAAAB joined region room: region:ap
+[2026-04-04 21:45:30] [32minfo[39m: TimeoutManager initialized
+[2026-04-04 21:45:30] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-04 21:45:30] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-04 21:53:14] [32minfo[39m: Engine.io connection established: LQx-tp1aQZMcgerXAAAA
+[2026-04-04 21:53:14] [32minfo[39m: New client connected: cVgo0FWSzulIvY-SAAAB
+[2026-04-04 21:53:14] [32minfo[39m: Socket cVgo0FWSzulIvY-SAAAB joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-04 21:53:14] [32minfo[39m: Socket cVgo0FWSzulIvY-SAAAB joined region room: region:ap
+[2026-04-04 21:53:18] [31merror[39m: Invalid lobby create data!
+[2026-04-04 21:53:26] [32minfo[39m: Client disconnected: cVgo0FWSzulIvY-SAAAB, reason: transport close
+[2026-04-04 21:53:26] [32minfo[39m: Engine.io connection established: DlmY9qQS4zEE1u21AAAD
+[2026-04-04 21:53:26] [32minfo[39m: New client connected: i3Jr3UG5KS8ew0nQAAAE
+[2026-04-04 21:53:26] [32minfo[39m: Socket i3Jr3UG5KS8ew0nQAAAE joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-04 21:53:26] [32minfo[39m: Socket i3Jr3UG5KS8ew0nQAAAE joined region room: region:ap
+[2026-04-04 21:53:36] [31merror[39m: Invalid lobby create data!
+[2026-04-04 21:54:02] [32minfo[39m: Engine.io connection established: b5veWcM7zP6oSobVAAAG
+[2026-04-04 21:54:02] [32minfo[39m: New client connected: 40gVMQX4BGul9cUsAAAH
+[2026-04-04 21:54:02] [32minfo[39m: Socket 40gVMQX4BGul9cUsAAAH joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-04 21:54:02] [32minfo[39m: Socket 40gVMQX4BGul9cUsAAAH joined region room: region:ap
+[2026-04-04 21:54:06] [31merror[39m: Invalid lobby create data!
+[2026-04-04 21:55:33] [32minfo[39m: Client disconnected: i3Jr3UG5KS8ew0nQAAAE, reason: transport close
+[2026-04-04 21:55:34] [32minfo[39m: Engine.io connection established: PzO2L2Gnuvv3vGM_AAAJ
+[2026-04-04 21:55:34] [32minfo[39m: New client connected: gUiM5k6IaRM-mDh-AAAK
+[2026-04-04 21:55:34] [32minfo[39m: Socket gUiM5k6IaRM-mDh-AAAK joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-04 21:55:34] [32minfo[39m: Socket gUiM5k6IaRM-mDh-AAAK joined region room: region:ap
+[2026-04-04 21:55:43] [31merror[39m: Invalid lobby create data!
+[2026-04-04 21:56:44] [32minfo[39m: TimeoutManager initialized
+[2026-04-04 21:56:44] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-04 21:56:44] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-04 21:56:48] [32minfo[39m: TimeoutManager initialized
+[2026-04-04 21:56:48] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-04 21:56:48] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-04 21:56:48] [32minfo[39m: Engine.io connection established: femIV4aFjsOAuvYhAAAA
+[2026-04-04 21:56:48] [32minfo[39m: New client connected: AAx-V-WbV-45_PuNAAAB
+[2026-04-04 21:56:48] [32minfo[39m: Socket AAx-V-WbV-45_PuNAAAB joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-04 21:56:48] [32minfo[39m: Socket AAx-V-WbV-45_PuNAAAB joined region room: region:ap
+[2026-04-04 21:56:48] [32minfo[39m: Engine.io connection established: rQnaDCfdFAaQmoodAAAD
+[2026-04-04 21:56:48] [32minfo[39m: New client connected: P2ZoTfhhcsXuFi0wAAAE
+[2026-04-04 21:56:48] [32minfo[39m: Socket P2ZoTfhhcsXuFi0wAAAE joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-04 21:56:48] [32minfo[39m: Socket P2ZoTfhhcsXuFi0wAAAE joined region room: region:ap
+[2026-04-04 21:56:52] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-04 22:21:45] [32minfo[39m: Engine.io connection established: _1wccmQ9no1yJuxdAAAG
+[2026-04-04 22:21:45] [32minfo[39m: New client connected: RMMMPFHKV8Bcvk9iAAAH
+[2026-04-04 22:21:45] [32minfo[39m: Socket RMMMPFHKV8Bcvk9iAAAH joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-04 22:21:45] [32minfo[39m: Socket RMMMPFHKV8Bcvk9iAAAH joined region room: region:ap
+[2026-04-04 23:07:29] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-04 23:07:41] [32minfo[39m: Client disconnected: P2ZoTfhhcsXuFi0wAAAE, reason: transport close
+[2026-04-04 23:07:41] [32minfo[39m: Engine.io connection established: Sf8bFWImtQPrPekrAAAJ
+[2026-04-04 23:07:41] [32minfo[39m: New client connected: LHtj4uHJGOicCv_EAAAK
+[2026-04-04 23:07:41] [32minfo[39m: Socket LHtj4uHJGOicCv_EAAAK joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-04 23:07:41] [32minfo[39m: Socket LHtj4uHJGOicCv_EAAAK joined region room: region:ap
+[2026-04-04 23:07:59] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-04 23:08:12] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-04 23:08:17] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-04 23:08:31] [32minfo[39m: Cancelled timeout for 69d145810242e6f3bf91f064:69ccc1ae30b0bad2cec283e9
+[2026-04-04 23:08:35] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-04 23:08:44] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-04 23:08:53] [32minfo[39m: Cancelled timeout for 69d1459c0242e6f3bf91f080:69ccc22530b0bad2cec283f7
+[2026-04-05 10:39:43] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 10:39:43] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 10:39:43] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 10:40:57] [32minfo[39m: Engine.io connection established: 1JRFPPp9x3HKIhlIAAAA
+[2026-04-05 10:40:57] [32minfo[39m: New client connected: rmD6Zzzge0nlM3YVAAAB
+[2026-04-05 10:40:57] [32minfo[39m: Socket rmD6Zzzge0nlM3YVAAAB joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 10:40:57] [32minfo[39m: Socket rmD6Zzzge0nlM3YVAAAB joined region room: region:ap
+[2026-04-05 10:41:10] [32minfo[39m: Engine.io connection established: a2mRmkoNab9N6tKdAAAD
+[2026-04-05 10:41:10] [32minfo[39m: New client connected: lsDoKSoyf6KUNxo1AAAE
+[2026-04-05 10:41:10] [32minfo[39m: Socket lsDoKSoyf6KUNxo1AAAE joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 10:41:10] [32minfo[39m: Socket lsDoKSoyf6KUNxo1AAAE joined region room: region:ap
+[2026-04-05 10:45:59] [32minfo[39m: Client disconnected: lsDoKSoyf6KUNxo1AAAE, reason: transport close
+[2026-04-05 10:45:59] [32minfo[39m: Engine.io connection established: FHw59dSvofz1k_eEAAAG
+[2026-04-05 10:45:59] [32minfo[39m: New client connected: Q1kHmbKda1-ABDrrAAAH
+[2026-04-05 10:45:59] [32minfo[39m: Socket Q1kHmbKda1-ABDrrAAAH joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 10:45:59] [32minfo[39m: Socket Q1kHmbKda1-ABDrrAAAH joined region room: region:ap
+[2026-04-05 10:46:02] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-05 10:46:07] [32minfo[39m: Client disconnected: rmD6Zzzge0nlM3YVAAAB, reason: transport close
+[2026-04-05 10:46:07] [32minfo[39m: Engine.io connection established: uW2pg40crVZ3TTa5AAAJ
+[2026-04-05 10:46:07] [32minfo[39m: New client connected: OzalrWNtURJ5qpbdAAAK
+[2026-04-05 10:46:07] [32minfo[39m: Socket OzalrWNtURJ5qpbdAAAK joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 10:46:07] [32minfo[39m: Socket OzalrWNtURJ5qpbdAAAK joined region room: region:ap
+[2026-04-05 10:46:16] [32minfo[39m: Engine.io connection established: cKc7rvW2QjS7y5UtAAAM
+[2026-04-05 10:46:16] [32minfo[39m: New client connected: UTP303GmZnZRuv4NAAAN
+[2026-04-05 10:46:16] [32minfo[39m: Socket UTP303GmZnZRuv4NAAAN joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 10:46:16] [32minfo[39m: Socket UTP303GmZnZRuv4NAAAN joined region room: region:ap
+[2026-04-05 10:46:19] [32minfo[39m: Client disconnected: UTP303GmZnZRuv4NAAAN, reason: transport close
+[2026-04-05 10:46:20] [32minfo[39m: Engine.io connection established: 8Tq15Nkc3BWvrgiZAAAP
+[2026-04-05 10:46:20] [32minfo[39m: New client connected: LYfr4zxIGq-EJdJEAAAQ
+[2026-04-05 10:46:20] [32minfo[39m: Socket LYfr4zxIGq-EJdJEAAAQ joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 10:46:20] [32minfo[39m: Socket LYfr4zxIGq-EJdJEAAAQ joined region room: region:ap
+[2026-04-05 11:17:49] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 11:17:49] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 11:17:49] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 11:17:50] [32minfo[39m: Engine.io connection established: Mf0tqqEp9BkB8f9wAAAA
+[2026-04-05 11:17:50] [32minfo[39m: Engine.io connection established: h8G8GhTpVbLGZIv1AAAB
+[2026-04-05 11:17:50] [32minfo[39m: New client connected: CZmFI8_sNRyyOm7OAAAC
+[2026-04-05 11:17:50] [32minfo[39m: Socket CZmFI8_sNRyyOm7OAAAC joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 11:17:50] [32minfo[39m: Socket CZmFI8_sNRyyOm7OAAAC joined region room: region:ap
+[2026-04-05 11:17:50] [32minfo[39m: New client connected: quBls9NwT8cUKKPLAAAE
+[2026-04-05 11:17:50] [32minfo[39m: Socket quBls9NwT8cUKKPLAAAE joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 11:17:50] [32minfo[39m: Socket quBls9NwT8cUKKPLAAAE joined region room: region:ap
+[2026-04-05 11:17:59] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 11:17:59] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 11:17:59] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 11:17:59] [32minfo[39m: Engine.io connection established: -mtgcYp7qY5vV6KBAAAA
+[2026-04-05 11:17:59] [32minfo[39m: New client connected: 0wmuYgcjuM6EpSyCAAAB
+[2026-04-05 11:17:59] [32minfo[39m: Socket 0wmuYgcjuM6EpSyCAAAB joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 11:17:59] [32minfo[39m: Socket 0wmuYgcjuM6EpSyCAAAB joined region room: region:ap
+[2026-04-05 11:18:07] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 11:18:07] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 11:18:07] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 11:18:07] [32minfo[39m: Engine.io connection established: 5QhYJZKry9sywfkXAAAA
+[2026-04-05 11:18:07] [32minfo[39m: New client connected: Wleud2ZH-o2V0rLfAAAB
+[2026-04-05 11:18:07] [32minfo[39m: Socket Wleud2ZH-o2V0rLfAAAB joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 11:18:07] [32minfo[39m: Socket Wleud2ZH-o2V0rLfAAAB joined region room: region:ap
+[2026-04-05 11:18:10] [32minfo[39m: Engine.io connection established: MddGYN4EvDFXBvpdAAAD
+[2026-04-05 11:18:10] [32minfo[39m: New client connected: 1CEeSB75jaMObqIWAAAE
+[2026-04-05 11:18:10] [32minfo[39m: Socket 1CEeSB75jaMObqIWAAAE joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 11:18:10] [32minfo[39m: Socket 1CEeSB75jaMObqIWAAAE joined region room: region:ap
+[2026-04-05 11:18:13] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 11:18:13] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 11:18:13] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 11:18:14] [32minfo[39m: Engine.io connection established: cZ269tb3Xqa6Ybj5AAAA
+[2026-04-05 11:18:14] [32minfo[39m: Engine.io connection established: g46zmT41ZJw977dlAAAB
+[2026-04-05 11:18:14] [32minfo[39m: Engine.io connection established: jxtQrkq597jC40RWAAAC
+[2026-04-05 11:18:14] [32minfo[39m: New client connected: vaS1JpdimNwcSQhIAAAD
+[2026-04-05 11:18:14] [32minfo[39m: Socket vaS1JpdimNwcSQhIAAAD joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 11:18:14] [32minfo[39m: Socket vaS1JpdimNwcSQhIAAAD joined region room: region:ap
+[2026-04-05 11:18:14] [32minfo[39m: New client connected: ArI6LvRQf7Zzv6lpAAAF
+[2026-04-05 11:18:14] [32minfo[39m: Socket ArI6LvRQf7Zzv6lpAAAF joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 11:18:14] [32minfo[39m: Socket ArI6LvRQf7Zzv6lpAAAF joined region room: region:ap
+[2026-04-05 11:18:14] [32minfo[39m: New client connected: i3sU6l3pHn7kH1H8AAAH
+[2026-04-05 11:18:14] [32minfo[39m: Socket i3sU6l3pHn7kH1H8AAAH joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 11:18:14] [32minfo[39m: Socket i3sU6l3pHn7kH1H8AAAH joined region room: region:ap
+[2026-04-05 11:18:28] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 11:18:28] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 11:18:28] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 11:18:28] [32minfo[39m: Engine.io connection established: 0VxIqZ3F9-UqlzYCAAAA
+[2026-04-05 11:18:28] [32minfo[39m: New client connected: PQ_JxXs_F00toS2aAAAB
+[2026-04-05 11:18:28] [32minfo[39m: Socket PQ_JxXs_F00toS2aAAAB joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 11:18:28] [32minfo[39m: Socket PQ_JxXs_F00toS2aAAAB joined region room: region:ap
+[2026-04-05 11:18:31] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 11:18:31] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 11:18:31] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 11:18:31] [32minfo[39m: Engine.io connection established: JQ5qNg8oSuMqwGglAAAA
+[2026-04-05 11:18:31] [32minfo[39m: New client connected: -Wllx_3oTbJqPuzzAAAB
+[2026-04-05 11:18:31] [32minfo[39m: Socket -Wllx_3oTbJqPuzzAAAB joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 11:18:31] [32minfo[39m: Socket -Wllx_3oTbJqPuzzAAAB joined region room: region:ap
+[2026-04-05 11:18:31] [32minfo[39m: Engine.io connection established: djgfVPZX1jsVLz3kAAAD
+[2026-04-05 11:18:31] [32minfo[39m: New client connected: hxrIRY1y3yUTIpw5AAAE
+[2026-04-05 11:18:31] [32minfo[39m: Socket hxrIRY1y3yUTIpw5AAAE joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 11:18:31] [32minfo[39m: Socket hxrIRY1y3yUTIpw5AAAE joined region room: region:ap
+[2026-04-05 11:18:36] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 11:18:36] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 11:18:36] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 11:18:36] [32minfo[39m: Engine.io connection established: 1yfAi8IcsM4bLCjnAAAA
+[2026-04-05 11:18:36] [32minfo[39m: New client connected: 15PXh-hwGEpB1Y_ZAAAB
+[2026-04-05 11:18:36] [32minfo[39m: Socket 15PXh-hwGEpB1Y_ZAAAB joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 11:18:36] [32minfo[39m: Socket 15PXh-hwGEpB1Y_ZAAAB joined region room: region:ap
+[2026-04-05 11:18:37] [32minfo[39m: Engine.io connection established: oV6kZojKDqOMCqtsAAAD
+[2026-04-05 11:18:37] [32minfo[39m: New client connected: 71yVhgqc-sndEIe7AAAE
+[2026-04-05 11:18:37] [32minfo[39m: Socket 71yVhgqc-sndEIe7AAAE joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 11:18:37] [32minfo[39m: Socket 71yVhgqc-sndEIe7AAAE joined region room: region:ap
+[2026-04-05 11:18:40] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 11:18:40] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 11:18:40] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 11:18:40] [32minfo[39m: Engine.io connection established: cI8n_1-gZmmMgz_mAAAA
+[2026-04-05 11:18:40] [32minfo[39m: New client connected: D8OJYnFVop2cgp1dAAAB
+[2026-04-05 11:18:40] [32minfo[39m: Socket D8OJYnFVop2cgp1dAAAB joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 11:18:40] [32minfo[39m: Socket D8OJYnFVop2cgp1dAAAB joined region room: region:ap
+[2026-04-05 11:18:40] [32minfo[39m: Engine.io connection established: 4qMuoRqZC2N_ElfSAAAD
+[2026-04-05 11:18:40] [32minfo[39m: New client connected: VAjg4HRdBKz9Av0_AAAE
+[2026-04-05 11:18:40] [32minfo[39m: Socket VAjg4HRdBKz9Av0_AAAE joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 11:18:40] [32minfo[39m: Socket VAjg4HRdBKz9Av0_AAAE joined region room: region:ap
+[2026-04-05 11:18:42] [32minfo[39m: Engine.io connection established: J07g0HME9LuyunC0AAAG
+[2026-04-05 11:18:42] [32minfo[39m: New client connected: pAE56AMM3WpkKdZoAAAH
+[2026-04-05 11:18:42] [32minfo[39m: Socket pAE56AMM3WpkKdZoAAAH joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 11:18:42] [32minfo[39m: Socket pAE56AMM3WpkKdZoAAAH joined region room: region:ap
+[2026-04-05 11:28:44] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 11:28:44] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 11:28:44] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 11:28:44] [32minfo[39m: Engine.io connection established: xzUnIB6FHUYQJVXYAAAA
+[2026-04-05 11:28:44] [32minfo[39m: New client connected: s0oUUnAbTLoiYHDMAAAB
+[2026-04-05 11:28:44] [32minfo[39m: Socket s0oUUnAbTLoiYHDMAAAB joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 11:28:44] [32minfo[39m: Socket s0oUUnAbTLoiYHDMAAAB joined region room: region:ap
+[2026-04-05 11:28:44] [32minfo[39m: Engine.io connection established: EuSoj8DfbaoORXCsAAAD
+[2026-04-05 11:28:44] [32minfo[39m: Engine.io connection established: hmo3n_wbTdZC9KE0AAAE
+[2026-04-05 11:28:44] [32minfo[39m: New client connected: bX6wiJ60J2T7VFuyAAAF
+[2026-04-05 11:28:44] [32minfo[39m: Socket bX6wiJ60J2T7VFuyAAAF joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 11:28:44] [32minfo[39m: Socket bX6wiJ60J2T7VFuyAAAF joined region room: region:ap
+[2026-04-05 11:28:44] [32minfo[39m: New client connected: XaQtkiu9VfCG56hRAAAH
+[2026-04-05 11:28:44] [32minfo[39m: Socket XaQtkiu9VfCG56hRAAAH joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 11:28:44] [32minfo[39m: Socket XaQtkiu9VfCG56hRAAAH joined region room: region:ap
+[2026-04-05 11:28:54] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 11:28:54] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 11:28:54] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 11:28:56] [32minfo[39m: Engine.io connection established: 6OewJpRZX_JxRBInAAAA
+[2026-04-05 11:28:56] [32minfo[39m: New client connected: CKi2-D9vyTNtLMWhAAAB
+[2026-04-05 11:28:56] [32minfo[39m: Socket CKi2-D9vyTNtLMWhAAAB joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 11:28:56] [32minfo[39m: Socket CKi2-D9vyTNtLMWhAAAB joined region room: region:ap
+[2026-04-05 11:28:59] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 11:28:59] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 11:28:59] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 11:28:59] [32minfo[39m: Engine.io connection established: L47O0A6DfldJWKQAAAAA
+[2026-04-05 11:28:59] [32minfo[39m: Engine.io connection established: G6m_OLwiZWKFc3_mAAAB
+[2026-04-05 11:28:59] [32minfo[39m: New client connected: ichoZt-SXhiZj02tAAAC
+[2026-04-05 11:28:59] [32minfo[39m: Socket ichoZt-SXhiZj02tAAAC joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 11:28:59] [32minfo[39m: Socket ichoZt-SXhiZj02tAAAC joined region room: region:ap
+[2026-04-05 11:28:59] [32minfo[39m: New client connected: KpfMNF9aY7otEm-4AAAE
+[2026-04-05 11:28:59] [32minfo[39m: Socket KpfMNF9aY7otEm-4AAAE joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 11:28:59] [32minfo[39m: Socket KpfMNF9aY7otEm-4AAAE joined region room: region:ap
+[2026-04-05 11:28:59] [32minfo[39m: Engine.io connection established: bndv06zdE4RGpzl1AAAG
+[2026-04-05 11:28:59] [32minfo[39m: New client connected: c56ZVDoxRGt-z8Q_AAAH
+[2026-04-05 11:28:59] [32minfo[39m: Socket c56ZVDoxRGt-z8Q_AAAH joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 11:28:59] [32minfo[39m: Socket c56ZVDoxRGt-z8Q_AAAH joined region room: region:ap
+[2026-04-05 11:29:03] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 11:29:03] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 11:29:03] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 11:29:05] [32minfo[39m: Engine.io connection established: iMAoLXMr28sdBvxUAAAA
+[2026-04-05 11:29:05] [32minfo[39m: New client connected: lQ7YjsHQcXAhBideAAAB
+[2026-04-05 11:29:05] [32minfo[39m: Socket lQ7YjsHQcXAhBideAAAB joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 11:29:05] [32minfo[39m: Socket lQ7YjsHQcXAhBideAAAB joined region room: region:ap
+[2026-04-05 11:29:06] [32minfo[39m: Engine.io connection established: hIuNhlt618k_kpB2AAAD
+[2026-04-05 11:29:06] [32minfo[39m: Engine.io connection established: -5CpVn_NsasAOVp7AAAE
+[2026-04-05 11:29:06] [32minfo[39m: New client connected: jpSMivGJo24I5UdjAAAF
+[2026-04-05 11:29:06] [32minfo[39m: Socket jpSMivGJo24I5UdjAAAF joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 11:29:06] [32minfo[39m: Socket jpSMivGJo24I5UdjAAAF joined region room: region:ap
+[2026-04-05 11:29:06] [32minfo[39m: New client connected: ZB3lFSdcs9IvACQLAAAH
+[2026-04-05 11:29:06] [32minfo[39m: Socket ZB3lFSdcs9IvACQLAAAH joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 11:29:06] [32minfo[39m: Socket ZB3lFSdcs9IvACQLAAAH joined region room: region:ap
+[2026-04-05 11:29:09] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 11:29:09] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 11:29:09] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 11:29:10] [32minfo[39m: Engine.io connection established: OGAM_QZM6U3vJHqbAAAA
+[2026-04-05 11:29:10] [32minfo[39m: Engine.io connection established: N2LEc1v6H2Nf01VbAAAB
+[2026-04-05 11:29:10] [32minfo[39m: New client connected: RbhIKG_Y2D91qIpmAAAC
+[2026-04-05 11:29:10] [32minfo[39m: Socket RbhIKG_Y2D91qIpmAAAC joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 11:29:10] [32minfo[39m: Socket RbhIKG_Y2D91qIpmAAAC joined region room: region:ap
+[2026-04-05 11:29:10] [32minfo[39m: New client connected: AmlTK-8YUIxCwSg6AAAE
+[2026-04-05 11:29:10] [32minfo[39m: Socket AmlTK-8YUIxCwSg6AAAE joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 11:29:10] [32minfo[39m: Socket AmlTK-8YUIxCwSg6AAAE joined region room: region:ap
+[2026-04-05 11:29:10] [32minfo[39m: Engine.io connection established: qAUifgxTUsIhAHv1AAAG
+[2026-04-05 11:29:10] [32minfo[39m: New client connected: Yk38Yy6gIfrKuh9WAAAH
+[2026-04-05 11:29:10] [32minfo[39m: Socket Yk38Yy6gIfrKuh9WAAAH joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 11:29:10] [32minfo[39m: Socket Yk38Yy6gIfrKuh9WAAAH joined region room: region:ap
+[2026-04-05 11:29:35] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 11:29:35] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 11:29:35] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 11:29:36] [32minfo[39m: Engine.io connection established: iCT6kTInrzwhM8CmAAAA
+[2026-04-05 11:29:36] [32minfo[39m: New client connected: xiZDDB-UGltKC7AVAAAB
+[2026-04-05 11:29:36] [32minfo[39m: Socket xiZDDB-UGltKC7AVAAAB joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 11:29:36] [32minfo[39m: Socket xiZDDB-UGltKC7AVAAAB joined region room: region:ap
+[2026-04-05 11:29:36] [32minfo[39m: Engine.io connection established: Ci_kZhWJQgdrb_XTAAAD
+[2026-04-05 11:29:36] [32minfo[39m: Engine.io connection established: dS8D5u8RB-NKIyRiAAAE
+[2026-04-05 11:29:36] [32minfo[39m: New client connected: rYEpCi0CVx9YW8QoAAAF
+[2026-04-05 11:29:36] [32minfo[39m: Socket rYEpCi0CVx9YW8QoAAAF joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 11:29:36] [32minfo[39m: Socket rYEpCi0CVx9YW8QoAAAF joined region room: region:ap
+[2026-04-05 11:29:36] [32minfo[39m: New client connected: 5gU67OETs-pXW3iKAAAH
+[2026-04-05 11:29:36] [32minfo[39m: Socket 5gU67OETs-pXW3iKAAAH joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 11:29:36] [32minfo[39m: Socket 5gU67OETs-pXW3iKAAAH joined region room: region:ap
+[2026-04-05 12:12:23] [32minfo[39m: Client disconnected: xiZDDB-UGltKC7AVAAAB, reason: client namespace disconnect
+[2026-04-05 12:12:24] [32minfo[39m: Client disconnected: rYEpCi0CVx9YW8QoAAAF, reason: client namespace disconnect
+[2026-04-05 12:12:24] [32minfo[39m: Client disconnected: 5gU67OETs-pXW3iKAAAH, reason: client namespace disconnect
+[2026-04-05 12:40:46] [32minfo[39m: Engine.io connection established: 3_x5x_O1TPr-kYkvAAAJ
+[2026-04-05 12:40:46] [32minfo[39m: New client connected: GtrHhxO7yqxVIFTbAAAK
+[2026-04-05 12:40:46] [32minfo[39m: Socket GtrHhxO7yqxVIFTbAAAK joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 12:40:46] [32minfo[39m: Socket GtrHhxO7yqxVIFTbAAAK joined region room: region:ap
+[2026-04-05 12:40:50] [32minfo[39m: Engine.io connection established: qTpF4a2s_ZxEGdiCAAAM
+[2026-04-05 12:40:50] [32minfo[39m: New client connected: eyfEYFVW2j_mDwfJAAAN
+[2026-04-05 12:40:50] [32minfo[39m: Socket eyfEYFVW2j_mDwfJAAAN joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 12:40:50] [32minfo[39m: Socket eyfEYFVW2j_mDwfJAAAN joined region room: region:ap
+[2026-04-05 12:51:58] [32minfo[39m: Client disconnected: GtrHhxO7yqxVIFTbAAAK, reason: client namespace disconnect
+[2026-04-05 12:51:58] [32minfo[39m: Engine.io connection established: f0BuFsTsl-_mDaPyAAAP
+[2026-04-05 12:51:58] [32minfo[39m: New client connected: RQOs1VUXA-xUbK2sAAAQ
+[2026-04-05 12:51:58] [32minfo[39m: Socket RQOs1VUXA-xUbK2sAAAQ joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 12:51:58] [32minfo[39m: Socket RQOs1VUXA-xUbK2sAAAQ joined region room: region:ap
+[2026-04-05 12:51:59] [32minfo[39m: Client disconnected: eyfEYFVW2j_mDwfJAAAN, reason: client namespace disconnect
+[2026-04-05 12:51:59] [32minfo[39m: Engine.io connection established: r3C0RAmokDwMP2yIAAAS
+[2026-04-05 12:51:59] [32minfo[39m: New client connected: --Idld-Xf7Fb9g-wAAAT
+[2026-04-05 12:51:59] [32minfo[39m: Socket --Idld-Xf7Fb9g-wAAAT joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 12:51:59] [32minfo[39m: Socket --Idld-Xf7Fb9g-wAAAT joined region room: region:ap
+[2026-04-05 12:51:59] [32minfo[39m: Engine.io connection established: zuzTw4DngHZ06dG9AAAV
+[2026-04-05 12:51:59] [32minfo[39m: New client connected: zCnq7G-O1WRzcmW6AAAW
+[2026-04-05 12:51:59] [32minfo[39m: Socket zCnq7G-O1WRzcmW6AAAW joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 12:51:59] [32minfo[39m: Socket zCnq7G-O1WRzcmW6AAAW joined region room: region:ap
+[2026-04-05 12:53:03] [32minfo[39m: Client disconnected: RQOs1VUXA-xUbK2sAAAQ, reason: client namespace disconnect
+[2026-04-05 12:53:03] [32minfo[39m: Engine.io connection established: NK2GDeuRTORc0bZWAAAY
+[2026-04-05 12:53:03] [32minfo[39m: New client connected: mnkC4pGfY_LlBIaMAAAZ
+[2026-04-05 12:53:03] [32minfo[39m: Socket mnkC4pGfY_LlBIaMAAAZ joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 12:53:03] [32minfo[39m: Socket mnkC4pGfY_LlBIaMAAAZ joined region room: region:ap
+[2026-04-05 12:53:04] [32minfo[39m: Client disconnected: --Idld-Xf7Fb9g-wAAAT, reason: client namespace disconnect
+[2026-04-05 12:53:04] [32minfo[39m: Client disconnected: zCnq7G-O1WRzcmW6AAAW, reason: client namespace disconnect
+[2026-04-05 12:53:04] [32minfo[39m: Engine.io connection established: vpIlO02mOYgF4vq3AAAb
+[2026-04-05 12:53:04] [32minfo[39m: New client connected: FAkH9ADIWzxL3RaXAAAc
+[2026-04-05 12:53:04] [32minfo[39m: Socket FAkH9ADIWzxL3RaXAAAc joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 12:53:04] [32minfo[39m: Socket FAkH9ADIWzxL3RaXAAAc joined region room: region:ap
+[2026-04-05 12:53:04] [32minfo[39m: Engine.io connection established: hyTE14VlV5FTj-RNAAAe
+[2026-04-05 12:53:04] [32minfo[39m: New client connected: cR2mscN2zYPgZgGzAAAf
+[2026-04-05 12:53:04] [32minfo[39m: Socket cR2mscN2zYPgZgGzAAAf joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 12:53:04] [32minfo[39m: Socket cR2mscN2zYPgZgGzAAAf joined region room: region:ap
+[2026-04-05 12:53:10] [32minfo[39m: Client disconnected: mnkC4pGfY_LlBIaMAAAZ, reason: client namespace disconnect
+[2026-04-05 12:53:10] [32minfo[39m: Engine.io connection established: wKaV4GG-6-6_zLxEAAAh
+[2026-04-05 12:53:10] [32minfo[39m: New client connected: fc2RsnEPn2MFI2XsAAAi
+[2026-04-05 12:53:10] [32minfo[39m: Socket fc2RsnEPn2MFI2XsAAAi joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 12:53:10] [32minfo[39m: Socket fc2RsnEPn2MFI2XsAAAi joined region room: region:ap
+[2026-04-05 12:53:11] [32minfo[39m: Client disconnected: cR2mscN2zYPgZgGzAAAf, reason: client namespace disconnect
+[2026-04-05 12:53:11] [32minfo[39m: Client disconnected: FAkH9ADIWzxL3RaXAAAc, reason: client namespace disconnect
+[2026-04-05 12:53:11] [32minfo[39m: Engine.io connection established: uG2xRLfTEqDVehPxAAAk
+[2026-04-05 12:53:11] [32minfo[39m: New client connected: BMY_wnx_4v6GJh0hAAAl
+[2026-04-05 12:53:11] [32minfo[39m: Socket BMY_wnx_4v6GJh0hAAAl joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 12:53:11] [32minfo[39m: Socket BMY_wnx_4v6GJh0hAAAl joined region room: region:ap
+[2026-04-05 12:53:11] [32minfo[39m: Engine.io connection established: _pzJDORh8_GPexytAAAn
+[2026-04-05 12:53:11] [32minfo[39m: New client connected: zws-P2rN87ATu33GAAAo
+[2026-04-05 12:53:11] [32minfo[39m: Socket zws-P2rN87ATu33GAAAo joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 12:53:11] [32minfo[39m: Socket zws-P2rN87ATu33GAAAo joined region room: region:ap
+[2026-04-05 12:59:01] [32minfo[39m: Client disconnected: BMY_wnx_4v6GJh0hAAAl, reason: transport close
+[2026-04-05 12:59:02] [32minfo[39m: Engine.io connection established: fXFFSZPbQLUiiZ-IAAAq
+[2026-04-05 12:59:02] [32minfo[39m: New client connected: My_SseX3_DobrZEUAAAr
+[2026-04-05 12:59:02] [32minfo[39m: Socket My_SseX3_DobrZEUAAAr joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 12:59:02] [32minfo[39m: Socket My_SseX3_DobrZEUAAAr joined region room: region:ap
+[2026-04-05 12:59:15] [32minfo[39m: Client disconnected: My_SseX3_DobrZEUAAAr, reason: transport close
+[2026-04-05 12:59:15] [32minfo[39m: Engine.io connection established: RZ4RuND0VX0W1FZyAAAt
+[2026-04-05 12:59:15] [32minfo[39m: New client connected: qcIlT7z1q2Zd2bBNAAAu
+[2026-04-05 12:59:15] [32minfo[39m: Socket qcIlT7z1q2Zd2bBNAAAu joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 12:59:15] [32minfo[39m: Socket qcIlT7z1q2Zd2bBNAAAu joined region room: region:ap
+[2026-04-05 13:00:49] [32minfo[39m: Client disconnected: qcIlT7z1q2Zd2bBNAAAu, reason: transport close
+[2026-04-05 13:00:50] [32minfo[39m: Engine.io connection established: 6Lvj25HCGxzUk3FtAAAw
+[2026-04-05 13:00:50] [32minfo[39m: New client connected: XkNN0iNK9X1D5yycAAAx
+[2026-04-05 13:00:50] [32minfo[39m: Socket XkNN0iNK9X1D5yycAAAx joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:00:50] [32minfo[39m: Socket XkNN0iNK9X1D5yycAAAx joined region room: region:ap
+[2026-04-05 13:03:21] [32minfo[39m: Client disconnected: XkNN0iNK9X1D5yycAAAx, reason: transport close
+[2026-04-05 13:03:21] [32minfo[39m: Engine.io connection established: 7liMp0ZCn2uZGCeCAAAz
+[2026-04-05 13:03:21] [32minfo[39m: New client connected: wOLvV2RwQB_9fliPAAA0
+[2026-04-05 13:03:21] [32minfo[39m: Socket wOLvV2RwQB_9fliPAAA0 joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:03:21] [32minfo[39m: Socket wOLvV2RwQB_9fliPAAA0 joined region room: region:ap
+[2026-04-05 13:03:36] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-05 13:04:44] [32minfo[39m: Client disconnected: zws-P2rN87ATu33GAAAo, reason: transport close
+[2026-04-05 13:04:44] [32minfo[39m: Engine.io connection established: SKD4yfGWifXpOZFwAAA2
+[2026-04-05 13:04:44] [32minfo[39m: New client connected: XUsfEbeTHcZkEtBlAAA3
+[2026-04-05 13:04:44] [32minfo[39m: Socket XUsfEbeTHcZkEtBlAAA3 joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 13:04:44] [32minfo[39m: Socket XUsfEbeTHcZkEtBlAAA3 joined region room: region:ap
+[2026-04-05 13:04:48] [32minfo[39m: Client disconnected: XUsfEbeTHcZkEtBlAAA3, reason: client namespace disconnect
+[2026-04-05 13:04:58] [32minfo[39m: Engine.io connection established: jOy5xSeXTxvwdKGNAAA5
+[2026-04-05 13:04:58] [32minfo[39m: New client connected: AwBhIuI1Dpkqyfl4AAA6
+[2026-04-05 13:04:58] [32minfo[39m: Socket AwBhIuI1Dpkqyfl4AAA6 joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 13:04:58] [32minfo[39m: Socket AwBhIuI1Dpkqyfl4AAA6 joined region room: region:ap
+[2026-04-05 13:06:31] [32minfo[39m: Client disconnected: AwBhIuI1Dpkqyfl4AAA6, reason: transport close
+[2026-04-05 13:06:31] [32minfo[39m: Engine.io connection established: QnqAkB5MFHNGwGIHAAA8
+[2026-04-05 13:06:31] [32minfo[39m: New client connected: QXBtn_mx4i46u6zmAAA9
+[2026-04-05 13:06:31] [32minfo[39m: Socket QXBtn_mx4i46u6zmAAA9 joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 13:06:31] [32minfo[39m: Socket QXBtn_mx4i46u6zmAAA9 joined region room: region:ap
+[2026-04-05 13:09:12] [32minfo[39m: Client disconnected: wOLvV2RwQB_9fliPAAA0, reason: transport close
+[2026-04-05 13:09:12] [32minfo[39m: Engine.io connection established: EvODm9LgheWevmXHAAA_
+[2026-04-05 13:09:12] [32minfo[39m: New client connected: 2Az12sk5UaS442B9AABA
+[2026-04-05 13:09:12] [32minfo[39m: Socket 2Az12sk5UaS442B9AABA joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:09:12] [32minfo[39m: Socket 2Az12sk5UaS442B9AABA joined region room: region:ap
+[2026-04-05 13:09:45] [32minfo[39m: Client disconnected: 2Az12sk5UaS442B9AABA, reason: transport close
+[2026-04-05 13:09:45] [32minfo[39m: Engine.io connection established: bLeOS2VTl3T0uZ0nAABC
+[2026-04-05 13:09:45] [32minfo[39m: New client connected: SZhfwthMqse5ABbfAABD
+[2026-04-05 13:09:45] [32minfo[39m: Socket SZhfwthMqse5ABbfAABD joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:09:45] [32minfo[39m: Socket SZhfwthMqse5ABbfAABD joined region room: region:ap
+[2026-04-05 13:09:55] [32minfo[39m: Client disconnected: QXBtn_mx4i46u6zmAAA9, reason: transport close
+[2026-04-05 13:09:55] [32minfo[39m: Engine.io connection established: b1Ru9HG_idLEP-e2AABF
+[2026-04-05 13:09:55] [32minfo[39m: New client connected: Z98XR591bQWK04HyAABG
+[2026-04-05 13:09:55] [32minfo[39m: Socket Z98XR591bQWK04HyAABG joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 13:09:55] [32minfo[39m: Socket Z98XR591bQWK04HyAABG joined region room: region:ap
+[2026-04-05 13:12:38] [32minfo[39m: Client disconnected: SZhfwthMqse5ABbfAABD, reason: transport close
+[2026-04-05 13:12:38] [32minfo[39m: Engine.io connection established: gIq3rZOgxqCApPnZAABI
+[2026-04-05 13:12:38] [32minfo[39m: New client connected: qne9Wq8V89meFNRtAABJ
+[2026-04-05 13:12:38] [32minfo[39m: Socket qne9Wq8V89meFNRtAABJ joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:12:38] [32minfo[39m: Socket qne9Wq8V89meFNRtAABJ joined region room: region:ap
+[2026-04-05 13:12:40] [32minfo[39m: Client disconnected: qne9Wq8V89meFNRtAABJ, reason: client namespace disconnect
+[2026-04-05 13:14:21] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 13:14:21] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 13:14:21] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 13:14:22] [32minfo[39m: Engine.io connection established: xosaoncqTxKWco_MAAAA
+[2026-04-05 13:14:22] [32minfo[39m: Engine.io connection established: uFyWARgjHHCOLTNaAAAB
+[2026-04-05 13:14:22] [32minfo[39m: New client connected: o-1GlqWSwAHrvQUUAAAC
+[2026-04-05 13:14:22] [32minfo[39m: Socket o-1GlqWSwAHrvQUUAAAC joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 13:14:22] [32minfo[39m: Socket o-1GlqWSwAHrvQUUAAAC joined region room: region:ap
+[2026-04-05 13:14:22] [32minfo[39m: New client connected: AfeDXc0pj4qQjWszAAAE
+[2026-04-05 13:14:22] [32minfo[39m: Socket AfeDXc0pj4qQjWszAAAE joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 13:14:22] [32minfo[39m: Socket AfeDXc0pj4qQjWszAAAE joined region room: region:ap
+[2026-04-05 13:14:41] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 13:14:41] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 13:14:41] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 13:14:41] [32minfo[39m: Engine.io connection established: FJaR1VZXUo-jBVfZAAAA
+[2026-04-05 13:14:41] [32minfo[39m: New client connected: fQAJx8NXAVBxUvY_AAAB
+[2026-04-05 13:14:41] [32minfo[39m: Socket fQAJx8NXAVBxUvY_AAAB joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 13:14:41] [32minfo[39m: Socket fQAJx8NXAVBxUvY_AAAB joined region room: region:ap
+[2026-04-05 13:14:41] [32minfo[39m: Engine.io connection established: 6ik7JoNKnKb8WET7AAAD
+[2026-04-05 13:14:41] [32minfo[39m: New client connected: RRgCpIFyArowI7xkAAAE
+[2026-04-05 13:14:41] [32minfo[39m: Socket RRgCpIFyArowI7xkAAAE joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 13:14:41] [32minfo[39m: Socket RRgCpIFyArowI7xkAAAE joined region room: region:ap
+[2026-04-05 13:14:45] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 13:14:45] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 13:14:45] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 13:14:45] [32minfo[39m: Engine.io connection established: Vt10kz8J212dE22oAAAA
+[2026-04-05 13:14:45] [32minfo[39m: Engine.io connection established: xj1sAz5cdLom4T0fAAAB
+[2026-04-05 13:14:45] [32minfo[39m: New client connected: GRA5NpqXn-89cKmeAAAC
+[2026-04-05 13:14:45] [32minfo[39m: Socket GRA5NpqXn-89cKmeAAAC joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 13:14:45] [32minfo[39m: Socket GRA5NpqXn-89cKmeAAAC joined region room: region:ap
+[2026-04-05 13:14:45] [32minfo[39m: New client connected: mLdHrmMhAOXOJh8eAAAE
+[2026-04-05 13:14:45] [32minfo[39m: Socket mLdHrmMhAOXOJh8eAAAE joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 13:14:45] [32minfo[39m: Socket mLdHrmMhAOXOJh8eAAAE joined region room: region:ap
+[2026-04-05 13:18:01] [32minfo[39m: Client disconnected: GRA5NpqXn-89cKmeAAAC, reason: client namespace disconnect
+[2026-04-05 13:18:01] [32minfo[39m: Client disconnected: mLdHrmMhAOXOJh8eAAAE, reason: client namespace disconnect
+[2026-04-05 13:18:12] [32minfo[39m: Engine.io connection established: WvWp28diuSesoLgXAAAG
+[2026-04-05 13:18:12] [32minfo[39m: Engine.io connection established: Mlheru0hwS68XrfyAAAH
+[2026-04-05 13:18:12] [32minfo[39m: Engine.io connection established: nMA-_xgSYxZ6t-_5AAAI
+[2026-04-05 13:18:12] [32minfo[39m: New client connected: vTEfnit4YlBAVeSMAAAJ
+[2026-04-05 13:18:12] [32minfo[39m: Socket vTEfnit4YlBAVeSMAAAJ joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 13:18:12] [32minfo[39m: Socket vTEfnit4YlBAVeSMAAAJ joined region room: region:ap
+[2026-04-05 13:18:12] [32minfo[39m: Engine.io connection established: 232vUoHIIZ8LSazOAAAL
+[2026-04-05 13:18:12] [32minfo[39m: New client connected: RkBD7C-jlDw7VmGjAAAM
+[2026-04-05 13:18:12] [32minfo[39m: Socket RkBD7C-jlDw7VmGjAAAM joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 13:18:12] [32minfo[39m: Socket RkBD7C-jlDw7VmGjAAAM joined region room: region:ap
+[2026-04-05 13:18:22] [32minfo[39m: Client disconnected: RkBD7C-jlDw7VmGjAAAM, reason: transport close
+[2026-04-05 13:18:22] [32minfo[39m: Engine.io connection established: s_uJoXr2kBMk2d94AAAO
+[2026-04-05 13:18:22] [32minfo[39m: New client connected: 2XYYV4YnMsxbpMN_AAAP
+[2026-04-05 13:18:22] [32minfo[39m: Socket 2XYYV4YnMsxbpMN_AAAP joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 13:18:22] [32minfo[39m: Socket 2XYYV4YnMsxbpMN_AAAP joined region room: region:ap
+[2026-04-05 13:19:26] [32minfo[39m: Engine.io connection established: EBOt_O7Q-J1-eKueAAAR
+[2026-04-05 13:19:26] [32minfo[39m: New client connected: -wOQF9gP94Q5vQAQAAAS
+[2026-04-05 13:19:26] [32minfo[39m: Socket -wOQF9gP94Q5vQAQAAAS joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:19:26] [32minfo[39m: Socket -wOQF9gP94Q5vQAQAAAS joined region room: region:ap
+[2026-04-05 13:19:31] [32minfo[39m: Client disconnected: -wOQF9gP94Q5vQAQAAAS, reason: transport close
+[2026-04-05 13:19:31] [32minfo[39m: Engine.io connection established: tLbizCDQ2rAbr6yzAAAU
+[2026-04-05 13:19:32] [32minfo[39m: New client connected: y6Y4Woot9CG2yOQRAAAV
+[2026-04-05 13:19:32] [32minfo[39m: Socket y6Y4Woot9CG2yOQRAAAV joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:19:32] [32minfo[39m: Socket y6Y4Woot9CG2yOQRAAAV joined region room: region:ap
+[2026-04-05 13:20:07] [32minfo[39m: Client disconnected: y6Y4Woot9CG2yOQRAAAV, reason: transport close
+[2026-04-05 13:20:07] [32minfo[39m: Engine.io connection established: beLhwpaTeCJ8qcrSAAAX
+[2026-04-05 13:20:07] [32minfo[39m: New client connected: kNFdLZmbvruwfmvrAAAY
+[2026-04-05 13:20:07] [32minfo[39m: Socket kNFdLZmbvruwfmvrAAAY joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:20:07] [32minfo[39m: Socket kNFdLZmbvruwfmvrAAAY joined region room: region:ap
+[2026-04-05 13:20:34] [32minfo[39m: Client disconnected: 2XYYV4YnMsxbpMN_AAAP, reason: transport close
+[2026-04-05 13:20:34] [32minfo[39m: Engine.io connection established: aZd47Uw6bRZfjzNHAAAa
+[2026-04-05 13:20:34] [32minfo[39m: New client connected: IVp5otbdD6XS8bA0AAAb
+[2026-04-05 13:20:34] [32minfo[39m: Socket IVp5otbdD6XS8bA0AAAb joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 13:20:34] [32minfo[39m: Socket IVp5otbdD6XS8bA0AAAb joined region room: region:ap
+[2026-04-05 13:22:01] [32minfo[39m: Client disconnected: IVp5otbdD6XS8bA0AAAb, reason: client namespace disconnect
+[2026-04-05 13:22:01] [32minfo[39m: Client disconnected: kNFdLZmbvruwfmvrAAAY, reason: client namespace disconnect
+[2026-04-05 13:22:02] [32minfo[39m: Client disconnected: vTEfnit4YlBAVeSMAAAJ, reason: client namespace disconnect
+[2026-04-05 13:22:20] [32minfo[39m: Engine.io connection established: waEKtnHDMNqgRmPLAAAd
+[2026-04-05 13:22:20] [32minfo[39m: Engine.io connection established: 1XmBIA3AJ3Sb1N5sAAAe
+[2026-04-05 13:22:20] [32minfo[39m: New client connected: utaF-x2KTgQeDAHnAAAf
+[2026-04-05 13:22:20] [32minfo[39m: Socket utaF-x2KTgQeDAHnAAAf joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 13:22:20] [32minfo[39m: Socket utaF-x2KTgQeDAHnAAAf joined region room: region:ap
+[2026-04-05 13:22:20] [32minfo[39m: Engine.io connection established: ShIrumEX2yo-Qfx3AAAh
+[2026-04-05 13:22:20] [32minfo[39m: Engine.io connection established: GdqwVcFgItNnfUoNAAAi
+[2026-04-05 13:22:20] [32minfo[39m: New client connected: Q25wse-GsKyy0RgYAAAj
+[2026-04-05 13:22:20] [32minfo[39m: Socket Q25wse-GsKyy0RgYAAAj joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:22:20] [32minfo[39m: Socket Q25wse-GsKyy0RgYAAAj joined region room: region:ap
+[2026-04-05 13:22:21] [32minfo[39m: Engine.io connection established: twDpzcXRyQV_WhwrAAAl
+[2026-04-05 13:22:21] [32minfo[39m: Engine.io connection established: lzA4SdbGa8NrWZwwAAAm
+[2026-04-05 13:22:21] [32minfo[39m: New client connected: FjU-sFS0mIN3tHLKAAAn
+[2026-04-05 13:22:21] [32minfo[39m: Socket FjU-sFS0mIN3tHLKAAAn joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 13:22:21] [32minfo[39m: Socket FjU-sFS0mIN3tHLKAAAn joined region room: region:ap
+[2026-04-05 13:22:38] [32minfo[39m: Client disconnected: Q25wse-GsKyy0RgYAAAj, reason: transport close
+[2026-04-05 13:22:38] [32minfo[39m: Engine.io connection established: nmzQ2FYCI2fvLpu7AAAp
+[2026-04-05 13:22:38] [32minfo[39m: New client connected: U3upGnOh9DqnSpvtAAAq
+[2026-04-05 13:22:38] [32minfo[39m: Socket U3upGnOh9DqnSpvtAAAq joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:22:38] [32minfo[39m: Socket U3upGnOh9DqnSpvtAAAq joined region room: region:ap
+[2026-04-05 13:22:39] [32minfo[39m: Client disconnected: utaF-x2KTgQeDAHnAAAf, reason: transport close
+[2026-04-05 13:22:40] [32minfo[39m: Engine.io connection established: hPzS8BorFENAmgTzAAAs
+[2026-04-05 13:22:40] [32minfo[39m: New client connected: 8ac9Fifo7ondGW6YAAAt
+[2026-04-05 13:22:40] [32minfo[39m: Socket 8ac9Fifo7ondGW6YAAAt joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 13:22:40] [32minfo[39m: Socket 8ac9Fifo7ondGW6YAAAt joined region room: region:ap
+[2026-04-05 13:22:42] [32minfo[39m: Client disconnected: 8ac9Fifo7ondGW6YAAAt, reason: transport close
+[2026-04-05 13:22:42] [32minfo[39m: Engine.io connection established: dPzbVyLbTfTgMHe5AAAv
+[2026-04-05 13:22:42] [32minfo[39m: New client connected: bDTt74BBYgkRRe1qAAAw
+[2026-04-05 13:22:42] [32minfo[39m: Socket bDTt74BBYgkRRe1qAAAw joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 13:22:42] [32minfo[39m: Socket bDTt74BBYgkRRe1qAAAw joined region room: region:ap
+[2026-04-05 13:23:03] [32minfo[39m: Client disconnected: U3upGnOh9DqnSpvtAAAq, reason: transport close
+[2026-04-05 13:23:03] [32minfo[39m: Engine.io connection established: 24YGVTOCE-Ii1lW3AAAy
+[2026-04-05 13:23:03] [32minfo[39m: New client connected: Jx1T3MFy-n3cQcVpAAAz
+[2026-04-05 13:23:03] [32minfo[39m: Socket Jx1T3MFy-n3cQcVpAAAz joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:23:03] [32minfo[39m: Socket Jx1T3MFy-n3cQcVpAAAz joined region room: region:ap
+[2026-04-05 13:24:11] [32minfo[39m: Client disconnected: Jx1T3MFy-n3cQcVpAAAz, reason: transport close
+[2026-04-05 13:24:11] [32minfo[39m: Engine.io connection established: Rjf-tpNyFp0EJ-GkAAA1
+[2026-04-05 13:24:11] [32minfo[39m: New client connected: HgUb-v-VzYue5KKyAAA2
+[2026-04-05 13:24:11] [32minfo[39m: Socket HgUb-v-VzYue5KKyAAA2 joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:24:11] [32minfo[39m: Socket HgUb-v-VzYue5KKyAAA2 joined region room: region:ap
+[2026-04-05 13:24:35] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 13:24:35] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 13:24:35] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 13:24:35] [32minfo[39m: Engine.io connection established: GLpqzEZ6Xm7xYQVBAAAA
+[2026-04-05 13:24:35] [32minfo[39m: New client connected: zTbIZ_3Yz0dw1egwAAAB
+[2026-04-05 13:24:35] [32minfo[39m: Socket zTbIZ_3Yz0dw1egwAAAB joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:24:35] [32minfo[39m: Socket zTbIZ_3Yz0dw1egwAAAB joined region room: region:ap
+[2026-04-05 13:24:35] [32minfo[39m: Engine.io connection established: wteMiFdLeEyrfFkzAAAD
+[2026-04-05 13:24:35] [32minfo[39m: New client connected: HGW3agXxV1a5QnS3AAAE
+[2026-04-05 13:24:35] [32minfo[39m: Socket HGW3agXxV1a5QnS3AAAE joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 13:24:35] [32minfo[39m: Socket HGW3agXxV1a5QnS3AAAE joined region room: region:ap
+[2026-04-05 13:24:38] [32minfo[39m: Engine.io connection established: UU7CU7remzvI7WhYAAAG
+[2026-04-05 13:24:38] [32minfo[39m: New client connected: wonO0j4W6dYIWYc4AAAH
+[2026-04-05 13:24:38] [32minfo[39m: Socket wonO0j4W6dYIWYc4AAAH joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 13:24:38] [32minfo[39m: Socket wonO0j4W6dYIWYc4AAAH joined region room: region:ap
+[2026-04-05 13:24:39] [32minfo[39m: Client disconnected: zTbIZ_3Yz0dw1egwAAAB, reason: transport close
+[2026-04-05 13:24:39] [32minfo[39m: Engine.io connection established: Ye5ZtjAgwjtvAytaAAAJ
+[2026-04-05 13:24:39] [32minfo[39m: New client connected: J36rsK-zd3d7yOXEAAAK
+[2026-04-05 13:24:39] [32minfo[39m: Socket J36rsK-zd3d7yOXEAAAK joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:24:39] [32minfo[39m: Socket J36rsK-zd3d7yOXEAAAK joined region room: region:ap
+[2026-04-05 13:24:43] [32minfo[39m: Client disconnected: J36rsK-zd3d7yOXEAAAK, reason: transport close
+[2026-04-05 13:24:44] [32minfo[39m: Engine.io connection established: P0oVT0sNKZV2QTQaAAAM
+[2026-04-05 13:24:44] [32minfo[39m: New client connected: ToONCyymUP7uVRi5AAAN
+[2026-04-05 13:24:44] [32minfo[39m: Socket ToONCyymUP7uVRi5AAAN joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:24:44] [32minfo[39m: Socket ToONCyymUP7uVRi5AAAN joined region room: region:ap
+[2026-04-05 13:24:47] [32minfo[39m: Client disconnected: ToONCyymUP7uVRi5AAAN, reason: client namespace disconnect
+[2026-04-05 13:24:57] [32minfo[39m: Engine.io connection established: q1N1_qiAKX76zlKdAAAP
+[2026-04-05 13:24:57] [32minfo[39m: New client connected: iMiNMdhJa_x1ACDKAAAQ
+[2026-04-05 13:24:57] [32minfo[39m: Socket iMiNMdhJa_x1ACDKAAAQ joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:24:57] [32minfo[39m: Socket iMiNMdhJa_x1ACDKAAAQ joined region room: region:ap
+[2026-04-05 13:27:27] [32minfo[39m: Client disconnected: iMiNMdhJa_x1ACDKAAAQ, reason: transport close
+[2026-04-05 13:27:28] [32minfo[39m: Engine.io connection established: 51G4CRGSSb4hw8EEAAAS
+[2026-04-05 13:27:28] [32minfo[39m: New client connected: WifG5RU8x49soPlHAAAT
+[2026-04-05 13:27:28] [32minfo[39m: Socket WifG5RU8x49soPlHAAAT joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:27:28] [32minfo[39m: Socket WifG5RU8x49soPlHAAAT joined region room: region:ap
+[2026-04-05 13:27:54] [32minfo[39m: Client disconnected: WifG5RU8x49soPlHAAAT, reason: transport close
+[2026-04-05 13:27:54] [32minfo[39m: Engine.io connection established: PeJqNSx3jp2BmWraAAAV
+[2026-04-05 13:27:54] [32minfo[39m: New client connected: n4IkBW8PpTJ7_gjAAAAW
+[2026-04-05 13:27:54] [32minfo[39m: Socket n4IkBW8PpTJ7_gjAAAAW joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:27:54] [32minfo[39m: Socket n4IkBW8PpTJ7_gjAAAAW joined region room: region:ap
+[2026-04-05 13:28:46] [32minfo[39m: Client disconnected: n4IkBW8PpTJ7_gjAAAAW, reason: transport close
+[2026-04-05 13:28:46] [32minfo[39m: Engine.io connection established: P8GmF54QVD--0tiSAAAY
+[2026-04-05 13:28:46] [32minfo[39m: New client connected: -UmbRcJZ_1RYqRsMAAAZ
+[2026-04-05 13:28:46] [32minfo[39m: Socket -UmbRcJZ_1RYqRsMAAAZ joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:28:46] [32minfo[39m: Socket -UmbRcJZ_1RYqRsMAAAZ joined region room: region:ap
+[2026-04-05 13:28:51] [32minfo[39m: Client disconnected: -UmbRcJZ_1RYqRsMAAAZ, reason: transport close
+[2026-04-05 13:28:51] [32minfo[39m: Engine.io connection established: EITXEtSsCvv0IFEJAAAb
+[2026-04-05 13:28:51] [32minfo[39m: New client connected: bsybB3VpMW93Gq2mAAAc
+[2026-04-05 13:28:51] [32minfo[39m: Socket bsybB3VpMW93Gq2mAAAc joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:28:51] [32minfo[39m: Socket bsybB3VpMW93Gq2mAAAc joined region room: region:ap
+[2026-04-05 13:28:56] [32minfo[39m: Client disconnected: bsybB3VpMW93Gq2mAAAc, reason: transport close
+[2026-04-05 13:28:56] [32minfo[39m: Engine.io connection established: zQlv43SrwTngnOt9AAAe
+[2026-04-05 13:28:56] [32minfo[39m: New client connected: RUDdhasyWGc1QokaAAAf
+[2026-04-05 13:28:56] [32minfo[39m: Socket RUDdhasyWGc1QokaAAAf joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:28:56] [32minfo[39m: Socket RUDdhasyWGc1QokaAAAf joined region room: region:ap
+[2026-04-05 13:30:01] [32minfo[39m: Client disconnected: wonO0j4W6dYIWYc4AAAH, reason: client namespace disconnect
+[2026-04-05 13:30:01] [32minfo[39m: Client disconnected: RUDdhasyWGc1QokaAAAf, reason: client namespace disconnect
+[2026-04-05 13:30:02] [32minfo[39m: Client disconnected: HGW3agXxV1a5QnS3AAAE, reason: client namespace disconnect
+[2026-04-05 13:30:07] [32minfo[39m: Engine.io connection established: eLuf8AfRfMMLbxA8AAAh
+[2026-04-05 13:30:07] [32minfo[39m: Engine.io connection established: DdABuhovifZDR_4WAAAi
+[2026-04-05 13:30:07] [32minfo[39m: Engine.io connection established: _Mtq3l69toOBRe22AAAj
+[2026-04-05 13:30:07] [32minfo[39m: New client connected: hKUR8dcaVBNwptCxAAAk
+[2026-04-05 13:30:07] [32minfo[39m: Socket hKUR8dcaVBNwptCxAAAk joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:30:07] [32minfo[39m: Socket hKUR8dcaVBNwptCxAAAk joined region room: region:ap
+[2026-04-05 13:30:08] [32minfo[39m: Engine.io connection established: qRRETuseXVCfpfBmAAAm
+[2026-04-05 13:30:08] [32minfo[39m: New client connected: _oNs7jUW8Z1aeSQPAAAn
+[2026-04-05 13:30:08] [32minfo[39m: Socket _oNs7jUW8Z1aeSQPAAAn joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 13:30:08] [32minfo[39m: Socket _oNs7jUW8Z1aeSQPAAAn joined region room: region:ap
+[2026-04-05 13:30:08] [32minfo[39m: Engine.io connection established: feX2I7i2UskEn-THAAAp
+[2026-04-05 13:30:08] [32minfo[39m: Engine.io connection established: y1RigZafDV0HZfA3AAAq
+[2026-04-05 13:30:08] [32minfo[39m: New client connected: 35iowfTe6TUWVVOtAAAr
+[2026-04-05 13:30:08] [32minfo[39m: Socket 35iowfTe6TUWVVOtAAAr joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 13:30:08] [32minfo[39m: Socket 35iowfTe6TUWVVOtAAAr joined region room: region:ap
+[2026-04-05 13:30:10] [32minfo[39m: Client disconnected: hKUR8dcaVBNwptCxAAAk, reason: transport close
+[2026-04-05 13:30:11] [32minfo[39m: Engine.io connection established: BEPtZVLCcHwg5k4XAAAt
+[2026-04-05 13:30:11] [32minfo[39m: New client connected: WGYjsHVmpqYdYTvdAAAu
+[2026-04-05 13:30:11] [32minfo[39m: Socket WGYjsHVmpqYdYTvdAAAu joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:30:11] [32minfo[39m: Socket WGYjsHVmpqYdYTvdAAAu joined region room: region:ap
+[2026-04-05 13:32:13] [32minfo[39m: Client disconnected: WGYjsHVmpqYdYTvdAAAu, reason: transport close
+[2026-04-05 13:32:13] [32minfo[39m: Engine.io connection established: clnDl_7uRjWIfpF_AAAw
+[2026-04-05 13:32:13] [32minfo[39m: New client connected: QATXla34ZeR2yvKAAAAx
+[2026-04-05 13:32:13] [32minfo[39m: Socket QATXla34ZeR2yvKAAAAx joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:32:13] [32minfo[39m: Socket QATXla34ZeR2yvKAAAAx joined region room: region:ap
+[2026-04-05 13:33:33] [32minfo[39m: Client disconnected: QATXla34ZeR2yvKAAAAx, reason: transport close
+[2026-04-05 13:33:33] [32minfo[39m: Engine.io connection established: 77-5rYOtgElVgFsXAAAz
+[2026-04-05 13:33:33] [32minfo[39m: New client connected: uepKtW8uDSvsY7sqAAA0
+[2026-04-05 13:33:33] [32minfo[39m: Socket uepKtW8uDSvsY7sqAAA0 joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:33:33] [32minfo[39m: Socket uepKtW8uDSvsY7sqAAA0 joined region room: region:ap
+[2026-04-05 13:33:35] [32minfo[39m: Client disconnected: _oNs7jUW8Z1aeSQPAAAn, reason: transport close
+[2026-04-05 13:33:35] [32minfo[39m: Engine.io connection established: uNRq0m6zB-9KKeNhAAA2
+[2026-04-05 13:33:35] [32minfo[39m: New client connected: NKjL-XVxE9RBxyiPAAA3
+[2026-04-05 13:33:35] [32minfo[39m: Socket NKjL-XVxE9RBxyiPAAA3 joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 13:33:35] [32minfo[39m: Socket NKjL-XVxE9RBxyiPAAA3 joined region room: region:ap
+[2026-04-05 13:33:57] [32minfo[39m: Client disconnected: NKjL-XVxE9RBxyiPAAA3, reason: transport close
+[2026-04-05 13:33:57] [32minfo[39m: Engine.io connection established: fh6TUvwMJVW1oslaAAA5
+[2026-04-05 13:33:57] [32minfo[39m: New client connected: UhP-N8oPvphSZTuCAAA6
+[2026-04-05 13:33:57] [32minfo[39m: Socket UhP-N8oPvphSZTuCAAA6 joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 13:33:57] [32minfo[39m: Socket UhP-N8oPvphSZTuCAAA6 joined region room: region:ap
+[2026-04-05 13:34:34] [32minfo[39m: Client disconnected: uepKtW8uDSvsY7sqAAA0, reason: transport close
+[2026-04-05 13:34:35] [32minfo[39m: Engine.io connection established: eZ9ZprjIvR-qjkd2AAA8
+[2026-04-05 13:34:35] [32minfo[39m: New client connected: qgPgI9hQRf-N5uH0AAA9
+[2026-04-05 13:34:35] [32minfo[39m: Socket qgPgI9hQRf-N5uH0AAA9 joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:34:35] [32minfo[39m: Socket qgPgI9hQRf-N5uH0AAA9 joined region room: region:ap
+[2026-04-05 13:34:35] [32minfo[39m: Client disconnected: UhP-N8oPvphSZTuCAAA6, reason: transport close
+[2026-04-05 13:34:35] [32minfo[39m: Engine.io connection established: UEm2RePTT1XXUhMvAAA_
+[2026-04-05 13:34:36] [32minfo[39m: New client connected: GP2LBN7MNnzsnG4TAABA
+[2026-04-05 13:34:36] [32minfo[39m: Socket GP2LBN7MNnzsnG4TAABA joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 13:34:36] [32minfo[39m: Socket GP2LBN7MNnzsnG4TAABA joined region room: region:ap
+[2026-04-05 13:34:46] [32minfo[39m: Client disconnected: qgPgI9hQRf-N5uH0AAA9, reason: transport close
+[2026-04-05 13:34:46] [32minfo[39m: Engine.io connection established: 3YDJtAP-6gL5_RGNAABC
+[2026-04-05 13:34:46] [32minfo[39m: New client connected: eWijJiW4cZ-dR-ZKAABD
+[2026-04-05 13:34:46] [32minfo[39m: Socket eWijJiW4cZ-dR-ZKAABD joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:34:46] [32minfo[39m: Socket eWijJiW4cZ-dR-ZKAABD joined region room: region:ap
+[2026-04-05 13:34:49] [32minfo[39m: Client disconnected: eWijJiW4cZ-dR-ZKAABD, reason: transport close
+[2026-04-05 13:34:50] [32minfo[39m: Engine.io connection established: noUF_ATeLNd91UviAABF
+[2026-04-05 13:34:50] [32minfo[39m: New client connected: iFFl4AjyyqRC9gAnAABG
+[2026-04-05 13:34:50] [32minfo[39m: Socket iFFl4AjyyqRC9gAnAABG joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:34:50] [32minfo[39m: Socket iFFl4AjyyqRC9gAnAABG joined region room: region:ap
+[2026-04-05 13:35:15] [32minfo[39m: Client disconnected: iFFl4AjyyqRC9gAnAABG, reason: transport close
+[2026-04-05 13:35:15] [32minfo[39m: Engine.io connection established: CG6iqEi_hxrg97Z9AABI
+[2026-04-05 13:35:15] [32minfo[39m: New client connected: YYZA_aidLbTuLFuwAABJ
+[2026-04-05 13:35:15] [32minfo[39m: Socket YYZA_aidLbTuLFuwAABJ joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:35:15] [32minfo[39m: Socket YYZA_aidLbTuLFuwAABJ joined region room: region:ap
+[2026-04-05 13:35:38] [32minfo[39m: Client disconnected: YYZA_aidLbTuLFuwAABJ, reason: transport close
+[2026-04-05 13:35:38] [32minfo[39m: Engine.io connection established: w4ECfLH54ciyEmU2AABL
+[2026-04-05 13:35:38] [32minfo[39m: New client connected: xkwc0YGhl7wX1ylnAABM
+[2026-04-05 13:35:38] [32minfo[39m: Socket xkwc0YGhl7wX1ylnAABM joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:35:38] [32minfo[39m: Socket xkwc0YGhl7wX1ylnAABM joined region room: region:ap
+[2026-04-05 13:42:26] [32minfo[39m: Client disconnected: xkwc0YGhl7wX1ylnAABM, reason: transport close
+[2026-04-05 13:42:27] [32minfo[39m: Engine.io connection established: kRh3Sh0I1-uH7xMCAABO
+[2026-04-05 13:42:27] [32minfo[39m: New client connected: 50aaI26uiCycv514AABP
+[2026-04-05 13:42:27] [32minfo[39m: Socket 50aaI26uiCycv514AABP joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:42:27] [32minfo[39m: Socket 50aaI26uiCycv514AABP joined region room: region:ap
+[2026-04-05 13:42:30] [32minfo[39m: Client disconnected: 50aaI26uiCycv514AABP, reason: transport close
+[2026-04-05 13:42:30] [32minfo[39m: Engine.io connection established: cR-NvI4VKYPZfvZZAABR
+[2026-04-05 13:42:30] [32minfo[39m: New client connected: ReJQKgVAqEx5U9UDAABS
+[2026-04-05 13:42:30] [32minfo[39m: Socket ReJQKgVAqEx5U9UDAABS joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:42:30] [32minfo[39m: Socket ReJQKgVAqEx5U9UDAABS joined region room: region:ap
+[2026-04-05 13:45:15] [32minfo[39m: Client disconnected: ReJQKgVAqEx5U9UDAABS, reason: transport close
+[2026-04-05 13:45:15] [32minfo[39m: Engine.io connection established: 6o4PeQmi1riR5yfWAABU
+[2026-04-05 13:45:15] [32minfo[39m: New client connected: UbD7MbaGsXvJl-qIAABV
+[2026-04-05 13:45:15] [32minfo[39m: Socket UbD7MbaGsXvJl-qIAABV joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:45:15] [32minfo[39m: Socket UbD7MbaGsXvJl-qIAABV joined region room: region:ap
+[2026-04-05 13:45:34] [32minfo[39m: Client disconnected: UbD7MbaGsXvJl-qIAABV, reason: transport close
+[2026-04-05 13:45:34] [32minfo[39m: Engine.io connection established: atGR9w_5mwHQtrBpAABX
+[2026-04-05 13:45:34] [32minfo[39m: New client connected: qN3NLZtfZy1ENZ-oAABY
+[2026-04-05 13:45:34] [32minfo[39m: Socket qN3NLZtfZy1ENZ-oAABY joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:45:34] [32minfo[39m: Socket qN3NLZtfZy1ENZ-oAABY joined region room: region:ap
+[2026-04-05 13:45:51] [32minfo[39m: Client disconnected: qN3NLZtfZy1ENZ-oAABY, reason: transport close
+[2026-04-05 13:45:51] [32minfo[39m: Engine.io connection established: bKpiccrhEmzRUPFtAABa
+[2026-04-05 13:45:51] [32minfo[39m: New client connected: Gp41qST9IKgtkw7FAABb
+[2026-04-05 13:45:51] [32minfo[39m: Socket Gp41qST9IKgtkw7FAABb joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:45:51] [32minfo[39m: Socket Gp41qST9IKgtkw7FAABb joined region room: region:ap
+[2026-04-05 13:46:12] [32minfo[39m: Client disconnected: Gp41qST9IKgtkw7FAABb, reason: transport close
+[2026-04-05 13:46:12] [32minfo[39m: Engine.io connection established: Rp0ZBOEZjrEbPtibAABd
+[2026-04-05 13:46:12] [32minfo[39m: New client connected: gmbIekr0ThfVzqL8AABe
+[2026-04-05 13:46:12] [32minfo[39m: Socket gmbIekr0ThfVzqL8AABe joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:46:12] [32minfo[39m: Socket gmbIekr0ThfVzqL8AABe joined region room: region:ap
+[2026-04-05 13:46:52] [32minfo[39m: Client disconnected: gmbIekr0ThfVzqL8AABe, reason: transport close
+[2026-04-05 13:46:52] [32minfo[39m: Engine.io connection established: z_YP4qJLxUNOkJQBAABg
+[2026-04-05 13:46:52] [32minfo[39m: New client connected: F7fTBEqhwL3J4URBAABh
+[2026-04-05 13:46:52] [32minfo[39m: Socket F7fTBEqhwL3J4URBAABh joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:46:52] [32minfo[39m: Socket F7fTBEqhwL3J4URBAABh joined region room: region:ap
+[2026-04-05 13:48:59] [32minfo[39m: Client disconnected: F7fTBEqhwL3J4URBAABh, reason: transport close
+[2026-04-05 13:48:59] [32minfo[39m: Engine.io connection established: qz5Nd07NjvfRl4t8AABj
+[2026-04-05 13:48:59] [32minfo[39m: New client connected: lWLLGsjleVESDujpAABk
+[2026-04-05 13:48:59] [32minfo[39m: Socket lWLLGsjleVESDujpAABk joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:48:59] [32minfo[39m: Socket lWLLGsjleVESDujpAABk joined region room: region:ap
+[2026-04-05 13:50:15] [32minfo[39m: Client disconnected: lWLLGsjleVESDujpAABk, reason: transport close
+[2026-04-05 13:50:15] [32minfo[39m: Engine.io connection established: Ow6Hi7MNlwr6f6nSAABm
+[2026-04-05 13:50:15] [32minfo[39m: New client connected: 9LsF4wejOpwjKBTEAABn
+[2026-04-05 13:50:15] [32minfo[39m: Socket 9LsF4wejOpwjKBTEAABn joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 13:50:15] [32minfo[39m: Socket 9LsF4wejOpwjKBTEAABn joined region room: region:ap
+[2026-04-05 13:53:05] [32minfo[39m: Client disconnected: 9LsF4wejOpwjKBTEAABn, reason: client namespace disconnect
+[2026-04-05 14:00:20] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 14:00:20] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 14:00:20] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 14:00:20] [32minfo[39m: Engine.io connection established: qsMlctmYOzFU6PvVAAAA
+[2026-04-05 14:00:20] [32minfo[39m: New client connected: zE-sFiV8LzgG_OygAAAB
+[2026-04-05 14:00:20] [32minfo[39m: Socket zE-sFiV8LzgG_OygAAAB joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 14:00:20] [32minfo[39m: Socket zE-sFiV8LzgG_OygAAAB joined region room: region:ap
+[2026-04-05 14:00:43] [32minfo[39m: Client disconnected: zE-sFiV8LzgG_OygAAAB, reason: transport close
+[2026-04-05 14:00:44] [32minfo[39m: Engine.io connection established: hXWyxvkSRnnENMdvAAAD
+[2026-04-05 14:00:44] [32minfo[39m: New client connected: DjTxx53J1J6uF6YWAAAE
+[2026-04-05 14:00:44] [32minfo[39m: Socket DjTxx53J1J6uF6YWAAAE joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 14:00:44] [32minfo[39m: Socket DjTxx53J1J6uF6YWAAAE joined region room: region:ap
+[2026-04-05 14:01:40] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-05 14:03:23] [32minfo[39m: Client disconnected: DjTxx53J1J6uF6YWAAAE, reason: transport close
+[2026-04-05 14:03:24] [32minfo[39m: Engine.io connection established: osZ3NpW4W3fodzrIAAAG
+[2026-04-05 14:03:24] [32minfo[39m: New client connected: AbBblBva6UqGLf9UAAAH
+[2026-04-05 14:03:24] [32minfo[39m: Socket AbBblBva6UqGLf9UAAAH joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 14:03:24] [32minfo[39m: Socket AbBblBva6UqGLf9UAAAH joined region room: region:ap
+[2026-04-05 14:04:23] [32minfo[39m: Client disconnected: AbBblBva6UqGLf9UAAAH, reason: client namespace disconnect
+[2026-04-05 14:04:23] [32minfo[39m: Engine.io connection established: tdXktcv85y9IHOjFAAAJ
+[2026-04-05 14:04:23] [32minfo[39m: New client connected: HuGHJaV_CUFIlarZAAAK
+[2026-04-05 14:04:23] [32minfo[39m: Socket HuGHJaV_CUFIlarZAAAK joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 14:04:23] [32minfo[39m: Socket HuGHJaV_CUFIlarZAAAK joined region room: region:ap
+[2026-04-05 14:04:24] [32minfo[39m: Engine.io connection established: gczSYFYIiM4oY5XaAAAM
+[2026-04-05 14:04:24] [32minfo[39m: New client connected: xFFYbzhEug6VeUbqAAAN
+[2026-04-05 14:04:24] [32minfo[39m: Socket xFFYbzhEug6VeUbqAAAN joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 14:04:24] [32minfo[39m: Socket xFFYbzhEug6VeUbqAAAN joined region room: region:ap
+[2026-04-05 14:05:49] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-05 14:06:08] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-05 14:06:10] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-05 14:07:06] [32minfo[39m: Client disconnected: HuGHJaV_CUFIlarZAAAK, reason: transport close
+[2026-04-05 14:07:06] [32minfo[39m: Engine.io connection established: 6JpsDNssEp6hD1kVAAAP
+[2026-04-05 14:07:06] [32minfo[39m: New client connected: Jqt_BsmzWv_zEct6AAAQ
+[2026-04-05 14:07:06] [32minfo[39m: Socket Jqt_BsmzWv_zEct6AAAQ joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 14:07:06] [32minfo[39m: Socket Jqt_BsmzWv_zEct6AAAQ joined region room: region:ap
+[2026-04-05 14:09:09] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 14:09:09] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 14:09:09] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 14:09:41] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 14:09:41] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 14:09:41] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 14:09:51] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 14:09:51] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 14:09:51] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 14:12:46] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 14:12:46] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 14:12:46] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 14:13:02] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 14:13:02] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 14:13:02] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 14:15:01] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 14:15:01] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 14:15:01] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 14:16:07] [32minfo[39m: Engine.io connection established: PtPVLNzguAw4Ao8hAAAA
+[2026-04-05 14:16:07] [32minfo[39m: New client connected: mhopVLdwCCV_18oqAAAB
+[2026-04-05 14:16:07] [32minfo[39m: Socket mhopVLdwCCV_18oqAAAB joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 14:16:07] [32minfo[39m: Socket mhopVLdwCCV_18oqAAAB joined region room: region:ap
+[2026-04-05 14:16:08] [32minfo[39m: Engine.io connection established: ccbct22SMu4F2ij5AAAD
+[2026-04-05 14:16:08] [32minfo[39m: New client connected: yG2-TRH0zFYCnq0QAAAE
+[2026-04-05 14:16:08] [32minfo[39m: Socket yG2-TRH0zFYCnq0QAAAE joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 14:16:08] [32minfo[39m: Socket yG2-TRH0zFYCnq0QAAAE joined region room: region:ap
+[2026-04-05 14:16:12] [32minfo[39m: Client disconnected: mhopVLdwCCV_18oqAAAB, reason: transport close
+[2026-04-05 14:16:13] [32minfo[39m: Engine.io connection established: z-tINL5hJJnP-VTlAAAG
+[2026-04-05 14:16:13] [32minfo[39m: New client connected: vzGhcWLN3sJf3lXlAAAH
+[2026-04-05 14:16:13] [32minfo[39m: Socket vzGhcWLN3sJf3lXlAAAH joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 14:16:13] [32minfo[39m: Socket vzGhcWLN3sJf3lXlAAAH joined region room: region:ap
+[2026-04-05 14:17:53] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 14:17:53] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 14:17:53] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 14:17:53] [32minfo[39m: Engine.io connection established: t80pmwqQ3fo4nBsKAAAA
+[2026-04-05 14:17:53] [32minfo[39m: New client connected: SgLufNXFwzuh1Fh2AAAB
+[2026-04-05 14:17:53] [32minfo[39m: Socket SgLufNXFwzuh1Fh2AAAB joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 14:17:53] [32minfo[39m: Socket SgLufNXFwzuh1Fh2AAAB joined region room: region:ap
+[2026-04-05 14:17:53] [32minfo[39m: Engine.io connection established: 84Qnw1rNMJ0vLOf5AAAD
+[2026-04-05 14:17:53] [32minfo[39m: New client connected: 946BgdLpI_0qq2_QAAAE
+[2026-04-05 14:17:53] [32minfo[39m: Socket 946BgdLpI_0qq2_QAAAE joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 14:17:53] [32minfo[39m: Socket 946BgdLpI_0qq2_QAAAE joined region room: region:ap
+[2026-04-05 14:17:59] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 14:17:59] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 14:17:59] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 14:18:00] [32minfo[39m: Engine.io connection established: KWRyYF1aiJmU-Z6KAAAA
+[2026-04-05 14:18:00] [32minfo[39m: New client connected: pRigD7UsOtfXtEpMAAAB
+[2026-04-05 14:18:00] [32minfo[39m: Socket pRigD7UsOtfXtEpMAAAB joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 14:18:00] [32minfo[39m: Socket pRigD7UsOtfXtEpMAAAB joined region room: region:ap
+[2026-04-05 14:18:00] [32minfo[39m: Engine.io connection established: A3QedEY3Pp9EUTQoAAAD
+[2026-04-05 14:18:00] [32minfo[39m: New client connected: JxFwEtrSMOfre33QAAAE
+[2026-04-05 14:18:00] [32minfo[39m: Socket JxFwEtrSMOfre33QAAAE joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 14:18:00] [32minfo[39m: Socket JxFwEtrSMOfre33QAAAE joined region room: region:ap
+[2026-04-05 14:18:08] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 14:18:08] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 14:18:08] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 14:18:08] [32minfo[39m: Engine.io connection established: O8LdT7PVMMHTwd7EAAAA
+[2026-04-05 14:18:08] [32minfo[39m: New client connected: c8Olms7iO6xvqNMWAAAB
+[2026-04-05 14:18:08] [32minfo[39m: Socket c8Olms7iO6xvqNMWAAAB joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 14:18:08] [32minfo[39m: Socket c8Olms7iO6xvqNMWAAAB joined region room: region:ap
+[2026-04-05 14:18:12] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 14:18:12] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 14:18:12] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 14:18:12] [32minfo[39m: Engine.io connection established: vdOsCEUzxiEpt19kAAAA
+[2026-04-05 14:18:12] [32minfo[39m: New client connected: FGXNS8VyaSRm6v9hAAAB
+[2026-04-05 14:18:12] [32minfo[39m: Socket FGXNS8VyaSRm6v9hAAAB joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 14:18:12] [32minfo[39m: Socket FGXNS8VyaSRm6v9hAAAB joined region room: region:ap
+[2026-04-05 14:18:14] [32minfo[39m: Engine.io connection established: l-MaXA5XPnCz7p9AAAAD
+[2026-04-05 14:18:14] [32minfo[39m: New client connected: crmq2JJzSjef4ga6AAAE
+[2026-04-05 14:18:14] [32minfo[39m: Socket crmq2JJzSjef4ga6AAAE joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 14:18:14] [32minfo[39m: Socket crmq2JJzSjef4ga6AAAE joined region room: region:ap
+[2026-04-05 14:20:11] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 14:20:11] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 14:20:11] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 14:20:12] [32minfo[39m: Engine.io connection established: fJOZyaDTjIWsMdooAAAA
+[2026-04-05 14:20:12] [32minfo[39m: New client connected: jp6ot3WmwmGz0bCOAAAB
+[2026-04-05 14:20:12] [32minfo[39m: Socket jp6ot3WmwmGz0bCOAAAB joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 14:20:12] [32minfo[39m: Socket jp6ot3WmwmGz0bCOAAAB joined region room: region:ap
+[2026-04-05 14:20:14] [32minfo[39m: Engine.io connection established: MT9SjlrG-EXjw8bTAAAD
+[2026-04-05 14:20:14] [32minfo[39m: New client connected: 2JGASvo7ILFjrBRlAAAE
+[2026-04-05 14:20:14] [32minfo[39m: Socket 2JGASvo7ILFjrBRlAAAE joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 14:20:14] [32minfo[39m: Socket 2JGASvo7ILFjrBRlAAAE joined region room: region:ap
+[2026-04-05 14:20:19] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 14:20:19] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 14:20:19] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 14:20:19] [32minfo[39m: Engine.io connection established: YdGfpdI3CEqPbIFrAAAA
+[2026-04-05 14:20:19] [32minfo[39m: New client connected: teSgSDoY3W50FB6ZAAAB
+[2026-04-05 14:20:19] [32minfo[39m: Socket teSgSDoY3W50FB6ZAAAB joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 14:20:19] [32minfo[39m: Socket teSgSDoY3W50FB6ZAAAB joined region room: region:ap
+[2026-04-05 14:20:19] [32minfo[39m: Engine.io connection established: XIOvm_YFlmbQrgxoAAAD
+[2026-04-05 14:20:19] [32minfo[39m: New client connected: L6Yg-Wg1I1ATEWr6AAAE
+[2026-04-05 14:20:19] [32minfo[39m: Socket L6Yg-Wg1I1ATEWr6AAAE joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 14:20:19] [32minfo[39m: Socket L6Yg-Wg1I1ATEWr6AAAE joined region room: region:ap
+[2026-04-05 14:20:43] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 14:20:43] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 14:20:43] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 14:20:43] [32minfo[39m: Engine.io connection established: hOGb2kIfUoKvhoCOAAAA
+[2026-04-05 14:20:43] [32minfo[39m: New client connected: unizUKNflnRuaQ8NAAAB
+[2026-04-05 14:20:43] [32minfo[39m: Socket unizUKNflnRuaQ8NAAAB joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 14:20:43] [32minfo[39m: Socket unizUKNflnRuaQ8NAAAB joined region room: region:ap
+[2026-04-05 14:20:43] [32minfo[39m: Engine.io connection established: TrF_H0chLUVjbsj0AAAD
+[2026-04-05 14:20:43] [32minfo[39m: New client connected: YrNcu0vUBr9qNpZDAAAE
+[2026-04-05 14:20:43] [32minfo[39m: Socket YrNcu0vUBr9qNpZDAAAE joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 14:20:43] [32minfo[39m: Socket YrNcu0vUBr9qNpZDAAAE joined region room: region:ap
+[2026-04-05 14:20:49] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 14:20:49] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 14:20:49] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 14:20:49] [32minfo[39m: Engine.io connection established: 2oVNiDkJPgKUOoudAAAA
+[2026-04-05 14:20:49] [32minfo[39m: New client connected: ITH9HXzCWYcSVy0lAAAB
+[2026-04-05 14:20:49] [32minfo[39m: Socket ITH9HXzCWYcSVy0lAAAB joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 14:20:49] [32minfo[39m: Socket ITH9HXzCWYcSVy0lAAAB joined region room: region:ap
+[2026-04-05 14:20:49] [32minfo[39m: Engine.io connection established: e5SC54ubqNCp1Jf3AAAD
+[2026-04-05 14:20:49] [32minfo[39m: New client connected: NZVGvG7AabG1maWLAAAE
+[2026-04-05 14:20:49] [32minfo[39m: Socket NZVGvG7AabG1maWLAAAE joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 14:20:49] [32minfo[39m: Socket NZVGvG7AabG1maWLAAAE joined region room: region:ap
+[2026-04-05 14:20:57] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 14:20:57] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 14:20:57] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 14:20:57] [32minfo[39m: Engine.io connection established: bqwfgF27VA6jbL9eAAAA
+[2026-04-05 14:20:57] [32minfo[39m: New client connected: NlnHYx14htJpdyRLAAAB
+[2026-04-05 14:20:57] [32minfo[39m: Socket NlnHYx14htJpdyRLAAAB joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 14:20:57] [32minfo[39m: Socket NlnHYx14htJpdyRLAAAB joined region room: region:ap
+[2026-04-05 14:20:58] [32minfo[39m: Engine.io connection established: SkcihmfSoEaLyp_mAAAD
+[2026-04-05 14:20:58] [32minfo[39m: New client connected: 5NBa5moJRZGoNG4YAAAE
+[2026-04-05 14:20:58] [32minfo[39m: Socket 5NBa5moJRZGoNG4YAAAE joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 14:20:58] [32minfo[39m: Socket 5NBa5moJRZGoNG4YAAAE joined region room: region:ap
+[2026-04-05 14:22:25] [32minfo[39m: Client disconnected: NlnHYx14htJpdyRLAAAB, reason: client namespace disconnect
+[2026-04-05 14:22:25] [32minfo[39m: Engine.io connection established: XHoCdcWUW1rc9tEAAAAG
+[2026-04-05 14:22:25] [32minfo[39m: New client connected: sp7zaMdolgB9QC1CAAAH
+[2026-04-05 14:22:25] [32minfo[39m: Socket sp7zaMdolgB9QC1CAAAH joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 14:22:25] [32minfo[39m: Socket sp7zaMdolgB9QC1CAAAH joined region room: region:ap
+[2026-04-05 14:22:26] [32minfo[39m: Client disconnected: 5NBa5moJRZGoNG4YAAAE, reason: client namespace disconnect
+[2026-04-05 14:22:26] [32minfo[39m: Engine.io connection established: 2IJkeDDH74tFur__AAAJ
+[2026-04-05 14:22:26] [32minfo[39m: New client connected: IAUsqbyFHpds21alAAAK
+[2026-04-05 14:22:26] [32minfo[39m: Socket IAUsqbyFHpds21alAAAK joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 14:22:26] [32minfo[39m: Socket IAUsqbyFHpds21alAAAK joined region room: region:ap
+[2026-04-05 14:23:10] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 14:23:10] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 14:23:10] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 14:23:10] [32minfo[39m: Engine.io connection established: 2qFHQGEH2Gp9vXEaAAAA
+[2026-04-05 14:23:10] [32minfo[39m: New client connected: uF-z0Qz3qEjdVvdzAAAB
+[2026-04-05 14:23:10] [32minfo[39m: Socket uF-z0Qz3qEjdVvdzAAAB joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 14:23:10] [32minfo[39m: Socket uF-z0Qz3qEjdVvdzAAAB joined region room: region:ap
+[2026-04-05 14:23:10] [32minfo[39m: Engine.io connection established: dM1viCrG-kP8uDY1AAAD
+[2026-04-05 14:23:10] [32minfo[39m: New client connected: a7PZkFyUzAhZVg4_AAAE
+[2026-04-05 14:23:10] [32minfo[39m: Socket a7PZkFyUzAhZVg4_AAAE joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 14:23:10] [32minfo[39m: Socket a7PZkFyUzAhZVg4_AAAE joined region room: region:ap
+[2026-04-05 14:23:23] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 14:23:23] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 14:23:23] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 14:23:23] [32minfo[39m: Engine.io connection established: e6BFH9L2nk4CbZmzAAAA
+[2026-04-05 14:23:23] [32minfo[39m: New client connected: UOf69AnZYqjwjTZBAAAB
+[2026-04-05 14:23:23] [32minfo[39m: Socket UOf69AnZYqjwjTZBAAAB joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 14:23:23] [32minfo[39m: Socket UOf69AnZYqjwjTZBAAAB joined region room: region:ap
+[2026-04-05 14:23:23] [32minfo[39m: Engine.io connection established: Q-8CeSfGYQamTmmrAAAD
+[2026-04-05 14:23:23] [32minfo[39m: New client connected: hlbwsa4H7V2RpeAGAAAE
+[2026-04-05 14:23:23] [32minfo[39m: Socket hlbwsa4H7V2RpeAGAAAE joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 14:23:23] [32minfo[39m: Socket hlbwsa4H7V2RpeAGAAAE joined region room: region:ap
+[2026-04-05 14:23:27] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 14:23:27] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 14:23:27] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 14:23:27] [32minfo[39m: Engine.io connection established: 0-PEaR5PgLanP-2hAAAA
+[2026-04-05 14:23:27] [32minfo[39m: New client connected: VTnhyTf-YSvgEqrUAAAB
+[2026-04-05 14:23:27] [32minfo[39m: Socket VTnhyTf-YSvgEqrUAAAB joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 14:23:27] [32minfo[39m: Socket VTnhyTf-YSvgEqrUAAAB joined region room: region:ap
+[2026-04-05 14:23:28] [32minfo[39m: Engine.io connection established: jz57Dpty-rdUg83wAAAD
+[2026-04-05 14:23:28] [32minfo[39m: New client connected: YH8iJpIbVXqELTkQAAAE
+[2026-04-05 14:23:28] [32minfo[39m: Socket YH8iJpIbVXqELTkQAAAE joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 14:23:28] [32minfo[39m: Socket YH8iJpIbVXqELTkQAAAE joined region room: region:ap
+[2026-04-05 14:23:29] [32minfo[39m: Client disconnected: YH8iJpIbVXqELTkQAAAE, reason: client namespace disconnect
+[2026-04-05 14:23:29] [32minfo[39m: Engine.io connection established: RWYqGzjc0C35OAcmAAAG
+[2026-04-05 14:23:29] [32minfo[39m: New client connected: qsLHBUQ3txz71gSAAAAH
+[2026-04-05 14:23:29] [32minfo[39m: Socket qsLHBUQ3txz71gSAAAAH joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 14:23:29] [32minfo[39m: Socket qsLHBUQ3txz71gSAAAAH joined region room: region:ap
+[2026-04-05 14:23:30] [32minfo[39m: Client disconnected: VTnhyTf-YSvgEqrUAAAB, reason: client namespace disconnect
+[2026-04-05 14:23:30] [32minfo[39m: Engine.io connection established: Ao6-qgEP37kYnu7TAAAJ
+[2026-04-05 14:23:30] [32minfo[39m: New client connected: 7bSbqzx0C1w6zXxTAAAK
+[2026-04-05 14:23:30] [32minfo[39m: Socket 7bSbqzx0C1w6zXxTAAAK joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 14:23:30] [32minfo[39m: Socket 7bSbqzx0C1w6zXxTAAAK joined region room: region:ap
+[2026-04-05 14:23:50] [32minfo[39m: Engine.io connection established: f80bOF0z-3GFY3KkAAAM
+[2026-04-05 14:23:50] [32minfo[39m: New client connected: V5PMZXTx2XpVtV05AAAN
+[2026-04-05 14:23:50] [32minfo[39m: Socket V5PMZXTx2XpVtV05AAAN joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 14:23:50] [32minfo[39m: Socket V5PMZXTx2XpVtV05AAAN joined region room: region:ap
+[2026-04-05 14:24:04] [32minfo[39m: Client disconnected: V5PMZXTx2XpVtV05AAAN, reason: transport close
+[2026-04-05 14:24:04] [32minfo[39m: Engine.io connection established: 6k-dEBTQPDr0PNgMAAAP
+[2026-04-05 14:24:04] [32minfo[39m: New client connected: ZHaUwTNoLxRuke5PAAAQ
+[2026-04-05 14:24:04] [32minfo[39m: Socket ZHaUwTNoLxRuke5PAAAQ joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 14:24:04] [32minfo[39m: Socket ZHaUwTNoLxRuke5PAAAQ joined region room: region:ap
+[2026-04-05 14:24:49] [32minfo[39m: Client disconnected: qsLHBUQ3txz71gSAAAAH, reason: client namespace disconnect
+[2026-04-05 14:24:49] [32minfo[39m: Engine.io connection established: Ru_3i8MGcnICQARwAAAS
+[2026-04-05 14:24:49] [32minfo[39m: Client disconnected: ZHaUwTNoLxRuke5PAAAQ, reason: client namespace disconnect
+[2026-04-05 14:24:49] [32minfo[39m: Engine.io connection established: s5-Z3rbkOnMCQeJ3AAAT
+[2026-04-05 14:24:49] [32minfo[39m: New client connected: d8ctX7hV3409_ltgAAAU
+[2026-04-05 14:24:49] [32minfo[39m: Socket d8ctX7hV3409_ltgAAAU joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 14:24:49] [32minfo[39m: Socket d8ctX7hV3409_ltgAAAU joined region room: region:ap
+[2026-04-05 14:24:49] [32minfo[39m: New client connected: tLsYobUVMILsy-rLAAAW
+[2026-04-05 14:24:49] [32minfo[39m: Socket tLsYobUVMILsy-rLAAAW joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 14:24:49] [32minfo[39m: Socket tLsYobUVMILsy-rLAAAW joined region room: region:ap
+[2026-04-05 14:24:50] [32minfo[39m: Client disconnected: 7bSbqzx0C1w6zXxTAAAK, reason: client namespace disconnect
+[2026-04-05 14:24:50] [32minfo[39m: Engine.io connection established: Y_OqiC-6dLL8R5f2AAAY
+[2026-04-05 14:24:50] [32minfo[39m: New client connected: Jlrd80bYP8Y7p6SQAAAZ
+[2026-04-05 14:24:50] [32minfo[39m: Socket Jlrd80bYP8Y7p6SQAAAZ joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 14:24:50] [32minfo[39m: Socket Jlrd80bYP8Y7p6SQAAAZ joined region room: region:ap
+[2026-04-05 14:24:56] [32minfo[39m: Client disconnected: tLsYobUVMILsy-rLAAAW, reason: transport close
+[2026-04-05 14:24:57] [32minfo[39m: Engine.io connection established: hLBFAW04PjyvrlWrAAAb
+[2026-04-05 14:24:57] [32minfo[39m: New client connected: y6c2yqkMPAyOx4qqAAAc
+[2026-04-05 14:24:57] [32minfo[39m: Socket y6c2yqkMPAyOx4qqAAAc joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 14:24:57] [32minfo[39m: Socket y6c2yqkMPAyOx4qqAAAc joined region room: region:ap
+[2026-04-05 14:25:35] [32minfo[39m: Client disconnected: y6c2yqkMPAyOx4qqAAAc, reason: transport close
+[2026-04-05 14:25:36] [32minfo[39m: Engine.io connection established: zlZ0ar1dikCltgL9AAAe
+[2026-04-05 14:25:36] [32minfo[39m: New client connected: hZs3mXszl9eILW_lAAAf
+[2026-04-05 14:25:36] [32minfo[39m: Socket hZs3mXszl9eILW_lAAAf joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 14:25:36] [32minfo[39m: Socket hZs3mXszl9eILW_lAAAf joined region room: region:ap
+[2026-04-05 14:26:02] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 14:26:02] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 14:26:02] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 14:26:03] [32minfo[39m: Engine.io connection established: 80Hj9L3bId0CYqI3AAAA
+[2026-04-05 14:26:03] [32minfo[39m: New client connected: gzs6QCHZhD__fp3TAAAB
+[2026-04-05 14:26:03] [32minfo[39m: Socket gzs6QCHZhD__fp3TAAAB joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 14:26:03] [32minfo[39m: Socket gzs6QCHZhD__fp3TAAAB joined region room: region:ap
+[2026-04-05 14:26:03] [32minfo[39m: Engine.io connection established: gTOEUsZ_Y1b2TS8gAAAD
+[2026-04-05 14:26:03] [32minfo[39m: New client connected: jIyo4TTPMIkSFPfkAAAE
+[2026-04-05 14:26:03] [32minfo[39m: Socket jIyo4TTPMIkSFPfkAAAE joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 14:26:03] [32minfo[39m: Socket jIyo4TTPMIkSFPfkAAAE joined region room: region:ap
+[2026-04-05 14:26:05] [32minfo[39m: Engine.io connection established: MZzOUyAwzgDksuTiAAAG
+[2026-04-05 14:26:05] [32minfo[39m: New client connected: do03V6oCSga2J8lJAAAH
+[2026-04-05 14:26:05] [32minfo[39m: Socket do03V6oCSga2J8lJAAAH joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 14:26:05] [32minfo[39m: Socket do03V6oCSga2J8lJAAAH joined region room: region:ap
+[2026-04-05 14:26:09] [32minfo[39m: Client disconnected: gzs6QCHZhD__fp3TAAAB, reason: transport close
+[2026-04-05 14:26:09] [32minfo[39m: Engine.io connection established: 639krK-pugWseaOMAAAJ
+[2026-04-05 14:26:09] [32minfo[39m: New client connected: k6CLme5qH0OI6W_KAAAK
+[2026-04-05 14:26:09] [32minfo[39m: Socket k6CLme5qH0OI6W_KAAAK joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 14:26:09] [32minfo[39m: Socket k6CLme5qH0OI6W_KAAAK joined region room: region:ap
+[2026-04-05 14:26:19] [32minfo[39m: Client disconnected: k6CLme5qH0OI6W_KAAAK, reason: transport close
+[2026-04-05 14:26:19] [32minfo[39m: Engine.io connection established: IG9K5NdGQVXcwpyyAAAM
+[2026-04-05 14:26:19] [32minfo[39m: New client connected: 3ac6mW-_q5hWQz6QAAAN
+[2026-04-05 14:26:19] [32minfo[39m: Socket 3ac6mW-_q5hWQz6QAAAN joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 14:26:19] [32minfo[39m: Socket 3ac6mW-_q5hWQz6QAAAN joined region room: region:ap
+[2026-04-05 14:27:35] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 14:27:35] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 14:27:35] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 14:27:35] [32minfo[39m: Engine.io connection established: 8r2997P7lxH2A74MAAAA
+[2026-04-05 14:27:35] [32minfo[39m: New client connected: 1Oh7Kq5fkqHdetdyAAAB
+[2026-04-05 14:27:35] [32minfo[39m: Socket 1Oh7Kq5fkqHdetdyAAAB joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 14:27:35] [32minfo[39m: Socket 1Oh7Kq5fkqHdetdyAAAB joined region room: region:ap
+[2026-04-05 14:27:35] [32minfo[39m: Engine.io connection established: KSbFl_GKFTylpVJ6AAAD
+[2026-04-05 14:27:35] [32minfo[39m: New client connected: cQaDl-vVj8TdNeBiAAAE
+[2026-04-05 14:27:35] [32minfo[39m: Socket cQaDl-vVj8TdNeBiAAAE joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 14:27:35] [32minfo[39m: Socket cQaDl-vVj8TdNeBiAAAE joined region room: region:ap
+[2026-04-05 14:27:36] [32minfo[39m: Engine.io connection established: b-WgG6h46QNvglCWAAAG
+[2026-04-05 14:27:36] [32minfo[39m: New client connected: d6UnLoCuTICIbYTCAAAH
+[2026-04-05 14:27:36] [32minfo[39m: Socket d6UnLoCuTICIbYTCAAAH joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 14:27:36] [32minfo[39m: Socket d6UnLoCuTICIbYTCAAAH joined region room: region:ap
+[2026-04-05 14:27:37] [32minfo[39m: Client disconnected: cQaDl-vVj8TdNeBiAAAE, reason: transport close
+[2026-04-05 14:27:37] [32minfo[39m: Engine.io connection established: 60A72hv8XB7TXjV1AAAJ
+[2026-04-05 14:27:37] [32minfo[39m: New client connected: 4AdIkfIE-LNYmxhOAAAK
+[2026-04-05 14:27:37] [32minfo[39m: Socket 4AdIkfIE-LNYmxhOAAAK joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 14:27:37] [32minfo[39m: Socket 4AdIkfIE-LNYmxhOAAAK joined region room: region:ap
+[2026-04-05 14:28:03] [32minfo[39m: Client disconnected: 4AdIkfIE-LNYmxhOAAAK, reason: transport close
+[2026-04-05 14:28:03] [32minfo[39m: Engine.io connection established: sPI-p_HVKbU-ocH0AAAM
+[2026-04-05 14:28:03] [32minfo[39m: New client connected: qEfIo5388OdUM05TAAAN
+[2026-04-05 14:28:03] [32minfo[39m: Socket qEfIo5388OdUM05TAAAN joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 14:28:03] [32minfo[39m: Socket qEfIo5388OdUM05TAAAN joined region room: region:ap
+[2026-04-05 14:28:33] [32minfo[39m: Client disconnected: d6UnLoCuTICIbYTCAAAH, reason: transport close
+[2026-04-05 14:28:33] [32minfo[39m: Engine.io connection established: ySzeSa7OPqk16c9ZAAAP
+[2026-04-05 14:28:33] [32minfo[39m: New client connected: dI1wMgWl5bo3Z4TBAAAQ
+[2026-04-05 14:28:33] [32minfo[39m: Socket dI1wMgWl5bo3Z4TBAAAQ joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 14:28:33] [32minfo[39m: Socket dI1wMgWl5bo3Z4TBAAAQ joined region room: region:ap
+[2026-04-05 14:29:00] [32minfo[39m: Client disconnected: qEfIo5388OdUM05TAAAN, reason: transport close
+[2026-04-05 14:29:01] [32minfo[39m: Engine.io connection established: nYy7v7ElqShRUL7uAAAS
+[2026-04-05 14:29:01] [32minfo[39m: New client connected: EUy6lF4KLiySvm4EAAAT
+[2026-04-05 14:29:01] [32minfo[39m: Socket EUy6lF4KLiySvm4EAAAT joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 14:29:01] [32minfo[39m: Socket EUy6lF4KLiySvm4EAAAT joined region room: region:ap
+[2026-04-05 14:29:18] [32minfo[39m: Client disconnected: EUy6lF4KLiySvm4EAAAT, reason: transport close
+[2026-04-05 14:29:18] [32minfo[39m: Engine.io connection established: xfLhtcTmdxB2w1r7AAAV
+[2026-04-05 14:29:18] [32minfo[39m: New client connected: U00hI3VM7IbqYgU0AAAW
+[2026-04-05 14:29:18] [32minfo[39m: Socket U00hI3VM7IbqYgU0AAAW joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 14:29:18] [32minfo[39m: Socket U00hI3VM7IbqYgU0AAAW joined region room: region:ap
+[2026-04-05 14:29:33] [32minfo[39m: Client disconnected: 1Oh7Kq5fkqHdetdyAAAB, reason: transport close
+[2026-04-05 14:29:33] [32minfo[39m: Engine.io connection established: ADt8GTZrARVWzBHtAAAY
+[2026-04-05 14:29:33] [32minfo[39m: New client connected: 95k4hGlWUSZsEs3OAAAZ
+[2026-04-05 14:29:33] [32minfo[39m: Socket 95k4hGlWUSZsEs3OAAAZ joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 14:29:33] [32minfo[39m: Socket 95k4hGlWUSZsEs3OAAAZ joined region room: region:ap
+[2026-04-05 14:31:15] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 14:31:15] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 14:31:15] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 14:31:16] [32minfo[39m: Engine.io connection established: -eBTaN7FjvmFETHiAAAA
+[2026-04-05 14:31:16] [32minfo[39m: New client connected: Uol3E4gMU9JVDvzaAAAB
+[2026-04-05 14:31:16] [32minfo[39m: Socket Uol3E4gMU9JVDvzaAAAB joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 14:31:16] [32minfo[39m: Socket Uol3E4gMU9JVDvzaAAAB joined region room: region:ap
+[2026-04-05 14:31:16] [32minfo[39m: Engine.io connection established: Zpg2SJ0Sb1bYCgYSAAAD
+[2026-04-05 14:31:16] [32minfo[39m: New client connected: IfMQsXktLFeg-1gIAAAE
+[2026-04-05 14:31:16] [32minfo[39m: Socket IfMQsXktLFeg-1gIAAAE joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 14:31:16] [32minfo[39m: Socket IfMQsXktLFeg-1gIAAAE joined region room: region:ap
+[2026-04-05 14:31:17] [32minfo[39m: Engine.io connection established: M-omio49SvcuXV1mAAAG
+[2026-04-05 14:31:17] [32minfo[39m: New client connected: cz5hJ1byEm40_OhJAAAH
+[2026-04-05 14:31:17] [32minfo[39m: Socket cz5hJ1byEm40_OhJAAAH joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 14:31:17] [32minfo[39m: Socket cz5hJ1byEm40_OhJAAAH joined region room: region:ap
+[2026-04-05 14:31:23] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 14:31:23] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 14:31:23] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 14:31:23] [32minfo[39m: Engine.io connection established: FwbtWJREXZe8eOIsAAAA
+[2026-04-05 14:31:23] [32minfo[39m: New client connected: M4NzPlKPTMNBAYn2AAAB
+[2026-04-05 14:31:23] [32minfo[39m: Socket M4NzPlKPTMNBAYn2AAAB joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 14:31:23] [32minfo[39m: Socket M4NzPlKPTMNBAYn2AAAB joined region room: region:ap
+[2026-04-05 14:31:23] [32minfo[39m: Engine.io connection established: oSdNK1TWDH7pjKRoAAAD
+[2026-04-05 14:31:23] [32minfo[39m: New client connected: rhjYtQ46CM-aihOBAAAE
+[2026-04-05 14:31:23] [32minfo[39m: Socket rhjYtQ46CM-aihOBAAAE joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 14:31:23] [32minfo[39m: Socket rhjYtQ46CM-aihOBAAAE joined region room: region:ap
+[2026-04-05 14:31:24] [32minfo[39m: Client disconnected: rhjYtQ46CM-aihOBAAAE, reason: transport close
+[2026-04-05 14:31:24] [32minfo[39m: Engine.io connection established: TemamLqK1dCooYeHAAAG
+[2026-04-05 14:31:24] [32minfo[39m: New client connected: cIOQpFNtoBraZFHIAAAH
+[2026-04-05 14:31:24] [32minfo[39m: Socket cIOQpFNtoBraZFHIAAAH joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 14:31:24] [32minfo[39m: Socket cIOQpFNtoBraZFHIAAAH joined region room: region:ap
+[2026-04-05 14:31:25] [32minfo[39m: Engine.io connection established: EIhNtiyzU_dvsnUFAAAJ
+[2026-04-05 14:31:25] [32minfo[39m: New client connected: cji0C-GTZB0IotxEAAAK
+[2026-04-05 14:31:25] [32minfo[39m: Socket cji0C-GTZB0IotxEAAAK joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 14:31:25] [32minfo[39m: Socket cji0C-GTZB0IotxEAAAK joined region room: region:ap
+[2026-04-05 14:31:27] [32minfo[39m: Client disconnected: cji0C-GTZB0IotxEAAAK, reason: transport close
+[2026-04-05 14:31:27] [32minfo[39m: Engine.io connection established: QjIaIjVThqESI9x2AAAM
+[2026-04-05 14:31:28] [32minfo[39m: New client connected: F6GjZwLo6iAVn2gvAAAN
+[2026-04-05 14:31:28] [32minfo[39m: Socket F6GjZwLo6iAVn2gvAAAN joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 14:31:28] [32minfo[39m: Socket F6GjZwLo6iAVn2gvAAAN joined region room: region:ap
+[2026-04-05 14:31:39] [32minfo[39m: Client disconnected: M4NzPlKPTMNBAYn2AAAB, reason: transport close
+[2026-04-05 14:31:39] [32minfo[39m: Engine.io connection established: T5uumyj67VnrulzmAAAP
+[2026-04-05 14:31:39] [32minfo[39m: New client connected: GHNiGPRRp9X_qC5jAAAQ
+[2026-04-05 14:31:39] [32minfo[39m: Socket GHNiGPRRp9X_qC5jAAAQ joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 14:31:39] [32minfo[39m: Socket GHNiGPRRp9X_qC5jAAAQ joined region room: region:ap
+[2026-04-05 14:33:05] [32minfo[39m: Client disconnected: cIOQpFNtoBraZFHIAAAH, reason: transport close
+[2026-04-05 14:33:05] [32minfo[39m: Engine.io connection established: cQhrj9h9aaZbSgefAAAS
+[2026-04-05 14:33:05] [32minfo[39m: New client connected: R32wfbqsSCPQu6W9AAAT
+[2026-04-05 14:33:05] [32minfo[39m: Socket R32wfbqsSCPQu6W9AAAT joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 14:33:05] [32minfo[39m: Socket R32wfbqsSCPQu6W9AAAT joined region room: region:ap
+[2026-04-05 14:33:14] [32minfo[39m: Client disconnected: R32wfbqsSCPQu6W9AAAT, reason: transport close
+[2026-04-05 14:33:15] [32minfo[39m: Engine.io connection established: nGRhnQX0NlgjPU5_AAAV
+[2026-04-05 14:33:15] [32minfo[39m: New client connected: hPmvs7SSnxNvkXBUAAAW
+[2026-04-05 14:33:15] [32minfo[39m: Socket hPmvs7SSnxNvkXBUAAAW joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 14:33:15] [32minfo[39m: Socket hPmvs7SSnxNvkXBUAAAW joined region room: region:ap
+[2026-04-05 14:34:50] [32minfo[39m: Client disconnected: hPmvs7SSnxNvkXBUAAAW, reason: transport close
+[2026-04-05 14:34:50] [32minfo[39m: Engine.io connection established: HpvX0vqCfW-f986gAAAY
+[2026-04-05 14:34:50] [32minfo[39m: New client connected: WkjuivuN_AWZKRX8AAAZ
+[2026-04-05 14:34:50] [32minfo[39m: Socket WkjuivuN_AWZKRX8AAAZ joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 14:34:50] [32minfo[39m: Socket WkjuivuN_AWZKRX8AAAZ joined region room: region:ap
+[2026-04-05 14:35:02] [32minfo[39m: Client disconnected: WkjuivuN_AWZKRX8AAAZ, reason: transport close
+[2026-04-05 14:35:03] [32minfo[39m: Engine.io connection established: 0TF_EiKu7kM1atHkAAAb
+[2026-04-05 14:35:03] [32minfo[39m: New client connected: jCGVmfb06CeShdo6AAAc
+[2026-04-05 14:35:03] [32minfo[39m: Socket jCGVmfb06CeShdo6AAAc joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 14:35:03] [32minfo[39m: Socket jCGVmfb06CeShdo6AAAc joined region room: region:ap
+[2026-04-05 14:35:23] [32minfo[39m: Client disconnected: jCGVmfb06CeShdo6AAAc, reason: transport close
+[2026-04-05 14:35:23] [32minfo[39m: Engine.io connection established: fPOLNv7UrZIF9VEaAAAe
+[2026-04-05 14:35:23] [32minfo[39m: New client connected: gGkQD2D7V5cGaSbuAAAf
+[2026-04-05 14:35:23] [32minfo[39m: Socket gGkQD2D7V5cGaSbuAAAf joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 14:35:23] [32minfo[39m: Socket gGkQD2D7V5cGaSbuAAAf joined region room: region:ap
+[2026-04-05 14:37:20] [32minfo[39m: Client disconnected: gGkQD2D7V5cGaSbuAAAf, reason: transport close
+[2026-04-05 14:37:21] [32minfo[39m: Engine.io connection established: e929vmLx6nED6SH_AAAh
+[2026-04-05 14:37:21] [32minfo[39m: New client connected: 2YZzAh6K6Utuu4JBAAAi
+[2026-04-05 14:37:21] [32minfo[39m: Socket 2YZzAh6K6Utuu4JBAAAi joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 14:37:21] [32minfo[39m: Socket 2YZzAh6K6Utuu4JBAAAi joined region room: region:ap
+[2026-04-05 14:37:27] [32minfo[39m: Client disconnected: 2YZzAh6K6Utuu4JBAAAi, reason: transport close
+[2026-04-05 14:37:28] [32minfo[39m: Engine.io connection established: Sz8V6bjpjVKfMF92AAAk
+[2026-04-05 14:37:28] [32minfo[39m: New client connected: 9g1xVkotLcDaraWrAAAl
+[2026-04-05 14:37:28] [32minfo[39m: Socket 9g1xVkotLcDaraWrAAAl joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 14:37:28] [32minfo[39m: Socket 9g1xVkotLcDaraWrAAAl joined region room: region:ap
+[2026-04-05 14:38:20] [32minfo[39m: Client disconnected: F6GjZwLo6iAVn2gvAAAN, reason: client namespace disconnect
+[2026-04-05 14:38:20] [32minfo[39m: Client disconnected: 9g1xVkotLcDaraWrAAAl, reason: client namespace disconnect
+[2026-04-05 14:38:21] [32minfo[39m: Client disconnected: GHNiGPRRp9X_qC5jAAAQ, reason: client namespace disconnect
+[2026-04-05 14:38:22] [32minfo[39m: Engine.io connection established: AOyX8mzmOeQv6B5VAAAn
+[2026-04-05 14:38:22] [32minfo[39m: Engine.io connection established: oGtmFx1LBvQ2pBhvAAAo
+[2026-04-05 14:38:22] [32minfo[39m: New client connected: 3yI5jQZip_1xka5LAAAp
+[2026-04-05 14:38:22] [32minfo[39m: Socket 3yI5jQZip_1xka5LAAAp joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 14:38:22] [32minfo[39m: Socket 3yI5jQZip_1xka5LAAAp joined region room: region:ap
+[2026-04-05 14:38:23] [32minfo[39m: New client connected: ED8T1x6SZdlsWV7lAAAr
+[2026-04-05 14:38:23] [32minfo[39m: Socket ED8T1x6SZdlsWV7lAAAr joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 14:38:23] [32minfo[39m: Socket ED8T1x6SZdlsWV7lAAAr joined region room: region:ap
+[2026-04-05 14:38:23] [32minfo[39m: Engine.io connection established: lPooqAq1WpYHtxbUAAAt
+[2026-04-05 14:38:23] [32minfo[39m: New client connected: wVj4RqMwczFWRTanAAAu
+[2026-04-05 14:38:23] [32minfo[39m: Socket wVj4RqMwczFWRTanAAAu joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 14:38:23] [32minfo[39m: Socket wVj4RqMwczFWRTanAAAu joined region room: region:ap
+[2026-04-05 14:38:27] [32minfo[39m: Client disconnected: 3yI5jQZip_1xka5LAAAp, reason: client namespace disconnect
+[2026-04-05 14:38:27] [32minfo[39m: Engine.io connection established: BMm4Q7-zjqtb-W_JAAAw
+[2026-04-05 14:38:27] [32minfo[39m: Client disconnected: ED8T1x6SZdlsWV7lAAAr, reason: client namespace disconnect
+[2026-04-05 14:38:27] [32minfo[39m: New client connected: wP2DQEw5mkGpfN8lAAAx
+[2026-04-05 14:38:27] [32minfo[39m: Socket wP2DQEw5mkGpfN8lAAAx joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 14:38:27] [32minfo[39m: Socket wP2DQEw5mkGpfN8lAAAx joined region room: region:ap
+[2026-04-05 14:38:27] [32minfo[39m: Engine.io connection established: 7bOMPnDeOr7-cuFrAAAz
+[2026-04-05 14:38:27] [32minfo[39m: New client connected: zoyJu0PQqoh6kas5AAA0
+[2026-04-05 14:38:27] [32minfo[39m: Socket zoyJu0PQqoh6kas5AAA0 joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 14:38:27] [32minfo[39m: Socket zoyJu0PQqoh6kas5AAA0 joined region room: region:ap
+[2026-04-05 14:38:28] [32minfo[39m: Client disconnected: wVj4RqMwczFWRTanAAAu, reason: client namespace disconnect
+[2026-04-05 14:38:28] [32minfo[39m: Engine.io connection established: T3Fo-yXM8kT0Ncr0AAA2
+[2026-04-05 14:38:28] [32minfo[39m: New client connected: IMdL3qekegtCLPLZAAA3
+[2026-04-05 14:38:28] [32minfo[39m: Socket IMdL3qekegtCLPLZAAA3 joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 14:38:28] [32minfo[39m: Socket IMdL3qekegtCLPLZAAA3 joined region room: region:ap
+[2026-04-05 14:38:30] [32minfo[39m: Client disconnected: wP2DQEw5mkGpfN8lAAAx, reason: client namespace disconnect
+[2026-04-05 14:38:30] [32minfo[39m: Engine.io connection established: 3uWPZTNwefT7qlWWAAA5
+[2026-04-05 14:38:30] [32minfo[39m: New client connected: owiCSjiqy_twlu9WAAA6
+[2026-04-05 14:38:30] [32minfo[39m: Socket owiCSjiqy_twlu9WAAA6 joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 14:38:30] [32minfo[39m: Socket owiCSjiqy_twlu9WAAA6 joined region room: region:ap
+[2026-04-05 14:38:30] [32minfo[39m: Client disconnected: zoyJu0PQqoh6kas5AAA0, reason: client namespace disconnect
+[2026-04-05 14:38:30] [32minfo[39m: Engine.io connection established: zK_nZ9YxytT5JrVyAAA8
+[2026-04-05 14:38:30] [32minfo[39m: New client connected: 2tkpuoH3s93AlilRAAA9
+[2026-04-05 14:38:30] [32minfo[39m: Socket 2tkpuoH3s93AlilRAAA9 joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 14:38:30] [32minfo[39m: Socket 2tkpuoH3s93AlilRAAA9 joined region room: region:ap
+[2026-04-05 14:38:31] [32minfo[39m: Client disconnected: IMdL3qekegtCLPLZAAA3, reason: client namespace disconnect
+[2026-04-05 14:38:31] [32minfo[39m: Engine.io connection established: pbjBLBX04t5-GBG9AAA_
+[2026-04-05 14:38:31] [32minfo[39m: New client connected: ekakCvkTgVB7HCJSAABA
+[2026-04-05 14:38:31] [32minfo[39m: Socket ekakCvkTgVB7HCJSAABA joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 14:38:31] [32minfo[39m: Socket ekakCvkTgVB7HCJSAABA joined region room: region:ap
+[2026-04-05 14:41:51] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-05 14:41:58] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-05 14:42:02] [32minfo[39m: Client disconnected: ekakCvkTgVB7HCJSAABA, reason: transport close
+[2026-04-05 14:42:03] [32minfo[39m: Engine.io connection established: RJafOrG4QP0bOY-mAABC
+[2026-04-05 14:42:03] [32minfo[39m: New client connected: QQzy96BhMAejp4hmAABD
+[2026-04-05 14:42:03] [32minfo[39m: Socket QQzy96BhMAejp4hmAABD joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 14:42:03] [32minfo[39m: Socket QQzy96BhMAejp4hmAABD joined region room: region:ap
+[2026-04-05 14:42:10] [32minfo[39m: Cancelled timeout for 69d2204fd62874500569db6a:69ccdc0962d3771152139bf3
+[2026-04-05 15:17:33] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-05 15:17:45] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-05 15:17:51] [32minfo[39m: Cancelled timeout for 69d228b9d62874500569dba2:69ccc22530b0bad2cec283f7
+[2026-04-05 15:17:56] [32minfo[39m: ✅ Broadcasted to users in region ap
+[2026-04-05 15:19:47] [32minfo[39m: TimeoutManager initialized
+[2026-04-05 15:19:47] [32minfo[39m: ✅ MongoDB connected: localhost
+[2026-04-05 15:19:47] [32minfo[39m: Server running on http://192.168.68.103:5000
+[2026-04-05 15:19:47] [32minfo[39m: Engine.io connection established: G1Ql0LoXYzs3RJBKAAAA
+[2026-04-05 15:19:47] [32minfo[39m: New client connected: IQ5UId1qa97O1TacAAAB
+[2026-04-05 15:19:47] [32minfo[39m: Socket IQ5UId1qa97O1TacAAAB joined user room: user:69ccdc0962d3771152139bf3
+[2026-04-05 15:19:47] [32minfo[39m: Socket IQ5UId1qa97O1TacAAAB joined region room: region:ap
+[2026-04-05 15:19:47] [32minfo[39m: Engine.io connection established: qv4wkQEECVibqnVjAAAD
+[2026-04-05 15:19:47] [32minfo[39m: New client connected: _Vqts8_QT16y4AZnAAAE
+[2026-04-05 15:19:47] [32minfo[39m: Socket _Vqts8_QT16y4AZnAAAE joined user room: user:69ccc22530b0bad2cec283f7
+[2026-04-05 15:19:47] [32minfo[39m: Socket _Vqts8_QT16y4AZnAAAE joined region room: region:ap
+[2026-04-05 15:19:48] [32minfo[39m: Engine.io connection established: oXTKNe96ROa9O_IQAAAG
+[2026-04-05 15:19:48] [32minfo[39m: New client connected: HnW_F143f5nKt_r_AAAH
+[2026-04-05 15:19:48] [32minfo[39m: Socket HnW_F143f5nKt_r_AAAH joined user room: user:69ccc1ae30b0bad2cec283e9
+[2026-04-05 15:19:48] [32minfo[39m: Socket HnW_F143f5nKt_r_AAAH joined region room: region:ap

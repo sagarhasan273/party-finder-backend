@@ -60,7 +60,7 @@ export const LobbySchema = z.object({
     })).optional(),
 });
 
-export const CreateLobbySchema = LobbySchema.omit({ id: true, host: true }).extend({
+export const CreateLobbySchema = LobbySchema.omit({ id: true, host: true, createdAt: true }).extend({
     host: z.string()
 });
 
