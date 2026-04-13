@@ -1,4 +1,4 @@
-# Valorant 5th Player Finder (LFG App)
+# Valorant 5th Player Finder
 
 **"Never queue as a cursed 4-stack again."**
 
@@ -53,7 +53,7 @@ When 4 friends are in a party, they **cannot** start a game — this app instant
 
 ## 🏗️ System Architecture (High-Level)
 
-```mermaid
+```
 graph TD
     subgraph "Frontend (React + MUI + TypeScript)"
         A[Landing + Auth] --> B[Profile (Rank Sync + Region)]
