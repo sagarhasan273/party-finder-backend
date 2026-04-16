@@ -12,7 +12,7 @@ const app = express();
 const server = http.createServer(app);
 
 app.use(cors({
-  origin: [`http://${getLocalIp()}:8081`, 'http://localhost:8081', 'https://party-finder-nine.vercel.app'],
+  origin: [`http://${getLocalIp()}:8081`, 'http://localhost:8081', 'https://party-finder-nine.vercel.app', 'https://www.val5th-finder.com'],
   credentials: true,
 }));
 
