@@ -54,13 +54,11 @@ async function start(): Promise<void> {
       logger.info(`Server running on http://${getLocalIp()}:${PORT}`);
 
       // Start keep-alive in production
-      if (process.env.NODE_ENV === 'production') {
-        setupKeepAlive(server, {
-          interval: 600000, // 10 minutes
-          activityInterval: 300000, // 5 minutes
-        });
-        logger.info('🟢 Keep-alive system activated');
-      }
+      setupKeepAlive(server, {
+        interval: 600000, // 10 minutes
+        activityInterval: 300000, // 5 minutes
+      });
+      logger.info('🟢 Keep-alive system activated');
     });
   } catch (error) {
     logger.error(`Failed to start server: ${error instanceof Error ? error.message : 'Unknown error'}`);
