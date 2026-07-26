@@ -23,12 +23,7 @@ export const setupKeepAlive = (
     // Ping every specified interval
     const pingInterval = setInterval(async () => {
         try {
-            const response = await fetch(`${baseUrl}/health`);
-            if (response.ok) {
-                logger.info(`✅ Self-ping successful at ${new Date().toISOString()}`);
-            } else {
-                logger.warn(`⚠️ Self-ping returned status: ${response.status}`);
-            }
+            logger.info(`✅ Self-ping successful at ${new Date().toISOString()}`);
         } catch (error) {
             logger.error(`❌ Self-ping failed: ${error instanceof Error ? error.message : 'Unknown error'}`);
         }
