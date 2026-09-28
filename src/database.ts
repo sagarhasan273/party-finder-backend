@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
-import logger from './utils/logger';
 import { dbConfig } from './config';
 import { DatabaseError } from './utils/errors';
+import logger from './utils/logger';
 
 let isConnected = false;
 

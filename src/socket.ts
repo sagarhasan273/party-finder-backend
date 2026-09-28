@@ -3,7 +3,6 @@ import { Server as IOServer, Socket } from 'socket.io';
 import { matchService } from './services/match.service';
 import { PlayerTicket } from './types/match.types';
 import logger from './utils/logger';
-import { getLocalIp } from './utils/system';
 
 let io: IOServer;
 let connectedUsers: number = 0;
@@ -20,14 +19,7 @@ export const broadcastTelemetry = () => {
 export const initSocket = (server: http.Server): IOServer => {
     io = new IOServer(server, {
         cors: {
-            origin: [
-                `http://${getLocalIp()}:8081`,
-                'http://localhost:8081',
-                'http://localhost:5173',
-                'https://party-finder-nine.vercel.app',
-                'https://www.val5th-finder.com',
-            ],
-            credentials: true,
+            origin: '*', // Allow all origins for seamless cross-network P2P testing
             methods: ['GET', 'POST'],
         },
         connectionStateRecovery: {
@@ -38,21 +30,10 @@ export const initSocket = (server: http.Server): IOServer => {
     });
 
     io.on('connection', (socket: Socket) => {
-        logger.info(`New client connected: ${socket.id}`);
+        logger.info(`[Socket Connected] ID: ${socket.id}`);
         connectedUsers += 1;
         io.emit('users:count', { count: connectedUsers });
         broadcastTelemetry();
-
-        const userId = socket.handshake.query?.userId as string | undefined;
-        const region = socket.handshake.query?.region as string | undefined;
-
-        if (userId) {
-            socket.join(`user:${userId}`);
-            if (region) socket.join(`region:${region}`);
-            socket.emit('connection:established', { userId, socketId: socket.id, message: 'Connected successfully' });
-        } else {
-            socket.emit('connection:established', { socketId: socket.id, message: 'Connected, but no user ID provided' });
-        }
 
         // Matchmaking Handlers
         socket.on('start-search', async (data: Omit<PlayerTicket, 'socketId'>) => {
@@ -73,9 +54,8 @@ export const initSocket = (server: http.Server): IOServer => {
                 if (result) {
                     const { match, matchedPeer } = result;
 
-                    socket.join(match.roomId);
-                    const peerSocket = io.sockets.sockets.get(matchedPeer.socketId);
-                    if (peerSocket) peerSocket.join(match.roomId);
+                    // Native Socket.IO v4 room join across all adapters
+                    io.in([ticket.socketId, matchedPeer.socketId]).socketsJoin(match.roomId);
 
                     io.to(ticket.socketId).emit('match-found', {
                         roomId: match.roomId,
@@ -90,6 +70,8 @@ export const initSocket = (server: http.Server): IOServer => {
                         peerSocketId: ticket.socketId,
                         participants: match.participants,
                     });
+
+                    logger.info(`[Match Dispatched] Room: ${match.roomId} between ${ticket.socketId} and ${matchedPeer.socketId}`);
                 } else {
                     socket.emit('queue-status', { status: 'searching' });
                 }
