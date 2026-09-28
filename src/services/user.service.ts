@@ -1,6 +1,5 @@
 import { UserRepository } from '../repositories/user.repository';
 
-import { joinUserRoom, leaveUserRoom } from '../socket';
 import { ReturnResponseType } from '../types/base.type';
 import { UpdateUserInput, UserType } from '../types/user.type';
 import { AppError, DatabaseError } from '../utils/errors';
@@ -28,11 +27,6 @@ export class UserService {
 
       const result = await this.userRepository.updateUser(input);
 
-      if (input.region) {
-        joinUserRoom(input.id.toString(), `region:${input.region}`);
-      } else {
-        leaveUserRoom(input.id.toString(), `region:${input.region}`)
-      }
 
       return result;
     } catch (error) {

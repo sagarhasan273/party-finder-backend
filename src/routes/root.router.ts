@@ -1,7 +1,7 @@
 import express from "express";
 
 import { AuthRoutes } from "./auth-router";
-import { InventoryRoutes } from "./inventory.router";
+import { MatchRoutes } from "./match.router";
 import { UserRoutes } from "./user-router";
 
 const app = express();
@@ -12,7 +12,7 @@ app.use('/auth', authRouters.router);
 const userRouters = new UserRoutes();
 app.use('/user', userRouters.router);
 
-const inventoryRouters = new InventoryRoutes();
-app.use('/inventory', inventoryRouters.router);
+const matchRouters = new MatchRoutes();
+app.use('/matches', matchRouters.router);
 
 export const rootRouter = app;

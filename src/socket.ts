@@ -1,202 +1,143 @@
 import http from 'http';
 import { Server as IOServer, Socket } from 'socket.io';
+import { matchService } from './services/match.service';
+import { PlayerTicket } from './types/match.types';
 import logger from './utils/logger';
 import { getLocalIp } from './utils/system';
 
 let io: IOServer;
 let connectedUsers: number = 0;
 
-export const initSocket = (server: http.Server) => {
+export const broadcastTelemetry = () => {
+    if (!io) return;
+    io.emit('telemetry-update', {
+        onlinePlayers: connectedUsers,
+        inQueueCount: matchService.getQueueLength(),
+        timestamp: Date.now(),
+    });
+};
+
+export const initSocket = (server: http.Server): IOServer => {
     io = new IOServer(server, {
         cors: {
-            origin: [`http://${getLocalIp()}:8081`, 'http://localhost:8081', 'http://localhost:5173'],
+            origin: [
+                `http://${getLocalIp()}:8081`,
+                'http://localhost:8081',
+                'http://localhost:5173',
+                'https://party-finder-nine.vercel.app',
+                'https://www.val5th-finder.com',
+            ],
             credentials: true,
-            methods: ["GET", "POST"]
+            methods: ['GET', 'POST'],
         },
-        // Add connection state recovery
         connectionStateRecovery: {
-            maxDisconnectionDuration: 2 * 60 * 1000, // 2 minutes
+            maxDisconnectionDuration: 2 * 60 * 1000,
             skipMiddlewares: true,
         },
-        // Allow polling as fallback
         transports: ['websocket', 'polling'],
     });
 
     io.on('connection', (socket: Socket) => {
         logger.info(`New client connected: ${socket.id}`);
-
         connectedUsers += 1;
-        io.emit("users:count", { count: connectedUsers });
+        io.emit('users:count', { count: connectedUsers });
+        broadcastTelemetry();
 
-        const userId = socket.handshake.query?.userId;
-        const region = socket.handshake.query?.region;
+        const userId = socket.handshake.query?.userId as string | undefined;
+        const region = socket.handshake.query?.region as string | undefined;
 
-
-        // If user ID is available, join user room
         if (userId) {
             socket.join(`user:${userId}`);
-            logger.info(`Socket ${socket.id} joined user room: user:${userId}`);
-
-            // 🔥 CRITICAL: Join region room if region is provided
-            if (region) {
-                socket.join(`region:${region}`);
-                logger.info(`Socket ${socket.id} joined region room: region:${region}`);
-            }
-
-            // Send confirmation back to client
-            socket.emit('connection:established', {
-                userId,
-                socketId: socket.id,
-                message: 'Connected successfully'
-            });
+            if (region) socket.join(`region:${region}`);
+            socket.emit('connection:established', { userId, socketId: socket.id, message: 'Connected successfully' });
         } else {
-            logger.info(`Socket ${socket.id} connected without user ID`);
-            socket.emit('connection:established', {
-                socketId: socket.id,
-                message: 'Connected, but no user ID provided'
-            });
+            socket.emit('connection:established', { socketId: socket.id, message: 'Connected, but no user ID provided' });
         }
 
-        // Handle custom room joining from services
-        socket.on('join-room', (roomName: string) => {
-            socket.join(roomName);
-            logger.info(`Socket ${socket.id} joined room: ${roomName}`);
-        });
-
-        socket.on('leave-room', (roomName: string) => {
-            socket.leave(roomName);
-            logger.info(`Socket ${socket.id} left room: ${roomName}`);
-        });
-
-        // Handle registration event (for clients that connect first then send user ID)
-        socket.on("register", (data) => {
-            if (socket.rooms.has(`user:${data?.userId}`)) return;
-
-            logger.info(`Registration attempt from socket ${socket.id}: ${data?.userId}`);
-
-            if (data.userId) {
-                socket.data.userId = data.userId;
-                socket.join(`user:${data.userId}`);
-
-                logger.info(`User ${data.userId} registered and joined room user:${data.userId}`);
-
-                // Confirm registration
-                socket.emit("registered", {
-                    userId: data.userId,
+        // Matchmaking Handlers
+        socket.on('start-search', async (data: Omit<PlayerTicket, 'socketId'>) => {
+            try {
+                const ticket: PlayerTicket = {
                     socketId: socket.id,
-                    success: true
-                });
-            } else {
-                socket.emit("registered", {
-                    success: false,
-                    error: "No userId provided"
-                });
+                    username: data.username.trim(),
+                    region: data.region,
+                    server: data.server,
+                    rank: data.rank,
+                    minRank: data.minRank,
+                    maxRank: data.maxRank,
+                    currentGroupSize: Number(data.currentGroupSize),
+                };
+
+                const result = await matchService.findMatch(ticket);
+
+                if (result) {
+                    const { match, matchedPeer } = result;
+
+                    socket.join(match.roomId);
+                    const peerSocket = io.sockets.sockets.get(matchedPeer.socketId);
+                    if (peerSocket) peerSocket.join(match.roomId);
+
+                    io.to(ticket.socketId).emit('match-found', {
+                        roomId: match.roomId,
+                        isInitiator: true,
+                        peerSocketId: matchedPeer.socketId,
+                        participants: match.participants,
+                    });
+
+                    io.to(matchedPeer.socketId).emit('match-found', {
+                        roomId: match.roomId,
+                        isInitiator: false,
+                        peerSocketId: ticket.socketId,
+                        participants: match.participants,
+                    });
+                } else {
+                    socket.emit('queue-status', { status: 'searching' });
+                }
+
+                broadcastTelemetry();
+            } catch (err) {
+                logger.error(`Error during matchmaking on socket ${socket.id}:`, err);
+                socket.emit('error-msg', { message: 'Matchmaking process encountered an internal error.' });
             }
         });
 
-        socket.on("users:count:request", () => {
-            socket.emit("users:count", { count: connectedUsers });
+        socket.on('cancel-search', () => {
+            matchService.removeSocketFromQueue(socket.id);
+            socket.emit('queue-status', { status: 'idle' });
+            broadcastTelemetry();
         });
 
-        // Handle disconnection
-        socket.on('disconnect', (reason) => {
-            connectedUsers -= 1;
-            io.emit('users:count', { count: connectedUsers });
+        // WebRTC P2P Signaling Relays
+        socket.on('webrtc-offer', ({ targetSocketId, offer }: { targetSocketId: string; offer: RTCSessionDescriptionInit }) => {
+            io.to(targetSocketId).emit('webrtc-offer', { senderSocketId: socket.id, offer });
+        });
 
+        socket.on('webrtc-answer', ({ targetSocketId, answer }: { targetSocketId: string; answer: RTCSessionDescriptionInit }) => {
+            io.to(targetSocketId).emit('webrtc-answer', { senderSocketId: socket.id, answer });
+        });
+
+        socket.on('webrtc-ice-candidate', ({ targetSocketId, candidate }: { targetSocketId: string; candidate: RTCIceCandidateInit }) => {
+            io.to(targetSocketId).emit('webrtc-ice-candidate', { candidate });
+        });
+
+        socket.on('leave-room', ({ roomId }: { roomId: string }) => {
+            socket.leave(roomId);
+            socket.to(roomId).emit('peer-left');
+        });
+
+        socket.on('disconnect', (reason: string) => {
+            connectedUsers = Math.max(0, connectedUsers - 1);
+            matchService.removeSocketFromQueue(socket.id);
+            io.emit('users:count', { count: connectedUsers });
+            broadcastTelemetry();
             logger.info(`Client disconnected: ${socket.id}, reason: ${reason}`);
         });
-
-        // Handle errors
-        socket.on('error', (error) => {
-            logger.error(`Socket error for ${socket.id}:`, error);
-        });
-    });
-
-    // Log when server starts
-    io.engine.on("connection", (socket) => {
-        logger.info(`Engine.io connection established: ${socket.id}`);
     });
 
     return io;
 };
 
-export const getIO = () => {
+export const getIO = (): IOServer => {
     if (!io) throw new Error('Socket.io not initialized');
     return io;
-};
-
-export const getConnectedUsersCount = () => {
-    if (!io) throw new Error('Socket.io not initialized');
-    return connectedUsers;
-}
-
-// Add these helper functions to your socket.ts file
-
-export const joinUserRoom = (userId: string, roomName: string) => {
-    if (!io) {
-        logger.error('Socket.io not initialized');
-        return;
-    }
-
-    io.to(`user:${userId}`).emit('join-room', roomName);
-
-    logger.info(`Emitted join-room to user ${userId} for room: ${roomName}`);
-};
-
-export const leaveUserRoom = (userId: string, roomName: string) => {
-    if (!io) {
-        logger.error('Socket.io not initialized');
-        return;
-    }
-    io.to(`user:${userId}`).emit('leave-room', roomName);
-
-    logger.info(`Emitted leave-room to user ${userId} for room: ${roomName}`);
-};
-
-// Or a more generic function to emit any socket event to a user
-export const emitToUserSocket = (userId: string, event: string, data: any) => {
-    if (!io) {
-        logger.error('Socket.io not initialized');
-        return;
-    }
-    io.to(`user:${userId}`).emit(event, data);
-};
-
-export const emitToRoom = (roomName: string, event: string, data: any) => {
-    if (!io) {
-        logger.error('Socket.io not initialized');
-        return;
-    }
-    io.to(roomName).emit(event, data);
-};
-
-export const broadcastToRegion = (region: string, event: string, data: any) => {
-    if (!io) {
-        logger.error('Socket.io not initialized');
-        return;
-    }
-
-    const roomName = `region:${region}`;
-
-    io.to(roomName).emit(event, data);
-    logger.info(`✅ Broadcasted to users in region ${region}`);
-};
-
-
-
-export const emitToUser = (userId: string, event: string, data: any) => {
-    if (!io) {
-        console.error('Socket.io not initialized');
-        return;
-    }
-    io.to(`user:${userId}`).emit(event, data);
-};
-
-// Helper function to emit to all connected clients
-export const emitToAll = (event: string, data: any) => {
-    if (!io) {
-        console.error('Socket.io not initialized');
-        return;
-    }
-    io.emit(event, data);
 };
