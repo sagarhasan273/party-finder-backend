@@ -13,6 +13,6 @@ const userRouters = new UserRoutes();
 app.use('/user', userRouters.router);
 
 const matchRouters = new MatchRoutes();
-app.use('/matches', matchRouters.router);
+app.use('/api/matches', matchRouters.router);
 
 export const rootRouter = app;

@@ -2,7 +2,6 @@ import http from 'http';
 import { Server as IOServer, Socket } from 'socket.io';
 import { matchService } from './services/match.service';
 import { PlayerTicket } from './types/match.types';
-import logger from './utils/logger';
 
 let io: IOServer;
 let connectedUsers: number = 0;
@@ -19,7 +18,7 @@ export const broadcastTelemetry = () => {
 export const initSocket = (server: http.Server): IOServer => {
     io = new IOServer(server, {
         cors: {
-            origin: '*', // Allow all origins for seamless cross-network P2P testing
+            origin: '*',
             methods: ['GET', 'POST'],
         },
         connectionStateRecovery: {
@@ -30,12 +29,10 @@ export const initSocket = (server: http.Server): IOServer => {
     });
 
     io.on('connection', (socket: Socket) => {
-        logger.info(`[Socket Connected] ID: ${socket.id}`);
         connectedUsers += 1;
         io.emit('users:count', { count: connectedUsers });
         broadcastTelemetry();
 
-        // Matchmaking Handlers
         socket.on('start-search', async (data: Omit<PlayerTicket, 'socketId'>) => {
             try {
                 const ticket: PlayerTicket = {
@@ -54,7 +51,7 @@ export const initSocket = (server: http.Server): IOServer => {
                 if (result) {
                     const { match, matchedPeer } = result;
 
-                    // Native Socket.IO v4 room join across all adapters
+                    // Socket.IO v4 bulk join into room
                     io.in([ticket.socketId, matchedPeer.socketId]).socketsJoin(match.roomId);
 
                     io.to(ticket.socketId).emit('match-found', {
@@ -70,15 +67,12 @@ export const initSocket = (server: http.Server): IOServer => {
                         peerSocketId: ticket.socketId,
                         participants: match.participants,
                     });
-
-                    logger.info(`[Match Dispatched] Room: ${match.roomId} between ${ticket.socketId} and ${matchedPeer.socketId}`);
                 } else {
                     socket.emit('queue-status', { status: 'searching' });
                 }
 
                 broadcastTelemetry();
             } catch (err) {
-                logger.error(`Error during matchmaking on socket ${socket.id}:`, err);
                 socket.emit('error-msg', { message: 'Matchmaking process encountered an internal error.' });
             }
         });
@@ -89,30 +83,38 @@ export const initSocket = (server: http.Server): IOServer => {
             broadcastTelemetry();
         });
 
-        // WebRTC P2P Signaling Relays
-        socket.on('webrtc-offer', ({ targetSocketId, offer }: { targetSocketId: string; offer: RTCSessionDescriptionInit }) => {
-            io.to(targetSocketId).emit('webrtc-offer', { senderSocketId: socket.id, offer });
-        });
+        // P2P WebRTC Signaling Relays with senderSocketId attribution
+        socket.on(
+            'webrtc-offer',
+            ({ targetSocketId, offer }: { targetSocketId: string; offer: RTCSessionDescriptionInit }) => {
+                io.to(targetSocketId).emit('webrtc-offer', { senderSocketId: socket.id, offer });
+            }
+        );
 
-        socket.on('webrtc-answer', ({ targetSocketId, answer }: { targetSocketId: string; answer: RTCSessionDescriptionInit }) => {
-            io.to(targetSocketId).emit('webrtc-answer', { senderSocketId: socket.id, answer });
-        });
+        socket.on(
+            'webrtc-answer',
+            ({ targetSocketId, answer }: { targetSocketId: string; answer: RTCSessionDescriptionInit }) => {
+                io.to(targetSocketId).emit('webrtc-answer', { senderSocketId: socket.id, answer });
+            }
+        );
 
-        socket.on('webrtc-ice-candidate', ({ targetSocketId, candidate }: { targetSocketId: string; candidate: RTCIceCandidateInit }) => {
-            io.to(targetSocketId).emit('webrtc-ice-candidate', { candidate });
-        });
+        socket.on(
+            'webrtc-ice-candidate',
+            ({ targetSocketId, candidate }: { targetSocketId: string; candidate: RTCIceCandidateInit }) => {
+                io.to(targetSocketId).emit('webrtc-ice-candidate', { senderSocketId: socket.id, candidate });
+            }
+        );
 
         socket.on('leave-room', ({ roomId }: { roomId: string }) => {
             socket.leave(roomId);
             socket.to(roomId).emit('peer-left');
         });
 
-        socket.on('disconnect', (reason: string) => {
+        socket.on('disconnect', () => {
             connectedUsers = Math.max(0, connectedUsers - 1);
             matchService.removeSocketFromQueue(socket.id);
             io.emit('users:count', { count: connectedUsers });
             broadcastTelemetry();
-            logger.info(`Client disconnected: ${socket.id}, reason: ${reason}`);
         });
     });
 
