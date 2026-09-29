@@ -119,6 +119,19 @@ export const initSocket = (server: http.Server): IOServer => {
         socket.on('leave-room', ({ roomId }: { roomId: string }) => {
             socket.leave(roomId);
             socket.to(roomId).emit('peer-left');
+            // Note: If you store active matches in memory inside matchService, call a cleanup function here.
+            // e.g., matchService.removeMatchData(roomId);
+        });
+
+        // Detect tab closures / network disconnects BEFORE the socket leaves its rooms
+        socket.on('disconnecting', () => {
+            for (const room of socket.rooms) {
+                // socket.rooms contains the socket's own ID, so we skip it to find the actual match room
+                if (room !== socket.id) {
+                    socket.to(room).emit('peer-left');
+                    // Note: If you store active matches in memory inside matchService, call a cleanup function here too.
+                }
+            }
         });
 
         socket.on('disconnect', () => {
