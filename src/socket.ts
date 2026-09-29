@@ -51,8 +51,8 @@ export const initSocket = (server: http.Server): IOServer => {
                 if (result) {
                     const { match, matchedPeer } = result;
 
-                    // Socket.IO v4 bulk join into room
-                    io.in([ticket.socketId, matchedPeer.socketId]).socketsJoin(match.roomId);
+                    // Join both sockets into the dedicated room
+                    await io.in([ticket.socketId, matchedPeer.socketId]).socketsJoin(match.roomId);
 
                     io.to(ticket.socketId).emit('match-found', {
                         roomId: match.roomId,
@@ -83,7 +83,18 @@ export const initSocket = (server: http.Server): IOServer => {
             broadcastTelemetry();
         });
 
-        // P2P WebRTC Signaling Relays with senderSocketId attribution
+        // Room-based Chat Relay (Fallback & Primary reliable channel)
+        socket.on('send-room-chat', ({ roomId, message, sender, timestamp }) => {
+            socket.to(roomId).emit('room-chat', { sender, message, timestamp });
+        });
+
+        // Room-based Party Code Broadcast
+        socket.on('send-party-code', async ({ roomId, partyCode }: { roomId: string; partyCode: string }) => {
+            await matchService.setPartyCode(roomId, partyCode);
+            socket.to(roomId).emit('party-code-updated', { partyCode });
+        });
+
+        // P2P WebRTC Signaling Relays
         socket.on(
             'webrtc-offer',
             ({ targetSocketId, offer }: { targetSocketId: string; offer: RTCSessionDescriptionInit }) => {
