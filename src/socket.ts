@@ -1,5 +1,6 @@
 import http from 'http';
 import { Server as IOServer, Socket } from 'socket.io';
+import { analyticsService } from './services/analytics.service';
 import { matchService } from './services/match.service';
 import { PlayerTicket } from './types/match.types';
 
@@ -28,13 +29,18 @@ export const initSocket = (server: http.Server): IOServer => {
         transports: ['websocket', 'polling'],
     });
 
-    io.on('connection', (socket: Socket) => {
+    io.on('connection', async (socket: Socket) => {
         connectedUsers += 1;
         io.emit('users:count', { count: connectedUsers });
         broadcastTelemetry();
 
+        const updatedStats = await analyticsService.getStats();
+        io.emit('history-stats', updatedStats);
+
         socket.on('start-search', async (data: Omit<PlayerTicket, 'socketId'>) => {
             try {
+                await analyticsService.recordSearch(data.region, data.server);
+
                 const ticket: PlayerTicket = {
                     socketId: socket.id,
                     username: data.username.trim(),
@@ -67,6 +73,13 @@ export const initSocket = (server: http.Server): IOServer => {
                         peerSocketId: ticket.socketId,
                         participants: match.participants,
                     });
+
+                    // 1. Call Service to record visit
+                    await analyticsService.recordVisit();
+
+                    // 2. Call Service to fetch clean stats and send to the new user
+                    const currentStats = await analyticsService.getStats();
+                    socket.emit('history-stats', currentStats);
                 } else {
                     socket.emit('queue-status', { status: 'searching' });
                 }
