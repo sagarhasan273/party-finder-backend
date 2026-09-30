@@ -52,7 +52,7 @@ export const initSocket = (server: http.Server): IOServer => {
                     const { match, matchedPeer } = result;
 
                     // Join both sockets into the dedicated room
-                    await io.in([ticket.socketId, matchedPeer.socketId]).socketsJoin(match.roomId);
+                    io.in([ticket.socketId, matchedPeer.socketId]).socketsJoin(match.roomId);
 
                     io.to(ticket.socketId).emit('match-found', {
                         roomId: match.roomId,
